@@ -24,7 +24,6 @@ source("scripts/clock_strict_morpho.Rev")
 source("scripts/Mk.Rev")
 
 
-
 ##Setting up the MCMC##
 
 #Creating variable mymodel
@@ -40,7 +39,7 @@ monitors.append( mnScreen(printgen = 10, num_samp_anc, origin_time) )
 
 #Settingup the MCMC run (10000 generations)
 mymcmc = mcmc(mymodel, monitors, moves)
-mymcmc.run(generations = 50000, tuningInterval = 5000)
+mymcmc.run(generations = 10000, tuningInterval = 1000)
 
 #Creates the final output
 trace = readTreeTrace("output/Pterosaurs_FBD.trees")
