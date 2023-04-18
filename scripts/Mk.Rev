@@ -2,7 +2,7 @@
 #This is a generalization of the Jukes-Cantor (JK) model
 
 #Defining a Q-matrix for 2 states 
-Q <- fnJC(2)
+Q <- fnJC(7)
 
 #Defing a stochastic node
 seq ~ dnPhyloCTMC(tree = tree, Q = Q, type = "Standard", branchRates = branch_rates)

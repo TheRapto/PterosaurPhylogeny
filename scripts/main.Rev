@@ -1,8 +1,11 @@
 ####Bayesian tree inference using fossilised birth-death process####
 
 #Reading in the data
-taxa <- readTaxonData("data/bears_taxa.tsv")
-morpho <- readDiscreteCharacterData("data/bears_morphology.nex")
+taxa <- readTaxonData("data/Pterosaur_Age.csv")
+morpho <- readDiscreteCharacterData("data/Pterosaur.nex")
+
+morpho.addMissingTaxa( taxa )
+
 
 #Defining helper variables
 num_taxa <- morpho.ntaxa() # number of taxa
@@ -29,16 +32,16 @@ mymodel = model(tree)
 
 #The monitors to capture the output
 # parameters printed to file
-monitors.append( mnModel(filename = "output/bears_FBD.log", printgen = 10, exclude = ["F"]) )
+monitors.append( mnModel(filename = "output/Pterosaurs_FBD.log", printgen = 10, exclude = ["F"]) )
 # trees printed to file
-monitors.append( mnFile(filename = "output/bears_FBD.trees", printgen = 10, tree) )
+monitors.append( mnFile(filename = "output/Pterosaurs_FBD.trees", printgen = 10, tree) )
 # parameter values printed to screen during the MCMC
-monitors.append( mnScreen(printgen = 10, age_extant, num_samp_anc, origin_time) )
+monitors.append( mnScreen(printgen = 10, num_samp_anc, origin_time) )
 
 #Settingup the MCMC run (10000 generations)
 mymcmc = mcmc(mymodel, monitors, moves)
 mymcmc.run(generations = 50000, tuningInterval = 5000)
 
 #Creates the final output
-trace = readTreeTrace("output/bears_FBD.trees")
-mccTree(trace, file = "output/bears_FBD.mcc.tre", positiveBranchLengths = TRUE)
+trace = readTreeTrace("output/Pterosaurs_FBD.trees")
+mccTree(trace, file = "output/Pterosaurs_FBD.mcc.tre", positiveBranchLengths = TRUE)

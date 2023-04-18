@@ -33,11 +33,6 @@ moves.append( mvCollapseExpandFossilBranch(tree, origin_time, weight = 6.0) )
 moves.append( mvNodeTimeSlideUniform(tree, weight = 40.0) )
 moves.append( mvRootTimeSlideUniform(tree, origin_time, weight = 5.0) )
 
-#Constraining the clade containg extant bears
-clade_extant = clade("Ailuropoda_melanoleuca","Tremarctos_ornatus","Melursus_ursinus",
-                    "Ursus_arctos","Ursus_maritimus","Helarctos_malayanus",
-                    "Ursus_americanus","Ursus_thibetanus")
-age_extant := tmrca(tree, clade_extant)
 
 #Deterministic variable to monitor amount of sampled ancestors
 num_samp_anc := tree.numSampledAncestors()
