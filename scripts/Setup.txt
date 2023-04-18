@@ -1,0 +1,7 @@
+setwd("C:\\revbayes-v1.2.1-win64\\revbayes-v1.2.1\\Files\\Exercise 5")
+getwd()
+
+source("scripts/main.Rev")
+
+Clear memory:
+Clear()
