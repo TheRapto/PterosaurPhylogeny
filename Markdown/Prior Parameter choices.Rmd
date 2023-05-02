@@ -1,0 +1,19 @@
+---
+title: "Prior parameter choices"
+author: "Joël Koelewijn"
+date: "2023-05-02"
+output: html_document
+---
+All the priors with the values and type of distribution used.
+
+First run, 21 species, BDMM', strict clock, no age boundaries:
+Prior:	                Type:	          Mean:	    Upper:	Start:	 Lower:                 
+Birth rate	            Exponential	    1			
+Clock rate	            Exponential	    1			
+Death rate	            Exponential	    1			
+Gamma shape	            Exponential	    1			
+Origin BDMM'	          Uniform		                150	    70	      35
+Proportion Invariant	  Uniform		                1	      0	        0
+Sampling rate	          Exponential	    0.1			
+Removal prob.	          0				
+
