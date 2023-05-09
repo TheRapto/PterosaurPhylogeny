@@ -68,7 +68,8 @@ name="alignment">
         <parameter id="mutationRate.s:PterosaurSmall" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
         <parameter id="gammaShape.s:PterosaurSmall" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
         <parameter id="proportionInvariant.s:PterosaurSmall" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="1.0">0.0</parameter>
-        <parameter id="clockRate.c:PterosaurSmall" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="ucedMean.c:PterosaurSmall" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <stateNode id="expRateCategories.c:PterosaurSmall" spec="parameter.IntegerParameter" dimension="40">1</stateNode>
     </state>
 
     <init id="RandomTree.t:PterosaurSmall" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:PterosaurSmall" taxa="@PterosaurSmall">
@@ -109,9 +110,6 @@ name="alignment">
                     <parameter id="RealParameter.4" spec="parameter.RealParameter" estimate="false" name="mean">1.0</parameter>
                 </Exponential>
             </distribution>
-            <prior id="ClockPrior.c:PterosaurSmall" name="distribution" x="@clockRate.c:PterosaurSmall">
-                <Uniform id="Uniform.0" name="distr" upper="Infinity"/>
-            </prior>
             <distribution id="deathRateCanonicalPrior.t:PterosaurSmall" spec="bdmmprime.util.priors.ZeroExcludingPrior" x="@deathRateCanonical.t:PterosaurSmall">
                 <Exponential id="Exponential.3" name="distr">
                     <parameter id="RealParameter.6" spec="parameter.RealParameter" estimate="false" name="mean">1.0</parameter>
@@ -133,6 +131,9 @@ name="alignment">
                     <parameter id="RealParameter.8" spec="parameter.RealParameter" estimate="false" name="mean">1.0</parameter>
                 </Exponential>
             </distribution>
+            <prior id="UCMeanRatePrior.c:PterosaurSmall" name="distribution" x="@ucedMean.c:PterosaurSmall">
+                <Uniform id="Uniform.5" name="distr" upper="Infinity"/>
+            </prior>
             <distribution id="Austriadactylus cristatus2.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
                 <taxonset id="Austriadactylus cristatus2" spec="TaxonSet">
                     <taxon id="Austriadactylus cristatus" spec="Taxon"/>
@@ -259,7 +260,11 @@ name="alignment">
                 <siteModel id="SiteModel.s:PterosaurSmall" spec="SiteModel" gammaCategoryCount="4" mutationRate="@mutationRate.s:PterosaurSmall" proportionInvariant="@proportionInvariant.s:PterosaurSmall" shape="@gammaShape.s:PterosaurSmall">
                     <substModel id="LewisMK.s:PterosaurSmall" spec="LewisMK" stateNumber="7"/>
                 </siteModel>
-                <branchRateModel id="StrictClock.c:PterosaurSmall" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:PterosaurSmall"/>
+                <branchRateModel id="ExponentialRelaxedClock.c:PterosaurSmall" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" clock.rate="@ucedMean.c:PterosaurSmall" numberOfDiscreteRates="4" rateCategories="@expRateCategories.c:PterosaurSmall" tree="@Tree.t:PterosaurSmall">
+                    <Exponential id="Exponential.c:PterosaurSmall" name="distr">
+                        <parameter id="UCExpLambda.c:PterosaurSmall" spec="parameter.RealParameter" name="mean">1.0</parameter>
+                    </Exponential>
+                </branchRateModel>
             </distribution>
         </distribution>
     </distribution>
@@ -339,10 +344,16 @@ name="alignment">
 
     <operator id="tipDatesSampler.Yelaphomte praderioi1" spec="SampledNodeDateRandomWalker" taxonset="@Yelaphomte praderioi1" tree="@Tree.t:PterosaurSmall" weight="1.0" windowSize="1.0"/>
 
-    <operator id="StrictClockRateScaler.c:PterosaurSmall" spec="ScaleOperator" parameter="@clockRate.c:PterosaurSmall" weight="3.0"/>
+    <operator id="ucedMeanScaler.c:PterosaurSmall" spec="ScaleOperator" parameter="@ucedMean.c:PterosaurSmall" scaleFactor="0.5" weight="1.0"/>
 
-    <operator id="strictClockUpDownOperator.c:PterosaurSmall" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
-        <up idref="clockRate.c:PterosaurSmall"/>
+    <operator id="ExpCategoriesRandomWalk.c:PterosaurSmall" spec="IntRandomWalkOperator" parameter="@expRateCategories.c:PterosaurSmall" weight="10.0" windowSize="1"/>
+
+    <operator id="ExpCategoriesSwapOperator.c:PterosaurSmall" spec="SwapOperator" intparameter="@expRateCategories.c:PterosaurSmall" weight="10.0"/>
+
+    <operator id="ExpCategoriesUniform.c:PterosaurSmall" spec="UniformOperator" parameter="@expRateCategories.c:PterosaurSmall" weight="10.0"/>
+
+    <operator id="relaxedUpDownOperatorExp.c:PterosaurSmall" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+        <up idref="ucedMean.c:PterosaurSmall"/>
         <down idref="Tree.t:PterosaurSmall"/>
     </operator>
 
@@ -388,7 +399,8 @@ name="alignment">
         <log idref="Scleromochlus taylori1.prior"/>
         <log idref="Seazzadactylus venieri1.prior"/>
         <log idref="Yelaphomte praderioi1.prior"/>
-        <log idref="clockRate.c:PterosaurSmall"/>
+        <log idref="ucedMean.c:PterosaurSmall"/>
+        <log id="rateStat.c:PterosaurSmall" spec="beast.evolution.branchratemodel.RateStatistic" branchratemodel="@ExponentialRelaxedClock.c:PterosaurSmall" tree="@Tree.t:PterosaurSmall"/>
     </logger>
 
     <logger id="screenlog" spec="Logger" logEvery="1000">
@@ -398,7 +410,7 @@ name="alignment">
     </logger>
 
     <logger id="treelog.t:PterosaurSmall" spec="Logger" fileName="PteroUncertain.trees" logEvery="1000" mode="tree">
-        <log id="TreeWithMetaDataLogger.t:PterosaurSmall" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:PterosaurSmall"/>
+        <log id="TreeWithMetaDataLogger.t:PterosaurSmall" spec="beast.evolution.tree.TreeWithMetaDataLogger" branchratemodel="@ExponentialRelaxedClock.c:PterosaurSmall" tree="@Tree.t:PterosaurSmall"/>
     </logger>
 
     <logger id="typedTreeLogger.t:PterosaurSmall" spec="bdmmprime.util.OptionalLogger" fileName="$(filebase).$(tree).typed.trees" logEvery="1000" mode="tree">
