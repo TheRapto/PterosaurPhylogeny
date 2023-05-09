@@ -50,10 +50,10 @@ name="alignment">
 <map name="OneOnX" >beast.math.distributions.OneOnX</map>
 
 
-<run id="mcmc" spec="MCMC" chainLength="1000000">
+<run id="mcmc" spec="MCMC" chainLength="100000">
     <state id="state" spec="State" storeEvery="5000">
         <tree id="Tree.t:PterosaurSmall" spec="beast.evolution.tree.Tree" name="stateNode">
-            <trait id="dateTrait.t:PterosaurSmall" spec="beast.evolution.tree.TraitSet" traitname="date-backward" value="Austriadactylus cristatus=15.35,Austriadraco dallavecchiai=15.35,Caelestiventus hanseni=0,Carniadactylus rosenfeldi=15.95,Dromomeron gigas=9.05,Dromomeron gregorii=16.45,Dromomeron romeri=24.2,Eudimorphodon ranzii=15.95,Faxinalipterus minimus=24.12,Ixalerpeton polesinensis=31.93,Kongonaphon kely=36.95,Lagerpeton chanarensis=33.7,Maehary bonapartei=24.12,PVSJ 883=28.05,Pachagnathus benitoi=9.05,Peteinosaurus zambellii=15.95,Preondactylus buffarinii=15.5,Raeticodactylus filisurensis=10.95,Scleromochlus taylori=29.18,Seazzadactylus venieri=16.1,Yelaphomte praderioi=9.05">
+            <trait id="dateTrait.t:PterosaurSmall" spec="beast.evolution.tree.TraitSet" traitname="date-backward" value="Austriadactylus cristatus=216.65,Austriadraco dallavecchiai=216.65,Caelestiventus hanseni=201.3,Carniadactylus rosenfeldi=217.25,Dromomeron gigas=210.35,Dromomeron gregorii=225.5,Dromomeron romeri=209.75,Eudimorphodon ranzii=217.25,Faxinalipterus minimus=225.42,Ixalerpeton polesinensis=233.23,Kongonaphon kely=238.25,Lagerpeton chanarensis=235,Maehary bonapartei=225.42,PVSJ 883=229.35,Pachagnathus benitoi=210.35,Peteinosaurus zambellii=217.25,Preondactylus buffarinii=216.8,Raeticodactylus filisurensis=212.25,Scleromochlus taylori=230.48,Seazzadactylus venieri=217.4,Yelaphomte praderioi=210.35">
                 <taxa id="TaxonSet.PterosaurSmall" spec="TaxonSet">
                     <alignment idref="PterosaurSmall"/>
                 </taxa>
@@ -87,7 +87,7 @@ name="alignment">
                 <parameterization id="CanonicalBDMMPrimeParameterization.t:PterosaurSmall" spec="bdmmprime.parameterization.CanonicalParameterization" processLength="@originBDMMPrime.t:PterosaurSmall">
                     <birthRate id="birthRateSVCanonical.t:PterosaurSmall" spec="bdmmprime.parameterization.SkylineVectorParameter" processLength="@originBDMMPrime.t:PterosaurSmall" skylineValues="@birthRateCanonical.t:PterosaurSmall" timesAreAges="true">
                         <typeSet id="typeSetBDMMPrime.t:PterosaurSmall" spec="bdmmprime.parameterization.TypeSet">
-                            <typeTraitSet id="typeTraitSet.t:PterosaurSmall" spec="bdmmprime.util.InitializedTraitSet" traitname="type" value="Kongonaphon kely=36.95,Dromomeron romeri=24.2,Dromomeron gregorii=16.45,Austriadactylus cristatus=15.35,Dromomeron gigas=9.05,Peteinosaurus zambellii=15.95,Yelaphomte praderioi=9.05,Faxinalipterus minimus=24.12,PVSJ 883=28.05,Austriadraco dallavecchiai=15.35,Caelestiventus hanseni=0,Scleromochlus taylori=29.18,Eudimorphodon ranzii=15.95,Ixalerpeton polesinensis=31.93,Pachagnathus benitoi=9.05,Maehary bonapartei=24.12,Lagerpeton chanarensis=33.7,Raeticodactylus filisurensis=10.95,Preondactylus buffarinii=15.5,Carniadactylus rosenfeldi=15.95,Seazzadactylus venieri=16.1">
+                            <typeTraitSet id="typeTraitSet.t:PterosaurSmall" spec="bdmmprime.util.InitializedTraitSet" traitname="type" value="Kongonaphon kely=238.25,Dromomeron romeri=225.5,Dromomeron gregorii=217.75,Austriadactylus cristatus=216.65,Dromomeron gigas=210.35,Peteinosaurus zambellii=217.25,Yelaphomte praderioi=210.35,Faxinalipterus minimus=225.42,PVSJ 883=229.35,Austriadraco dallavecchiai=216.65,Caelestiventus hanseni=208.8,Scleromochlus taylori=230.48,Eudimorphodon ranzii=217.25,Ixalerpeton polesinensis=233.23,Pachagnathus benitoi=210.35,Maehary bonapartei=225.42,Lagerpeton chanarensis=235,Raeticodactylus filisurensis=212.25,Preondactylus buffarinii=216.8,Carniadactylus rosenfeldi=217.25,Seazzadactylus venieri=217.4">
                                 <taxa id="TaxonSet.1" spec="TaxonSet" alignment="@PterosaurSmall"/>
                             </typeTraitSet>
                         </typeSet>
@@ -150,121 +150,121 @@ name="alignment">
                 <taxonset id="Austriadactylus cristatus2" spec="TaxonSet">
                     <taxon id="Austriadactylus cristatus" spec="Taxon"/>
                 </taxonset>
-                <Uniform id="Uniform.18" lower="14.2" name="distr" upper="16.5"/>
+                <Uniform id="Uniform.18" lower="215.5" name="distr" upper="217.8"/>
             </distribution>
             <distribution id="Austriadraco dallavecchiai1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
                 <taxonset id="Austriadraco dallavecchiai1" spec="TaxonSet">
                     <taxon id="Austriadraco dallavecchiai" spec="Taxon"/>
                 </taxonset>
-                <Uniform id="Uniform.19" lower="14.2" name="distr" upper="16.5"/>
+                <Uniform id="Uniform.19" lower="215.5" name="distr" upper="217.8"/>
             </distribution>
             <distribution id="Carniadactylus rosenfeldi1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
                 <taxonset id="Carniadactylus rosenfeldi1" spec="TaxonSet">
                     <taxon id="Carniadactylus rosenfeldi" spec="Taxon"/>
                 </taxonset>
-                <Uniform id="Uniform.21" lower="14.7" name="distr" upper="17.2"/>
+                <Uniform id="Uniform.21" lower="216.0" name="distr" upper="218.5"/>
             </distribution>
             <distribution id="Dromomeron gigas1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
                 <taxonset id="Dromomeron gigas1" spec="TaxonSet">
                     <taxon id="Dromomeron gigas" spec="Taxon"/>
                 </taxonset>
-                <Uniform id="Uniform.22" lower="4.7" name="distr" upper="13.4"/>
+                <Uniform id="Uniform.22" lower="206.0" name="distr" upper="214.7"/>
             </distribution>
             <distribution id="Dromomeron gregorii1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
                 <taxonset id="Dromomeron gregorii1" spec="TaxonSet">
                     <taxon id="Dromomeron gregorii" spec="Taxon"/>
                 </taxonset>
-                <Uniform id="Uniform.23" lower="7.2" name="distr" upper="25.7"/>
+                <Uniform id="Uniform.23" lower="208.5" name="distr" upper="227.0"/>
             </distribution>
             <distribution id="Dromomeron romeri1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
                 <taxonset id="Dromomeron romeri1" spec="TaxonSet">
                     <taxon id="Dromomeron romeri" spec="Taxon"/>
                 </taxonset>
-                <Uniform id="Uniform.24" lower="1.7" name="distr" upper="24.7"/>
+                <Uniform id="Uniform.24" lower="203.0" name="distr" upper="226.0"/>
             </distribution>
             <distribution id="Eudimorphodon ranzii1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
                 <taxonset id="Eudimorphodon ranzii1" spec="TaxonSet">
                     <taxon id="Eudimorphodon ranzii" spec="Taxon"/>
                 </taxonset>
-                <Uniform id="Uniform.16" lower="15.0" name="distr" upper="16.9"/>
+                <Uniform id="Uniform.16" lower="216.3" name="distr" upper="218.2"/>
             </distribution>
             <distribution id="Faxinalipterus minimus1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
                 <taxonset id="Faxinalipterus minimus1" spec="TaxonSet">
                     <taxon id="Faxinalipterus minimus" spec="Taxon"/>
                 </taxonset>
-                <Uniform id="Uniform.17" lower="23.75" name="distr" upper="24.49"/>
+                <Uniform id="Uniform.17" lower="225.05" name="distr" upper="225.79"/>
             </distribution>
             <distribution id="Ixalerpeton polesinensis1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
                 <taxonset id="Ixalerpeton polesinensis1" spec="TaxonSet">
                     <taxon id="Ixalerpeton polesinensis" spec="Taxon"/>
                 </taxonset>
-                <Uniform id="Uniform.20" lower="31.2" name="distr" upper="32.66"/>
+                <Uniform id="Uniform.20" lower="232.5" name="distr" upper="233.96"/>
             </distribution>
             <distribution id="Kongonaphon kely1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
                 <taxonset id="Kongonaphon kely1" spec="TaxonSet">
                     <taxon id="Kongonaphon kely" spec="Taxon"/>
                 </taxonset>
-                <Uniform id="Uniform.25" lower="35.7" name="distr" upper="38.2"/>
+                <Uniform id="Uniform.25" lower="237.0" name="distr" upper="239.5"/>
             </distribution>
             <distribution id="Lagerpeton chanarensis1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
                 <taxonset id="Lagerpeton chanarensis1" spec="TaxonSet">
                     <taxon id="Lagerpeton chanarensis" spec="Taxon"/>
                 </taxonset>
-                <Uniform id="Uniform.26" lower="32.0" name="distr" upper="35.4"/>
+                <Uniform id="Uniform.26" lower="233.3" name="distr" upper="236.7"/>
             </distribution>
             <distribution id="Maehary bonapartei1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
                 <taxonset id="Maehary bonapartei1" spec="TaxonSet">
                     <taxon id="Maehary bonapartei" spec="Taxon"/>
                 </taxonset>
-                <Uniform id="Uniform.27" lower="23.75" name="distr" upper="24.49"/>
+                <Uniform id="Uniform.27" lower="225.05" name="distr" upper="225.79"/>
             </distribution>
             <distribution id="PVSJ 8831.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
                 <taxonset id="PVSJ 8831" spec="TaxonSet">
                     <taxon id="PVSJ 883" spec="Taxon"/>
                 </taxonset>
-                <Uniform id="Uniform.28" lower="25.7" name="distr" upper="30.4"/>
+                <Uniform id="Uniform.28" lower="227.0" name="distr" upper="231.7"/>
             </distribution>
             <distribution id="Pachagnathus benitoi1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
                 <taxonset id="Pachagnathus benitoi1" spec="TaxonSet">
                     <taxon id="Pachagnathus benitoi" spec="Taxon"/>
                 </taxonset>
-                <Uniform id="Uniform.29" lower="4.7" name="distr" upper="13.4"/>
+                <Uniform id="Uniform.29" lower="206.0" name="distr" upper="214.7"/>
             </distribution>
             <distribution id="Peteinosaurus zambellii1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
                 <taxonset id="Peteinosaurus zambellii1" spec="TaxonSet">
                     <taxon id="Peteinosaurus zambellii" spec="Taxon"/>
                 </taxonset>
-                <Uniform id="Uniform.30" lower="15.0" name="distr" upper="16.9"/>
+                <Uniform id="Uniform.30" lower="216.3" name="distr" upper="218.2"/>
             </distribution>
             <distribution id="Preondactylus buffarinii1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
                 <taxonset id="Preondactylus buffarinii1" spec="TaxonSet">
                     <taxon id="Preondactylus buffarinii" spec="Taxon"/>
                 </taxonset>
-                <Uniform id="Uniform.31" lower="14.5" name="distr" upper="16.5"/>
+                <Uniform id="Uniform.31" lower="215.8" name="distr" upper="217.8"/>
             </distribution>
             <distribution id="Raeticodactylus filisurensis1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
                 <taxonset id="Raeticodactylus filisurensis1" spec="TaxonSet">
                     <taxon id="Raeticodactylus filisurensis" spec="Taxon"/>
                 </taxonset>
-                <Uniform id="Uniform.32" lower="7.2" name="distr" upper="14.7"/>
+                <Uniform id="Uniform.32" lower="208.5" name="distr" upper="216.0"/>
             </distribution>
             <distribution id="Scleromochlus taylori1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
                 <taxonset id="Scleromochlus taylori1" spec="TaxonSet">
                     <taxon id="Scleromochlus taylori" spec="Taxon"/>
                 </taxonset>
-                <Uniform id="Uniform.33" lower="25.7" name="distr" upper="32.66"/>
+                <Uniform id="Uniform.33" lower="227.0" name="distr" upper="233.96"/>
             </distribution>
             <distribution id="Seazzadactylus venieri1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
                 <taxonset id="Seazzadactylus venieri1" spec="TaxonSet">
                     <taxon id="Seazzadactylus venieri" spec="Taxon"/>
                 </taxonset>
-                <Uniform id="Uniform.34" lower="14.5" name="distr" upper="17.7"/>
+                <Uniform id="Uniform.34" lower="215.8" name="distr" upper="219.0"/>
             </distribution>
             <distribution id="Yelaphomte praderioi1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
                 <taxonset id="Yelaphomte praderioi1" spec="TaxonSet">
                     <taxon id="Yelaphomte praderioi" spec="Taxon"/>
                 </taxonset>
-                <Uniform id="Uniform.35" lower="4.7" name="distr" upper="13.4"/>
+                <Uniform id="Uniform.35" lower="206.0" name="distr" upper="214.7"/>
             </distribution>
         </distribution>
         <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">

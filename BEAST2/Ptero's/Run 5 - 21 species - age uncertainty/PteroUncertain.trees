@@ -1,0 +1,53 @@
+#NEXUS
+
+Begin taxa;
+	Dimensions ntax=21;
+		Taxlabels
+			"Austriadactylus cristatus"
+			"Austriadraco dallavecchiai"
+			"Caelestiventus hanseni"
+			"Carniadactylus rosenfeldi"
+			"Dromomeron gigas"
+			"Dromomeron gregorii"
+			"Dromomeron romeri"
+			"Eudimorphodon ranzii"
+			"Faxinalipterus minimus"
+			"Ixalerpeton polesinensis"
+			"Kongonaphon kely"
+			"Lagerpeton chanarensis"
+			"Maehary bonapartei"
+			"PVSJ 883"
+			"Pachagnathus benitoi"
+			"Peteinosaurus zambellii"
+			"Preondactylus buffarinii"
+			"Raeticodactylus filisurensis"
+			"Scleromochlus taylori"
+			"Seazzadactylus venieri"
+			"Yelaphomte praderioi"
+			;
+End;
+Begin trees;
+	Translate
+		   1 "Austriadactylus cristatus",
+		   2 "Austriadraco dallavecchiai",
+		   3 "Caelestiventus hanseni",
+		   4 "Carniadactylus rosenfeldi",
+		   5 "Dromomeron gigas",
+		   6 "Dromomeron gregorii",
+		   7 "Dromomeron romeri",
+		   8 "Eudimorphodon ranzii",
+		   9 "Faxinalipterus minimus",
+		  10 "Ixalerpeton polesinensis",
+		  11 "Kongonaphon kely",
+		  12 "Lagerpeton chanarensis",
+		  13 "Maehary bonapartei",
+		  14 "PVSJ 883",
+		  15 "Pachagnathus benitoi",
+		  16 "Peteinosaurus zambellii",
+		  17 "Preondactylus buffarinii",
+		  18 "Raeticodactylus filisurensis",
+		  19 "Scleromochlus taylori",
+		  20 "Seazzadactylus venieri",
+		  21 "Yelaphomte praderioi"
+;
+tree STATE_0 = ((((((((((((1[&rate=1.9841313618755114]:0.09941426669887932,2[&rate=0.33897536683933144]:0.09941426669887932)[&rate=0.4502010019495559]:0.04877864429522205,(((3[&rate=0.6684545679695739]:9.1227465153799,(5[&rate=1.3375041969504589]:0.01174774905020115,15[&rate=0.33897536683933144]:0.01174774905020115)[&rate=0.06453852113757118]:0.06099876632969803)[&rate=0.9480394301887355]:1.607336762914878,21[&rate=0.6684545679695739]:1.6800832782947772)[&rate=0.1479201300766222]:4.0028869510248555,18[&rate=0.8855190732074014]:3.782970229319634)[&rate=3.2834143460057725]:0.7652226816744676)[&rate=0.531879032963823]:0.689526320332492,17[&rate=2.772588722239781]:0.687719231326593)[&rate=2.772588722239781]:0.4741361413249301,(4[&rate=0.2711527705005704]:0.07491573682426278,(8[&rate=1.3375041969504589]:0.03636030537858126,16[&rate=0.531879032963823]:0.03636030537858126)[&rate=0.11934675763256625]:0.03855543144568152)[&rate=0.5753641449035618]:0.636939635827261)[&rate=0.5753641449035618]:0.28630173925456504,6[&rate=1.817077277212345]:0.4981571119060888)[&rate=4.382026634673885]:0.7315268327983198,20[&rate=0.012578782206860073]:1.5796839447044064)[&rate=1.3375041969504589]:6.653823589416877,13[&rate=0.2076393647782445]:0.21350753412128398)[&rate=0.17733401528291554]:1.1775624149246795,(7[&rate=1.817077277212345]:0.12444757376169235,9[&rate=1.9841313618755114]:0.20444757376169065)[&rate=0.5753641449035618]:1.1866223752842728)[&rate=0.11934675763256625]:7.314913370864087,(14[&rate=2.772588722239781]:1.5510058325740133,19[&rate=0.3044891907681621]:0.42100583257401425)[&rate=0.3746934494414107]:3.2249774873360373)[&rate=0.2711527705005704]:0.8846349127827935,10[&rate=2.772588722239781]:1.780618232692845)[&rate=2.1848020573376616]:1.5494730844413027,12[&rate=0.9480394301887355]:1.5600913171341446)[&rate=0.3044891907681621]:2.449873558837176,11[&rate=1.5488132906176655]:0.7599648759713205)[&rate=1.0]:0.0;

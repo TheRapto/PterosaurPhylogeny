@@ -1,0 +1,231 @@
+#
+#model:
+#
+#<?xml version="1.0" encoding="UTF-8" standalone="no"?><input id="posterior" spec="beast.core.util.CompoundDistribution">
+#    <distribution id="prior" spec="beast.core.util.CompoundDistribution">
+#        <distribution conditionOnSurvival="false" id="BDMMPrime.t:PterosaurSmall" spec="bdmmprime.distribution.BirthDeathMigrationDistribution">
+#            <parameterization id="CanonicalBDMMPrimeParameterization.t:PterosaurSmall" spec="bdmmprime.parameterization.CanonicalParameterization">
+#                <birthRate id="birthRateSVCanonical.t:PterosaurSmall" spec="bdmmprime.parameterization.SkylineVectorParameter" timesAreAges="true">
+#                    <parameter id="birthRateCanonical.t:PterosaurSmall" name="skylineValues" spec="beast.core.parameter.RealParameter">1.0</parameter>
+#                    <parameter id="originBDMMPrime.t:PterosaurSmall" name="processLength" spec="beast.core.parameter.RealParameter">70.0</parameter>
+#                    <typeSet id="typeSetBDMMPrime.t:PterosaurSmall" spec="bdmmprime.parameterization.TypeSet">
+#                        <typeTraitSet id="typeTraitSet.t:PterosaurSmall" spec="bdmmprime.util.InitializedTraitSet" traitname="type" value="Kongonaphon kely=36.95,Dromomeron romeri=24.2,Dromomeron gregorii=16.45,Austriadactylus cristatus=15.35,Dromomeron gigas=9.05,Peteinosaurus zambellii=15.95,Yelaphomte praderioi=9.05,Faxinalipterus minimus=24.12,PVSJ 883=28.05,Austriadraco dallavecchiai=15.35,Caelestiventus hanseni=0,Scleromochlus taylori=29.18,Eudimorphodon ranzii=15.95,Ixalerpeton polesinensis=31.93,Pachagnathus benitoi=9.05,Maehary bonapartei=24.12,Lagerpeton chanarensis=33.7,Raeticodactylus filisurensis=10.95,Preondactylus buffarinii=15.5,Carniadactylus rosenfeldi=15.95,Seazzadactylus venieri=16.1">
+#                            <taxa id="TaxonSet.1" spec="beast.evolution.alignment.TaxonSet">
+#                            </taxa>
+#                        </typeTraitSet>
+#                    </typeSet>
+#                </birthRate>
+#                <deathRate id="deathRateSVCanonical.t:PterosaurSmall" processLength="@originBDMMPrime.t:PterosaurSmall" spec="bdmmprime.parameterization.SkylineVectorParameter" timesAreAges="true" typeSet="@typeSetBDMMPrime.t:PterosaurSmall">
+#                    <parameter id="deathRateCanonical.t:PterosaurSmall" name="skylineValues" spec="beast.core.parameter.RealParameter">1.0</parameter>
+#                </deathRate>
+#                <samplingRate id="samplingRateSVCanonical.t:PterosaurSmall" processLength="@originBDMMPrime.t:PterosaurSmall" spec="bdmmprime.parameterization.SkylineVectorParameter" timesAreAges="true" typeSet="@typeSetBDMMPrime.t:PterosaurSmall">
+#                    <parameter id="samplingRateCanonical.t:PterosaurSmall" name="skylineValues" spec="beast.core.parameter.RealParameter">0.1</parameter>
+#                </samplingRate>
+#                <rhoSampling id="rhoSamplingProbTPCanonical.t:PterosaurSmall" processLength="@originBDMMPrime.t:PterosaurSmall" spec="bdmmprime.parameterization.TimedParameter" timesAreAges="true" typeSet="@typeSetBDMMPrime.t:PterosaurSmall"/>
+#                <removalProb id="removalProbSVCanonical.t:PterosaurSmall" processLength="@originBDMMPrime.t:PterosaurSmall" spec="bdmmprime.parameterization.SkylineVectorParameter" timesAreAges="true" typeSet="@typeSetBDMMPrime.t:PterosaurSmall">
+#                    <parameter id="removalProbCanonical.t:PterosaurSmall" lower="0.0" name="skylineValues" spec="beast.core.parameter.RealParameter" upper="1.0">0.0</parameter>
+#                </removalProb>
+#                <migrationRate id="migrationRateSMCanonical.t:PterosaurSmall" processLength="@originBDMMPrime.t:PterosaurSmall" spec="bdmmprime.parameterization.SkylineMatrixParameter" timesAreAges="true" typeSet="@typeSetBDMMPrime.t:PterosaurSmall">
+#                    <parameter id="migrationRateCanonical.t:PterosaurSmall" name="skylineValues" spec="beast.core.parameter.RealParameter">1.0</parameter>
+#                </migrationRate>
+#                <birthRateAmongDemes id="birthRateAmongDemesSMCanonical.t:PterosaurSmall" processLength="@originBDMMPrime.t:PterosaurSmall" spec="bdmmprime.parameterization.SkylineMatrixParameter" timesAreAges="true" typeSet="@typeSetBDMMPrime.t:PterosaurSmall">
+#                    <parameter id="birthRateAmongDemesCanonical.t:PterosaurSmall" name="skylineValues" spec="beast.core.parameter.RealParameter">1.0</parameter>
+#                </birthRateAmongDemes>
+#                <typeSet idref="typeSetBDMMPrime.t:PterosaurSmall"/>
+#                <parameter idref="originBDMMPrime.t:PterosaurSmall" name="processLength"/>
+#            </parameterization>
+#            <parameter dimension="15" id="typeFrequencies.t:PterosaurSmall" lower="0.0" name="frequencies" spec="beast.core.parameter.RealParameter" upper="1.0">0.06666666666666667 0.06666666666666667 0.06666666666666667 0.06666666666666667 0.06666666666666667 0.06666666666666667 0.06666666666666667 0.06666666666666667 0.06666666666666667 0.06666666666666667 0.06666666666666667 0.06666666666666667 0.06666666666666667 0.06666666666666667 0.06666666666666667</parameter>
+#            <typeTraitSet idref="typeTraitSet.t:PterosaurSmall"/>
+#            <tree id="Tree.t:PterosaurSmall" spec="beast.evolution.tree.Tree">
+#                <trait id="dateTrait.t:PterosaurSmall" spec="beast.evolution.tree.TraitSet" traitname="date-backward" value="Austriadactylus cristatus=15.35,Austriadraco dallavecchiai=15.35,Caelestiventus hanseni=0,Carniadactylus rosenfeldi=15.95,Dromomeron gigas=9.05,Dromomeron gregorii=16.45,Dromomeron romeri=24.2,Eudimorphodon ranzii=15.95,Faxinalipterus minimus=24.12,Ixalerpeton polesinensis=31.93,Kongonaphon kely=36.95,Lagerpeton chanarensis=33.7,Maehary bonapartei=24.12,PVSJ 883=28.05,Pachagnathus benitoi=9.05,Peteinosaurus zambellii=15.95,Preondactylus buffarinii=15.5,Raeticodactylus filisurensis=10.95,Scleromochlus taylori=29.18,Seazzadactylus venieri=16.1,Yelaphomte praderioi=9.05">
+#                    <taxa alignment="@PterosaurSmall" id="TaxonSet.PterosaurSmall" spec="beast.evolution.alignment.TaxonSet"/>
+#                </trait>
+#                <taxonset idref="TaxonSet.PterosaurSmall"/>
+#            </tree>
+#        </distribution>
+#        <distribution id="birthRateAmongDemesCanonicalPrior.t:PterosaurSmall" spec="bdmmprime.util.priors.ZeroExcludingPrior" x="@birthRateAmongDemesCanonical.t:PterosaurSmall">
+#            <Exponential id="Exponential.7" name="distr">
+#                <parameter estimate="false" id="RealParameter.52" name="mean" spec="beast.core.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </distribution>
+#        <distribution id="birthRateCanonicalPrior.t:PterosaurSmall" spec="bdmmprime.util.priors.ZeroExcludingPrior" x="@birthRateCanonical.t:PterosaurSmall">
+#            <Exponential id="Exponential.1" name="distr">
+#                <parameter estimate="false" id="RealParameter.4" name="mean" spec="beast.core.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </distribution>
+#        <distribution id="deathRateCanonicalPrior.t:PterosaurSmall" spec="bdmmprime.util.priors.ZeroExcludingPrior" x="@deathRateCanonical.t:PterosaurSmall">
+#            <Exponential id="Exponential.3" name="distr">
+#                <parameter estimate="false" id="RealParameter.6" name="mean" spec="beast.core.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </distribution>
+#        <prior id="GammaShapePrior.s:PterosaurSmall" name="distribution">
+#            <parameter id="gammaShape.s:PterosaurSmall" name="x" spec="beast.core.parameter.RealParameter">1.0</parameter>
+#            <Exponential id="Exponential.0" name="distr">
+#                <parameter estimate="false" id="RealParameter.0" name="mean" spec="beast.core.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </prior>
+#        <distribution id="migrationRateCanonicalPrior.t:PterosaurSmall" spec="bdmmprime.util.priors.ZeroExcludingPrior" x="@migrationRateCanonical.t:PterosaurSmall">
+#            <Exponential id="Exponential.6" name="distr">
+#                <parameter estimate="false" id="RealParameter.51" name="mean" spec="beast.core.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </distribution>
+#        <prior id="originBDMMPrimePrior.t:PterosaurSmall" name="distribution" x="@originBDMMPrime.t:PterosaurSmall">
+#            <Uniform id="Uniform.3" lower="39.0" name="distr" upper="150.0"/>
+#        </prior>
+#        <prior id="PropInvariantPrior.s:PterosaurSmall" name="distribution">
+#            <parameter id="proportionInvariant.s:PterosaurSmall" lower="0.0" name="x" spec="beast.core.parameter.RealParameter" upper="1.0">0.0</parameter>
+#            <Uniform id="Uniform.2" name="distr"/>
+#        </prior>
+#        <distribution id="removalProbCanonicalPrior.t:PterosaurSmall" spec="bdmmprime.util.priors.ZeroExcludingPrior" x="@removalProbCanonical.t:PterosaurSmall">
+#            <Exponential id="Exponential.5" name="distr">
+#                <parameter estimate="false" id="RealParameter.50" name="mean" spec="beast.core.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </distribution>
+#        <distribution id="samplingRateCanonicalPrior.t:PterosaurSmall" spec="bdmmprime.util.priors.ZeroExcludingPrior" x="@samplingRateCanonical.t:PterosaurSmall">
+#            <Exponential id="Exponential.4" name="distr">
+#                <parameter estimate="false" id="RealParameter.8" name="mean" spec="beast.core.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </distribution>
+#        <prior id="UCMeanRatePrior.c:PterosaurSmall" name="distribution">
+#            <parameter id="ucedMean.c:PterosaurSmall" name="x" spec="beast.core.parameter.RealParameter">1.0</parameter>
+#            <Uniform id="Uniform.5" name="distr" upper="Infinity"/>
+#        </prior>
+#        <distribution id="Austriadactylus cristatus2.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
+#            <taxonset id="Austriadactylus cristatus2" spec="beast.evolution.alignment.TaxonSet">
+#                <taxon id="Austriadactylus cristatus" spec="beast.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <Uniform id="Uniform.18" lower="14.2" name="distr" upper="16.5"/>
+#        </distribution>
+#        <distribution id="Austriadraco dallavecchiai1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
+#            <taxonset id="Austriadraco dallavecchiai1" spec="beast.evolution.alignment.TaxonSet">
+#                <taxon id="Austriadraco dallavecchiai" spec="beast.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <Uniform id="Uniform.19" lower="14.2" name="distr" upper="16.5"/>
+#        </distribution>
+#        <distribution id="Carniadactylus rosenfeldi1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
+#            <taxonset id="Carniadactylus rosenfeldi1" spec="beast.evolution.alignment.TaxonSet">
+#                <taxon id="Carniadactylus rosenfeldi" spec="beast.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <Uniform id="Uniform.21" lower="14.7" name="distr" upper="17.2"/>
+#        </distribution>
+#        <distribution id="Dromomeron gigas1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
+#            <taxonset id="Dromomeron gigas1" spec="beast.evolution.alignment.TaxonSet">
+#                <taxon id="Dromomeron gigas" spec="beast.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <Uniform id="Uniform.22" lower="4.7" name="distr" upper="13.4"/>
+#        </distribution>
+#        <distribution id="Dromomeron gregorii1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
+#            <taxonset id="Dromomeron gregorii1" spec="beast.evolution.alignment.TaxonSet">
+#                <taxon id="Dromomeron gregorii" spec="beast.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <Uniform id="Uniform.23" lower="7.2" name="distr" upper="25.7"/>
+#        </distribution>
+#        <distribution id="Dromomeron romeri1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
+#            <taxonset id="Dromomeron romeri1" spec="beast.evolution.alignment.TaxonSet">
+#                <taxon id="Dromomeron romeri" spec="beast.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <Uniform id="Uniform.24" lower="1.7" name="distr" upper="24.7"/>
+#        </distribution>
+#        <distribution id="Eudimorphodon ranzii1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
+#            <taxonset id="Eudimorphodon ranzii1" spec="beast.evolution.alignment.TaxonSet">
+#                <taxon id="Eudimorphodon ranzii" spec="beast.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <Uniform id="Uniform.16" lower="15.0" name="distr" upper="16.9"/>
+#        </distribution>
+#        <distribution id="Faxinalipterus minimus1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
+#            <taxonset id="Faxinalipterus minimus1" spec="beast.evolution.alignment.TaxonSet">
+#                <taxon id="Faxinalipterus minimus" spec="beast.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <Uniform id="Uniform.17" lower="23.75" name="distr" upper="24.49"/>
+#        </distribution>
+#        <distribution id="Ixalerpeton polesinensis1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
+#            <taxonset id="Ixalerpeton polesinensis1" spec="beast.evolution.alignment.TaxonSet">
+#                <taxon id="Ixalerpeton polesinensis" spec="beast.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <Uniform id="Uniform.20" lower="31.2" name="distr" upper="32.66"/>
+#        </distribution>
+#        <distribution id="Kongonaphon kely1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
+#            <taxonset id="Kongonaphon kely1" spec="beast.evolution.alignment.TaxonSet">
+#                <taxon id="Kongonaphon kely" spec="beast.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <Uniform id="Uniform.25" lower="35.7" name="distr" upper="38.2"/>
+#        </distribution>
+#        <distribution id="Lagerpeton chanarensis1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
+#            <taxonset id="Lagerpeton chanarensis1" spec="beast.evolution.alignment.TaxonSet">
+#                <taxon id="Lagerpeton chanarensis" spec="beast.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <Uniform id="Uniform.26" lower="32.0" name="distr" upper="35.4"/>
+#        </distribution>
+#        <distribution id="Maehary bonapartei1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
+#            <taxonset id="Maehary bonapartei1" spec="beast.evolution.alignment.TaxonSet">
+#                <taxon id="Maehary bonapartei" spec="beast.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <Uniform id="Uniform.27" lower="23.75" name="distr" upper="24.49"/>
+#        </distribution>
+#        <distribution id="PVSJ 8831.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
+#            <taxonset id="PVSJ 8831" spec="beast.evolution.alignment.TaxonSet">
+#                <taxon id="PVSJ 883" spec="beast.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <Uniform id="Uniform.28" lower="25.7" name="distr" upper="30.4"/>
+#        </distribution>
+#        <distribution id="Pachagnathus benitoi1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
+#            <taxonset id="Pachagnathus benitoi1" spec="beast.evolution.alignment.TaxonSet">
+#                <taxon id="Pachagnathus benitoi" spec="beast.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <Uniform id="Uniform.29" lower="4.7" name="distr" upper="13.4"/>
+#        </distribution>
+#        <distribution id="Peteinosaurus zambellii1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
+#            <taxonset id="Peteinosaurus zambellii1" spec="beast.evolution.alignment.TaxonSet">
+#                <taxon id="Peteinosaurus zambellii" spec="beast.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <Uniform id="Uniform.30" lower="15.0" name="distr" upper="16.9"/>
+#        </distribution>
+#        <distribution id="Preondactylus buffarinii1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
+#            <taxonset id="Preondactylus buffarinii1" spec="beast.evolution.alignment.TaxonSet">
+#                <taxon id="Preondactylus buffarinii" spec="beast.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <Uniform id="Uniform.31" lower="14.5" name="distr" upper="16.5"/>
+#        </distribution>
+#        <distribution id="Raeticodactylus filisurensis1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
+#            <taxonset id="Raeticodactylus filisurensis1" spec="beast.evolution.alignment.TaxonSet">
+#                <taxon id="Raeticodactylus filisurensis" spec="beast.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <Uniform id="Uniform.32" lower="7.2" name="distr" upper="14.7"/>
+#        </distribution>
+#        <distribution id="Scleromochlus taylori1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
+#            <taxonset id="Scleromochlus taylori1" spec="beast.evolution.alignment.TaxonSet">
+#                <taxon id="Scleromochlus taylori" spec="beast.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <Uniform id="Uniform.33" lower="25.7" name="distr" upper="32.66"/>
+#        </distribution>
+#        <distribution id="Seazzadactylus venieri1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
+#            <taxonset id="Seazzadactylus venieri1" spec="beast.evolution.alignment.TaxonSet">
+#                <taxon id="Seazzadactylus venieri" spec="beast.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <Uniform id="Uniform.34" lower="14.5" name="distr" upper="17.7"/>
+#        </distribution>
+#        <distribution id="Yelaphomte praderioi1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:PterosaurSmall">
+#            <taxonset id="Yelaphomte praderioi1" spec="beast.evolution.alignment.TaxonSet">
+#                <taxon id="Yelaphomte praderioi" spec="beast.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <Uniform id="Uniform.35" lower="4.7" name="distr" upper="13.4"/>
+#        </distribution>
+#    </distribution>
+#    <distribution id="likelihood" spec="beast.core.util.CompoundDistribution" useThreads="true">
+#        <distribution data="@PterosaurSmall" id="treeLikelihood.PterosaurSmall" spec="beast.evolution.likelihood.ThreadedTreeLikelihood" tree="@Tree.t:PterosaurSmall">
+#            <siteModel gammaCategoryCount="4" id="SiteModel.s:PterosaurSmall" proportionInvariant="@proportionInvariant.s:PterosaurSmall" shape="@gammaShape.s:PterosaurSmall" spec="beast.evolution.sitemodel.SiteModel">
+#                <parameter id="mutationRate.s:PterosaurSmall" name="mutationRate" spec="beast.core.parameter.RealParameter">1.0</parameter>
+#                <substModel id="LewisMK.s:PterosaurSmall" spec="beast.evolution.substitutionmodel.LewisMK" stateNumber="7"/>
+#            </siteModel>
+#            <branchRateModel clock.rate="@ucedMean.c:PterosaurSmall" id="ExponentialRelaxedClock.c:PterosaurSmall" numberOfDiscreteRates="0" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" tree="@Tree.t:PterosaurSmall">
+#                <Exponential id="Exponential.c:PterosaurSmall" name="distr">
+#                    <parameter id="UCExpLambda.c:PterosaurSmall" name="mean" spec="beast.core.parameter.RealParameter">1.0</parameter>
+#                </Exponential>
+#                <rateCategories dimension="40" id="expRateCategories.c:PterosaurSmall" spec="beast.core.parameter.IntegerParameter">1</rateCategories>
+#            </branchRateModel>
+#        </distribution>
+#    </distribution>
+#</input>
+#
+Sample	posterior	likelihood	prior	treeLikelihood.PterosaurSmall	TreeHeight	originBDMMPrime	typeMappedTree.length_0	typeMappedTree.count_0_to_10.95	typeMappedTree.count_0_to_15.35	typeMappedTree.count_0_to_15.5	typeMappedTree.count_0_to_15.95	typeMappedTree.count_0_to_16.1	typeMappedTree.count_0_to_16.45	typeMappedTree.count_0_to_24.12	typeMappedTree.count_0_to_24.2	typeMappedTree.count_0_to_28.05	typeMappedTree.count_0_to_29.18	typeMappedTree.count_0_to_31.93	typeMappedTree.count_0_to_33.7	typeMappedTree.count_0_to_36.95	typeMappedTree.count_0_to_9.05	typeMappedTree.length_10.95	typeMappedTree.count_10.95_to_0	typeMappedTree.count_10.95_to_15.35	typeMappedTree.count_10.95_to_15.5	typeMappedTree.count_10.95_to_15.95	typeMappedTree.count_10.95_to_16.1	typeMappedTree.count_10.95_to_16.45	typeMappedTree.count_10.95_to_24.12	typeMappedTree.count_10.95_to_24.2	typeMappedTree.count_10.95_to_28.05	typeMappedTree.count_10.95_to_29.18	typeMappedTree.count_10.95_to_31.93	typeMappedTree.count_10.95_to_33.7	typeMappedTree.count_10.95_to_36.95	typeMappedTree.count_10.95_to_9.05	typeMappedTree.length_15.35	typeMappedTree.count_15.35_to_0	typeMappedTree.count_15.35_to_10.95	typeMappedTree.count_15.35_to_15.5	typeMappedTree.count_15.35_to_15.95	typeMappedTree.count_15.35_to_16.1	typeMappedTree.count_15.35_to_16.45	typeMappedTree.count_15.35_to_24.12	typeMappedTree.count_15.35_to_24.2	typeMappedTree.count_15.35_to_28.05	typeMappedTree.count_15.35_to_29.18	typeMappedTree.count_15.35_to_31.93	typeMappedTree.count_15.35_to_33.7	typeMappedTree.count_15.35_to_36.95	typeMappedTree.count_15.35_to_9.05	typeMappedTree.length_15.5	typeMappedTree.count_15.5_to_0	typeMappedTree.count_15.5_to_10.95	typeMappedTree.count_15.5_to_15.35	typeMappedTree.count_15.5_to_15.95	typeMappedTree.count_15.5_to_16.1	typeMappedTree.count_15.5_to_16.45	typeMappedTree.count_15.5_to_24.12	typeMappedTree.count_15.5_to_24.2	typeMappedTree.count_15.5_to_28.05	typeMappedTree.count_15.5_to_29.18	typeMappedTree.count_15.5_to_31.93	typeMappedTree.count_15.5_to_33.7	typeMappedTree.count_15.5_to_36.95	typeMappedTree.count_15.5_to_9.05	typeMappedTree.length_15.95	typeMappedTree.count_15.95_to_0	typeMappedTree.count_15.95_to_10.95	typeMappedTree.count_15.95_to_15.35	typeMappedTree.count_15.95_to_15.5	typeMappedTree.count_15.95_to_16.1	typeMappedTree.count_15.95_to_16.45	typeMappedTree.count_15.95_to_24.12	typeMappedTree.count_15.95_to_24.2	typeMappedTree.count_15.95_to_28.05	typeMappedTree.count_15.95_to_29.18	typeMappedTree.count_15.95_to_31.93	typeMappedTree.count_15.95_to_33.7	typeMappedTree.count_15.95_to_36.95	typeMappedTree.count_15.95_to_9.05	typeMappedTree.length_16.1	typeMappedTree.count_16.1_to_0	typeMappedTree.count_16.1_to_10.95	typeMappedTree.count_16.1_to_15.35	typeMappedTree.count_16.1_to_15.5	typeMappedTree.count_16.1_to_15.95	typeMappedTree.count_16.1_to_16.45	typeMappedTree.count_16.1_to_24.12	typeMappedTree.count_16.1_to_24.2	typeMappedTree.count_16.1_to_28.05	typeMappedTree.count_16.1_to_29.18	typeMappedTree.count_16.1_to_31.93	typeMappedTree.count_16.1_to_33.7	typeMappedTree.count_16.1_to_36.95	typeMappedTree.count_16.1_to_9.05	typeMappedTree.length_16.45	typeMappedTree.count_16.45_to_0	typeMappedTree.count_16.45_to_10.95	typeMappedTree.count_16.45_to_15.35	typeMappedTree.count_16.45_to_15.5	typeMappedTree.count_16.45_to_15.95	typeMappedTree.count_16.45_to_16.1	typeMappedTree.count_16.45_to_24.12	typeMappedTree.count_16.45_to_24.2	typeMappedTree.count_16.45_to_28.05	typeMappedTree.count_16.45_to_29.18	typeMappedTree.count_16.45_to_31.93	typeMappedTree.count_16.45_to_33.7	typeMappedTree.count_16.45_to_36.95	typeMappedTree.count_16.45_to_9.05	typeMappedTree.length_24.12	typeMappedTree.count_24.12_to_0	typeMappedTree.count_24.12_to_10.95	typeMappedTree.count_24.12_to_15.35	typeMappedTree.count_24.12_to_15.5	typeMappedTree.count_24.12_to_15.95	typeMappedTree.count_24.12_to_16.1	typeMappedTree.count_24.12_to_16.45	typeMappedTree.count_24.12_to_24.2	typeMappedTree.count_24.12_to_28.05	typeMappedTree.count_24.12_to_29.18	typeMappedTree.count_24.12_to_31.93	typeMappedTree.count_24.12_to_33.7	typeMappedTree.count_24.12_to_36.95	typeMappedTree.count_24.12_to_9.05	typeMappedTree.length_24.2	typeMappedTree.count_24.2_to_0	typeMappedTree.count_24.2_to_10.95	typeMappedTree.count_24.2_to_15.35	typeMappedTree.count_24.2_to_15.5	typeMappedTree.count_24.2_to_15.95	typeMappedTree.count_24.2_to_16.1	typeMappedTree.count_24.2_to_16.45	typeMappedTree.count_24.2_to_24.12	typeMappedTree.count_24.2_to_28.05	typeMappedTree.count_24.2_to_29.18	typeMappedTree.count_24.2_to_31.93	typeMappedTree.count_24.2_to_33.7	typeMappedTree.count_24.2_to_36.95	typeMappedTree.count_24.2_to_9.05	typeMappedTree.length_28.05	typeMappedTree.count_28.05_to_0	typeMappedTree.count_28.05_to_10.95	typeMappedTree.count_28.05_to_15.35	typeMappedTree.count_28.05_to_15.5	typeMappedTree.count_28.05_to_15.95	typeMappedTree.count_28.05_to_16.1	typeMappedTree.count_28.05_to_16.45	typeMappedTree.count_28.05_to_24.12	typeMappedTree.count_28.05_to_24.2	typeMappedTree.count_28.05_to_29.18	typeMappedTree.count_28.05_to_31.93	typeMappedTree.count_28.05_to_33.7	typeMappedTree.count_28.05_to_36.95	typeMappedTree.count_28.05_to_9.05	typeMappedTree.length_29.18	typeMappedTree.count_29.18_to_0	typeMappedTree.count_29.18_to_10.95	typeMappedTree.count_29.18_to_15.35	typeMappedTree.count_29.18_to_15.5	typeMappedTree.count_29.18_to_15.95	typeMappedTree.count_29.18_to_16.1	typeMappedTree.count_29.18_to_16.45	typeMappedTree.count_29.18_to_24.12	typeMappedTree.count_29.18_to_24.2	typeMappedTree.count_29.18_to_28.05	typeMappedTree.count_29.18_to_31.93	typeMappedTree.count_29.18_to_33.7	typeMappedTree.count_29.18_to_36.95	typeMappedTree.count_29.18_to_9.05	typeMappedTree.length_31.93	typeMappedTree.count_31.93_to_0	typeMappedTree.count_31.93_to_10.95	typeMappedTree.count_31.93_to_15.35	typeMappedTree.count_31.93_to_15.5	typeMappedTree.count_31.93_to_15.95	typeMappedTree.count_31.93_to_16.1	typeMappedTree.count_31.93_to_16.45	typeMappedTree.count_31.93_to_24.12	typeMappedTree.count_31.93_to_24.2	typeMappedTree.count_31.93_to_28.05	typeMappedTree.count_31.93_to_29.18	typeMappedTree.count_31.93_to_33.7	typeMappedTree.count_31.93_to_36.95	typeMappedTree.count_31.93_to_9.05	typeMappedTree.length_33.7	typeMappedTree.count_33.7_to_0	typeMappedTree.count_33.7_to_10.95	typeMappedTree.count_33.7_to_15.35	typeMappedTree.count_33.7_to_15.5	typeMappedTree.count_33.7_to_15.95	typeMappedTree.count_33.7_to_16.1	typeMappedTree.count_33.7_to_16.45	typeMappedTree.count_33.7_to_24.12	typeMappedTree.count_33.7_to_24.2	typeMappedTree.count_33.7_to_28.05	typeMappedTree.count_33.7_to_29.18	typeMappedTree.count_33.7_to_31.93	typeMappedTree.count_33.7_to_36.95	typeMappedTree.count_33.7_to_9.05	typeMappedTree.length_36.95	typeMappedTree.count_36.95_to_0	typeMappedTree.count_36.95_to_10.95	typeMappedTree.count_36.95_to_15.35	typeMappedTree.count_36.95_to_15.5	typeMappedTree.count_36.95_to_15.95	typeMappedTree.count_36.95_to_16.1	typeMappedTree.count_36.95_to_16.45	typeMappedTree.count_36.95_to_24.12	typeMappedTree.count_36.95_to_24.2	typeMappedTree.count_36.95_to_28.05	typeMappedTree.count_36.95_to_29.18	typeMappedTree.count_36.95_to_31.93	typeMappedTree.count_36.95_to_33.7	typeMappedTree.count_36.95_to_9.05	typeMappedTree.length_9.05	typeMappedTree.count_9.05_to_0	typeMappedTree.count_9.05_to_10.95	typeMappedTree.count_9.05_to_15.35	typeMappedTree.count_9.05_to_15.5	typeMappedTree.count_9.05_to_15.95	typeMappedTree.count_9.05_to_16.1	typeMappedTree.count_9.05_to_16.45	typeMappedTree.count_9.05_to_24.12	typeMappedTree.count_9.05_to_24.2	typeMappedTree.count_9.05_to_28.05	typeMappedTree.count_9.05_to_29.18	typeMappedTree.count_9.05_to_31.93	typeMappedTree.count_9.05_to_33.7	typeMappedTree.count_9.05_to_36.95	mutationRate	gammaShape	proportionInvariant	logP(mrca(Austriadactylus cristatus2.prior))	height(Austriadactylus cristatus)	logP(mrca(Austriadraco dallavecchiai1.prior))	height(Austriadraco dallavecchiai)	logP(mrca(Carniadactylus rosenfeldi1.prior))	height(Carniadactylus rosenfeldi)	logP(mrca(Dromomeron gigas1.prior))	height(Dromomeron gigas)	logP(mrca(Dromomeron gregorii1.prior))	height(Dromomeron gregorii)	logP(mrca(Dromomeron romeri1.prior))	height(Dromomeron romeri)	logP(mrca(Eudimorphodon ranzii1.prior))	height(Eudimorphodon ranzii)	logP(mrca(Faxinalipterus minimus1.prior))	height(Faxinalipterus minimus)	logP(mrca(Ixalerpeton polesinensis1.prior))	height(Ixalerpeton polesinensis)	logP(mrca(Kongonaphon kely1.prior))	height(Kongonaphon kely)	logP(mrca(Lagerpeton chanarensis1.prior))	height(Lagerpeton chanarensis)	logP(mrca(Maehary bonapartei1.prior))	height(Maehary bonapartei)	logP(mrca(PVSJ 8831.prior))	height(PVSJ 883)	logP(mrca(Pachagnathus benitoi1.prior))	height(Pachagnathus benitoi)	logP(mrca(Peteinosaurus zambellii1.prior))	height(Peteinosaurus zambellii)	logP(mrca(Preondactylus buffarinii1.prior))	height(Preondactylus buffarinii)	logP(mrca(Raeticodactylus filisurensis1.prior))	height(Raeticodactylus filisurensis)	logP(mrca(Scleromochlus taylori1.prior))	height(Scleromochlus taylori)	logP(mrca(Seazzadactylus venieri1.prior))	height(Seazzadactylus venieri)	logP(mrca(Yelaphomte praderioi1.prior))	height(Yelaphomte praderioi)	ucedMean	rateStat.mean	rateStat.variance	rateStat.coefficientOfVariation	birthRateSVCanonical	birthRateAmongDemesCanonical	deathRateSVCanonical	migrationRateSMCanonical	samplingRateSVCanonical	removalProbSVCanonical	birthRateAmongDemesSMCanonical	typeFrequencies.1	typeFrequencies.2	typeFrequencies.3	typeFrequencies.4	typeFrequencies.5	typeFrequencies.6	typeFrequencies.7	typeFrequencies.8	typeFrequencies.9	typeFrequencies.10	typeFrequencies.11	typeFrequencies.12	typeFrequencies.13	typeFrequencies.14	typeFrequencies.15
+0	-5791.828883184127	-4353.144529262669	-1438.684353921459	-4353.144529262669	37.70996487597132	70.0	11.694225753538674	7	7	7	13	10	12	7	5	11	7	10	8	15	3	6.2047355153753685	9	3	5	3	8	8	7	4	6	8	7	2	10	1	5.119054310876635	11	4	4	4	4	6	2	6	8	5	7	3	4	3	5.080168246289865	8	4	2	7	3	5	5	6	6	3	4	11	11	4	7.262737849904632	9	7	3	8	11	5	9	6	5	6	7	2	2	8	6.275105141244275	7	11	4	4	3	4	5	6	4	7	4	6	5	9	4.9869785277902	10	2	4	4	8	8	4	5	6	2	4	11	2	6	6.3643561271775795	10	4	5	5	6	2	4	5	4	4	3	5	6	4	5.3593472217718485	4	4	6	9	6	4	4	2	4	6	5	8	3	5	4.852658918871946	10	5	5	3	12	5	5	7	3	2	6	4	4	5	4.929570723685309	4	5	8	6	7	1	5	4	7	5	3	3	8	9	5.500732264970203	14	9	3	5	7	8	3	5	1	5	6	5	3	8	4.824924741542276	8	4	6	7	4	7	6	2	4	3	6	9	3	7	5.426610843357878	8	4	6	7	4	7	3	5	5	6	7	6	5	9	6.367878925723403	10	11	6	5	4	2	5	5	6	3	5	6	4	6	1.0	1.0	0.0	-0.8329091229351043	15.35	-0.8329091229351043	15.35	-0.916290731874155	15.95	-2.163323025660538	9.05	-2.917770732084279	16.45	-3.1354942159291497	24.2	-0.641853886172394	15.95	0.3011050927839237	24.12	-0.37843643572024316	31.93	-0.916290731874155	36.95	-1.2237754316221152	33.7	0.3011050927839237	24.12	-1.5475625087160128	28.05	-2.163323025660538	9.05	-0.641853886172394	15.95	-0.6931471805599453	15.5	-2.0149030205422647	10.95	-1.9401794743463279	29.18	-1.1631508098056806	16.1	-2.163323025660538	9.05	1.0	0.9077710109358212	1.1352839372960144	0.9574159737743279	1.0	1.0	1.0	1.0	0.1	0.0	1.0	0.06666666666666667	0.06666666666666667	0.06666666666666667	0.06666666666666667	0.06666666666666667	0.06666666666666667	0.06666666666666667	0.06666666666666667	0.06666666666666667	0.06666666666666667	0.06666666666666667	0.06666666666666667	0.06666666666666667	0.06666666666666667	0.06666666666666667
