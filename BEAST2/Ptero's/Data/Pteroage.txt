@@ -1,8 +1,8 @@
-Arcticodactylus cromptonellus	204.9
+Arcticodactylus cromptonellus	201.3
 Austriadactylus cristatus	216.65
 Austriadactylus cristatus	216.65
 Austriadraco dallavecchiai	216.65
-Caelestiventus hanseni	208.8
+Caelestiventus hanseni	201.3
 Carniadactylus rosenfeldi	217.25
 Caviramus schesaplanensis	212.25
 Dockum Lagerpetid	225.5

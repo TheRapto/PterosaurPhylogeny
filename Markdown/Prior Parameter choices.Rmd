@@ -18,3 +18,14 @@ Sampling rate	          Exponential	    0.1
 Removal prob.	          0				
 
 "Run 5 - 21 species - age uncertainty - Relaxed clock", 21 species, BDMM', Relaxed clock, added age boundaries:
+Clock model: Relaxed clock exponential. number of discrete rates = 0
+
+Prior:	                Type:	          Mean:	    Upper:	Start:	 Lower:                 
+Birth rate	            Exponential	    1			
+Death rate	            Exponential	    1			
+Gamma shape	            Exponential	    1			
+Origin BDMM'	          Uniform		                150	    70	      30
+Proportion Invariant	  Uniform		                1	      0	        0
+Sampling rate	          Exponential	    0.1			
+Removal prob.	          0		
+ucedMean                Exponential     1
