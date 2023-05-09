@@ -439,7 +439,7 @@ name="alignment">
         <log id="nodeTypedTree.t:PterosaurSmall" spec="bdmmprime.mapping.TypedNodeTreeLogger" typedTree="@typeMappedTree.t:PterosaurSmall"/>
     </logger>
 
-    <logger id="trajLogger.t:PterosaurSmall" spec="bdmmprime.util.OptionalLogger" enableLogger="true" fileName="PteroUncertain.traj" logEvery="1000">
+    <logger id="trajLogger.t:PterosaurSmall" spec="bdmmprime.util.OptionalLogger" fileName="PteroUncertain.traj" logEvery="1000">
         <log id="typedTraj.t:PterosaurSmall" spec="bdmmprime.trajectories.SampledTrajectory" bdmmDistrib="@BDMMPrime.t:PterosaurSmall" frequencies="@typeFrequencies.t:PterosaurSmall" typeMappedTree="@typeMappedTree.t:PterosaurSmall" useTauLeaping="true"/>
     </logger>
 
