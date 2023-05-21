@@ -1,0 +1,16 @@
+<itsabeastystatewerein version='2.0' sample='1000000'>
+<statenode id='ePopSize.t:empty'>ePopSize.t:empty[1 1] (0.0,Infinity): 282.71699765025664 </statenode>
+<statenode id='growthRate1'>growthRate1[1 1] (-Infinity,Infinity): -0.09121157959978492 </statenode>
+<statenode id='growthRate2'>growthRate2[1 1] (-Infinity,Infinity): 0.032642337172746755 </statenode>
+<statenode id='growthRate3'>growthRate3[1 1] (-Infinity,Infinity): 0.008780399865402789 </statenode>
+<statenode id='growthRate4'>growthRate4[1 1] (-Infinity,Infinity): 0.09888051305944992 </statenode>
+</itsabeastystatewerein>
+<!--
+{"operators":[
+{"id":"ePopSizeScaler.t:empty","p":0.11616463123416344,"accept":55409,"reject":144837,"acceptFC":55393,"rejectFC":142866,"rejectIv":0,"rejectOp":0},
+{"id":"GrowthRateRandomWalk1.t:empty","p":0.01304843712077444,"accept":37571,"reject":162393,"acceptFC":37447,"rejectFC":160554,"rejectIv":0,"rejectOp":0},
+{"id":"GrowthRateRandomWalk2.t:empty","p":0.011530062030374912,"accept":35280,"reject":164274,"acceptFC":35179,"rejectFC":162402,"rejectIv":1,"rejectOp":0},
+{"id":"GrowthRateRandomWalk3.t:empty","p":0.013282086053631527,"accept":36059,"reject":163642,"acceptFC":35949,"rejectFC":161654,"rejectIv":3,"rejectOp":0},
+{"id":"GrowthRateRandomWalk4.t:empty","p":0.033578729619507086,"accept":47094,"reject":153442,"acceptFC":46748,"rejectFC":151807,"rejectIv":0,"rejectOp":0}
+]}
+-->

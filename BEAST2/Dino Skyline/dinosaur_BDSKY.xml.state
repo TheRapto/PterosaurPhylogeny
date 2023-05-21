@@ -1,0 +1,18 @@
+<itsabeastystatewerein version='2.0' sample='5000000'>
+<statenode id='birthRateBDS.t:empty'>birthRateBDS.t:empty[4 1] (0.0,Infinity): 2.760625083335516 2.263394494704653 1.3539778492182357 2.7794769435690925 </statenode>
+<statenode id='deathRateBDS.t:empty'>deathRateBDS.t:empty[4 1] (0.0,Infinity): 2.7036040294506725 2.249529401660922 1.364789043451372 2.751952172008078 </statenode>
+<statenode id='samplingBDS.t:empty'>samplingBDS.t:empty[4 1] (0.0,1.0): 8.38970757534966E-4 4.708610635222191E-4 2.8928433582343634E-4 6.6177763043539E-4 </statenode>
+<statenode id='origin.t:empty'>origin.t:empty[1 1] (0.0,Infinity): 185.00417115369916 </statenode>
+</itsabeastystatewerein>
+<!--
+{"operators":[
+{"id":"BDSKY_contemp_bds_deathRateScaler.t:empty","p":0.9464050640224299,"accept":112702,"reject":572672,"acceptFC":112652,"rejectFC":571370,"rejectIv":0,"rejectOp":0},
+{"id":"BDSKY_contemp_bds_samplingScaler.t:empty","p":0.45947486312622005,"accept":176028,"reject":508803,"acceptFC":175237,"rejectFC":508220,"rejectIv":0,"rejectOp":0},
+{"id":"BDSKY_contemp_bds_birthRateScaler.t:empty","p":0.9398567064014411,"accept":94662,"reject":591460,"acceptFC":94614,"rejectFC":590138,"rejectIv":0,"rejectOp":0},
+{"id":"BDSKY_contemp_bds_originScaler.t:empty","p":0.8429864976913221,"accept":44981,"reject":160691,"acceptFC":44931,"rejectFC":160332,"rejectIv":124623,"rejectOp":0},
+{"id":"BDSKY_contemp_bds_deathRateScalerAll.t:empty","p":0.9711687720363749,"accept":71536,"reject":612867,"acceptFC":71515,"rejectFC":611543,"rejectIv":0,"rejectOp":0},
+{"id":"BDSKY_contemp_bds_samplingScalerAll.t:empty","p":0.6284759900226209,"accept":164280,"reject":520361,"acceptFC":163757,"rejectFC":519497,"rejectIv":0,"rejectOp":0},
+{"id":"BDSKY_contemp_bds_birthRateScalerAll.t:empty","p":0.9720655909834651,"accept":72298,"reject":611726,"acceptFC":72265,"rejectFC":610381,"rejectIv":0,"rejectOp":0},
+{"id":"BDSKY_contemp_bds_updownBD.t:empty","p":0.5135506506683668,"accept":163450,"reject":521484,"acceptFC":162734,"rejectFC":520813,"rejectIv":0,"rejectOp":0}
+]}
+-->
