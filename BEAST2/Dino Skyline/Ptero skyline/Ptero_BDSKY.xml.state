@@ -1,0 +1,18 @@
+<itsabeastystatewerein version='2.0' sample='5000000'>
+<statenode id='birthRateBDS.t:empty'>birthRateBDS.t:empty[4 1] (0.0,Infinity): 0.44237407642529736 0.1868882402642487 0.3595243797751139 0.4564849982582715 </statenode>
+<statenode id='deathRateBDS.t:empty'>deathRateBDS.t:empty[4 1] (0.0,Infinity): 0.3416336859372926 0.01269228005728173 0.31829964746402695 0.37866507343997574 </statenode>
+<statenode id='samplingBDS.t:empty'>samplingBDS.t:empty[4 1] (0.0,1.0): 0.22258732368538206 0.04223347178000415 0.04993542619287116 0.012069997141397148 </statenode>
+<statenode id='origin.t:empty'>origin.t:empty[1 1] (0.0,Infinity): 42.71558884444788 </statenode>
+</itsabeastystatewerein>
+<!--
+{"operators":[
+{"id":"BDSKY_contemp_bds_deathRateScaler.t:empty","p":0.2640915177598022,"accept":191048,"reject":494685,"acceptFC":190074,"rejectFC":494316,"rejectIv":0,"rejectOp":0},
+{"id":"BDSKY_contemp_bds_samplingScaler.t:empty","p":0.18127111660246736,"accept":189925,"reject":495509,"acceptFC":188755,"rejectFC":495250,"rejectIv":14420,"rejectOp":14420},
+{"id":"BDSKY_contemp_bds_birthRateScaler.t:empty","p":0.32221968822577557,"accept":185880,"reject":498829,"acceptFC":184930,"rejectFC":498385,"rejectIv":0,"rejectOp":0},
+{"id":"BDSKY_contemp_bds_originScaler.t:empty","p":0.7811698041561826,"accept":47563,"reject":157832,"acceptFC":47518,"rejectFC":157439,"rejectIv":59282,"rejectOp":0},
+{"id":"BDSKY_contemp_bds_deathRateScalerAll.t:empty","p":0.6327505920694001,"accept":172464,"reject":512283,"acceptFC":171899,"rejectFC":511444,"rejectIv":0,"rejectOp":0},
+{"id":"BDSKY_contemp_bds_samplingScalerAll.t:empty","p":0.25719594837232745,"accept":171647,"reject":513209,"acceptFC":170627,"rejectFC":512887,"rejectIv":31164,"rejectOp":31164},
+{"id":"BDSKY_contemp_bds_birthRateScalerAll.t:empty","p":0.6852022138422923,"accept":169920,"reject":513887,"acceptFC":169417,"rejectFC":513074,"rejectIv":0,"rejectOp":0},
+{"id":"BDSKY_contemp_bds_updownBD.t:empty","p":0.3372136849828537,"accept":177971,"reject":507349,"acceptFC":176956,"rejectFC":507028,"rejectIv":3334,"rejectOp":3334}
+]}
+-->
