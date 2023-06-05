@@ -1,39 +1,39 @@
-<itsabeastystatewerein version='2.0' sample='54999'>
-<statenode id='Tree.t:Pterosaur_25'>(((20:40.72164364012218,(5:27.753322665953817,((23:11.32406388628823,24:18.37406388628824)32:1.2778173039663443,2:13.351881190254574)41:15.001441475699238)48:7.968320974168364)36:5.2070472442296705,(((((0:29.24068110617467,(3:8.603063347712306,21:21.753063347712306)26:35.97261775846236)27:26.296795645294473,10:11.772476751469142)30:0.2705966331200358,17:18.943073384589184)29:7.983735334761789,(6:9.340262243240296,4:1.9402622432402978)28:26.536546476110672)34:8.001548893473014,((1:9.1870156902325,18:8.587015690232505)40:5.781450282133619,19:14.818465972366127)39:13.659891640457857)38:12.90033327152787)35:54.944994133533356,(((11:32.02918706033449,14:22.449187060334495)31:4.487669233728155,((13:0.7743181532965053,12:5.794318153296501)46:11.213936853936588,22:19.75825500723309)25:11.698601286829557)44:2.9521414196477025,((((9:1.7260814151072736,7:16.87608141510728)47:18.121657150569206,8:27.59773856567648)42:8.761287267429978,16:24.759025833106463)43:6.530195616321407,15:35.21922144942786)37:4.249776264282488)33:48.234687304174855)45:0.0</statenode>
-<statenode id='clockRate.c:Pterosaur_25'>clockRate.c:Pterosaur_25[1 1] (0.0,Infinity): 0.001839890415535342 </statenode>
+<itsabeastystatewerein version='2.0' sample='1500000'>
+<statenode id='Tree.t:Pterosaur_25'>(((((1:9.68333578628065,18:9.083335786280657)38:15.75950142545014,19:25.2928372117308)31:8.678172356424227,((6:13.22840949483792,4:5.828409494837928)41:30.719534364765735,(10:19.125628675061122,(21:36.318958255131236,3:23.16895825513126)37:55.05667041992989)29:8.972315184542538)25:5.423065708551363)43:5.856330694492613,(((5:28.204733314839004,20:33.204733314839004)42:4.8395044075703595,((24:12.143762046852501,23:5.09376204685249)36:4.380361361718144,2:10.224123408570634)44:23.420114313838724)48:3.9570282267042387,(0:37.234869878990025,17:0.36986987899004475)28:43.53139607012356)32:2.3760743135340334)46:75.91241516411205,((((((8:23.080049036670204,15:15.410049036670202)47:13.341889628781132,16:24.82193866545134)45:7.802976599348753,(((7:17.4234241478307,9:2.2734241478306956)30:18.968099606023713,13:8.491523753854409)40:10.542161003525393,12:24.0536847573798)35:4.691230507420286)34:8.012248566472621,14:34.98716383127271)39:0.37451459177246704,11:44.941678423045175)33:3.686602728059924,22:43.5682811511051)27:58.49147427565458)26:0.0</statenode>
+<statenode id='clockRate.c:Pterosaur_25'>clockRate.c:Pterosaur_25[1 1] (0.0,Infinity): 0.0014190315664328512 </statenode>
 <statenode id='proportionInvariant.s:Pterosaur_25'>proportionInvariant.s:Pterosaur_25[1 1] (0.0,1.0): 0.0 </statenode>
-<statenode id='gammaShape.s:Pterosaur_25'>gammaShape.s:Pterosaur_25[1 1] (0.001,1000.0): 0.8144954013795449 </statenode>
+<statenode id='gammaShape.s:Pterosaur_25'>gammaShape.s:Pterosaur_25[1 1] (0.001,1000.0): 0.824815040460099 </statenode>
 <statenode id='mutationRate.s:Pterosaur_25'>mutationRate.s:Pterosaur_25[1 1] (0.0,Infinity): 1.0 </statenode>
-<statenode id='birthRateCanonical.t:Pterosaur_25'>birthRateCanonical.t:Pterosaur_25[1 1] (-Infinity,Infinity): 0.7204672330283856 </statenode>
-<statenode id='deathRateCanonical.t:Pterosaur_25'>deathRateCanonical.t:Pterosaur_25[1 1] (-Infinity,Infinity): 2.727549138111094 </statenode>
-<statenode id='samplingRateCanonical.t:Pterosaur_25'>samplingRateCanonical.t:Pterosaur_25[1 1] (-Infinity,Infinity): 3.480612073426264E-4 </statenode>
-<statenode id='originBDMMPrime.t:Pterosaur_25'>originBDMMPrime.t:Pterosaur_25[1 1] (-Infinity,Infinity): 171.30231916345116 </statenode>
-<statenode id='typeFrequencies.t:Pterosaur_25'>typeFrequencies.t:Pterosaur_25[19 1] (0.0,1.0): 0.046663262188457746 0.08654027359670274 0.01222811163589746 0.04686229846039984 0.006324937484332875 0.017239373139466562 0.04764442806318406 0.03934666072583459 0.07229348070011454 0.03176511030961897 0.017632722908075854 0.08182892072321735 0.02662589306292579 0.07681325151008786 0.02772948989321012 0.07402239186632646 0.022241866118372325 0.015347683670048032 0.25084984394372684 </statenode>
-<statenode id='removalProbCanonical.t:Pterosaur_25'>removalProbCanonical.t:Pterosaur_25[1 1] (0.0,1.0): 0.19044654641468592 </statenode>
-<statenode id='migrationRateCanonical.t:Pterosaur_25'>migrationRateCanonical.t:Pterosaur_25[1 1] (-Infinity,Infinity): 1.586736839364274 </statenode>
-<statenode id='birthRateAmongDemesCanonical.t:Pterosaur_25'>birthRateAmongDemesCanonical.t:Pterosaur_25[1 1] (-Infinity,Infinity): 0.11175462703060986 </statenode>
+<statenode id='birthRateCanonical.t:Pterosaur_25'>birthRateCanonical.t:Pterosaur_25[1 1] (-Infinity,Infinity): 0.47290025997362295 </statenode>
+<statenode id='deathRateCanonical.t:Pterosaur_25'>deathRateCanonical.t:Pterosaur_25[1 1] (-Infinity,Infinity): 0.7614007855524484 </statenode>
+<statenode id='samplingRateCanonical.t:Pterosaur_25'>samplingRateCanonical.t:Pterosaur_25[1 1] (-Infinity,Infinity): 9.603078850755428E-4 </statenode>
+<statenode id='originBDMMPrime.t:Pterosaur_25'>originBDMMPrime.t:Pterosaur_25[1 1] (-Infinity,Infinity): 194.54566385801627 </statenode>
+<statenode id='typeFrequencies.t:Pterosaur_25'>typeFrequencies.t:Pterosaur_25[19 1] (0.0,1.0): 0.030555282029936216 0.07205330204020911 0.009396905268199566 0.005293791674168893 0.016583185634398562 0.024286308711553774 0.02404736109528352 0.0019314475847552054 0.041511114078301214 0.025118938486876734 0.2223786330815712 0.14414146358684352 0.0414035506177322 0.041024109620436885 0.02345969811955101 0.05350606252241235 0.05011491584563193 0.12731277346681252 0.04588115653532563 </statenode>
+<statenode id='removalProbCanonical.t:Pterosaur_25'>removalProbCanonical.t:Pterosaur_25[1 1] (0.0,1.0): 0.30560726085889717 </statenode>
+<statenode id='migrationRateCanonical.t:Pterosaur_25'>migrationRateCanonical.t:Pterosaur_25[1 1] (-Infinity,Infinity): 0.16044630165399082 </statenode>
+<statenode id='birthRateAmongDemesCanonical.t:Pterosaur_25'>birthRateAmongDemesCanonical.t:Pterosaur_25[1 1] (-Infinity,Infinity): 0.016496786506094922 </statenode>
 </itsabeastystatewerein>
 <!--
 {"operators":[
-{"id":"StrictClockRateScaler.c:Pterosaur_25","p":0.6744337989633524,"accept":559,"reject":1159,"acceptFC":229,"rejectFC":596,"rejectIv":0,"rejectOp":0},
-{"id":"strictClockUpDownOperator.c:Pterosaur_25","p":0.5810463522985921,"accept":50,"reject":1678,"acceptFC":18,"rejectFC":853,"rejectIv":1572,"rejectOp":1013},
-{"id":"proportionInvariantScaler.s:Pterosaur_25","p":0.282046588990808,"accept":0,"reject":58,"acceptFC":0,"rejectFC":39,"rejectIv":58,"rejectOp":58},
-{"id":"gammaShapeScaler.s:Pterosaur_25","p":0.32955097509180387,"accept":22,"reject":38,"acceptFC":8,"rejectFC":25,"rejectIv":0,"rejectOp":0},
-{"id":"FixMeanMutationRatesOperator","p":69.53258981409427,"accept":1157,"reject":0,"acceptFC":563,"rejectFC":0,"rejectIv":0,"rejectOp":0},
-{"id":"birthRateCanonicalScaler.t:Pterosaur_25","p":0.7803751309890989,"accept":357,"reject":1321,"acceptFC":138,"rejectFC":695,"rejectIv":0,"rejectOp":0},
-{"id":"deathRateCanonicalScaler.t:Pterosaur_25","p":0.9175150549388473,"accept":105,"reject":1679,"acceptFC":65,"rejectFC":830,"rejectIv":0,"rejectOp":0},
-{"id":"samplingRateCanonicalScaler.t:Pterosaur_25","p":0.36328618603768453,"accept":1000,"reject":718,"acceptFC":363,"rejectFC":498,"rejectIv":0,"rejectOp":0},
-{"id":"BDMMPrimeLeafToSA.t:Pterosaur_25","p":"NaN","accept":7,"reject":5875,"acceptFC":0,"rejectFC":2879,"rejectIv":3519,"rejectOp":3505},
-{"id":"BDMMPrimeSAWilsonBalding.t:Pterosaur_25","p":"NaN","accept":168,"reject":5684,"acceptFC":79,"rejectFC":2835,"rejectIv":146,"rejectOp":119},
-{"id":"BDMMPrimeSAWide.t:Pterosaur_25","p":"NaN","accept":49,"reject":5715,"acceptFC":26,"rejectFC":2917,"rejectIv":4193,"rejectOp":4193},
-{"id":"BDMMPrimeSANarrow.t:Pterosaur_25","p":"NaN","accept":942,"reject":4881,"acceptFC":450,"rejectFC":2375,"rejectIv":2424,"rejectOp":2424},
-{"id":"BDMMPrimeSAUniformOperator.t:Pterosaur_25","p":"NaN","accept":6573,"reject":5299,"acceptFC":3260,"rejectFC":2619,"rejectIv":0,"rejectOp":0},
-{"id":"BDMMPrimeSATreeRootScaler.t:Pterosaur_25","p":0.8933455638184151,"accept":299,"reject":315,"acceptFC":135,"rejectFC":162,"rejectIv":152,"rejectOp":20},
-{"id":"BDMMPrimeSATreeScaler.t:Pterosaur_25","p":0.9429359872511289,"accept":375,"reject":1304,"acceptFC":207,"rejectFC":631,"rejectIv":890,"rejectOp":616},
-{"id":"originBDMMPrimeScaler.t:Pterosaur_25","p":0.7019145533227442,"accept":332,"reject":1424,"acceptFC":156,"rejectFC":728,"rejectIv":648,"rejectOp":0},
-{"id":"typeFrequenciesExchanger.t:Pterosaur_25","p":0.4530223069112282,"accept":211,"reject":394,"acceptFC":50,"rejectFC":239,"rejectIv":394,"rejectOp":394},
-{"id":"removalProbCanonicalScaler.t:Pterosaur_25","p":0.1791620933595583,"accept":1056,"reject":701,"acceptFC":308,"rejectFC":539,"rejectIv":428,"rejectOp":428},
-{"id":"migrationRateCanonicalScaler.t:Pterosaur_25","p":0.2707987963118505,"accept":1087,"reject":670,"acceptFC":393,"rejectFC":481,"rejectIv":0,"rejectOp":0},
-{"id":"birthRateAmongDemesCanonicalScaler.t:Pterosaur_25","p":0.8955049835180823,"accept":120,"reject":1618,"acceptFC":60,"rejectFC":797,"rejectIv":0,"rejectOp":0}
+{"id":"StrictClockRateScaler.c:Pterosaur_25","p":0.6618249126231548,"accept":23583,"reject":72983,"acceptFC":23253,"rejectFC":72420,"rejectIv":0,"rejectOp":0},
+{"id":"strictClockUpDownOperator.c:Pterosaur_25","p":0.6083402918477417,"accept":2497,"reject":93692,"acceptFC":2465,"rejectFC":92867,"rejectIv":87925,"rejectOp":58371},
+{"id":"proportionInvariantScaler.s:Pterosaur_25","p":0.23698361732152398,"accept":0,"reject":3243,"acceptFC":0,"rejectFC":3224,"rejectIv":3243,"rejectOp":3243},
+{"id":"gammaShapeScaler.s:Pterosaur_25","p":0.30668188716474554,"accept":811,"reject":2364,"acceptFC":797,"rejectFC":2351,"rejectIv":0,"rejectOp":0},
+{"id":"FixMeanMutationRatesOperator","p":2570.8439192868536,"accept":63526,"reject":0,"acceptFC":62932,"rejectFC":0,"rejectIv":0,"rejectOp":0},
+{"id":"birthRateCanonicalScaler.t:Pterosaur_25","p":0.8363101114930137,"accept":28852,"reject":67417,"acceptFC":28633,"rejectFC":66791,"rejectIv":0,"rejectOp":0},
+{"id":"deathRateCanonicalScaler.t:Pterosaur_25","p":0.9429830552262466,"accept":25690,"reject":70023,"acceptFC":25650,"rejectFC":69174,"rejectIv":0,"rejectOp":0},
+{"id":"samplingRateCanonicalScaler.t:Pterosaur_25","p":0.28605071600034376,"accept":28261,"reject":67872,"acceptFC":27624,"rejectFC":67652,"rejectIv":0,"rejectOp":0},
+{"id":"BDMMPrimeLeafToSA.t:Pterosaur_25","p":"NaN","accept":113,"reject":320306,"acceptFC":106,"rejectFC":317310,"rejectIv":197427,"rejectOp":197413},
+{"id":"BDMMPrimeSAWilsonBalding.t:Pterosaur_25","p":"NaN","accept":7579,"reject":313312,"acceptFC":7490,"rejectFC":310463,"rejectIv":7833,"rejectOp":6819},
+{"id":"BDMMPrimeSAWide.t:Pterosaur_25","p":"NaN","accept":2871,"reject":317094,"acceptFC":2848,"rejectFC":314296,"rejectIv":221783,"rejectOp":221783},
+{"id":"BDMMPrimeSANarrow.t:Pterosaur_25","p":"NaN","accept":51845,"reject":267650,"acceptFC":51353,"rejectFC":265144,"rejectIv":123869,"rejectOp":123869},
+{"id":"BDMMPrimeSAUniformOperator.t:Pterosaur_25","p":"NaN","accept":354083,"reject":285465,"acceptFC":350770,"rejectFC":282785,"rejectIv":0,"rejectOp":0},
+{"id":"BDMMPrimeSATreeRootScaler.t:Pterosaur_25","p":0.8446349416367019,"accept":9538,"reject":22779,"acceptFC":9374,"rejectFC":22626,"rejectIv":10403,"rejectOp":493},
+{"id":"BDMMPrimeSATreeScaler.t:Pterosaur_25","p":0.9249079424253488,"accept":16754,"reject":79091,"acceptFC":16586,"rejectFC":78418,"rejectIv":52843,"rejectOp":35951},
+{"id":"originBDMMPrimeScaler.t:Pterosaur_25","p":0.7209436531735962,"accept":21032,"reject":74765,"acceptFC":20856,"rejectFC":74069,"rejectIv":35356,"rejectOp":0},
+{"id":"typeFrequenciesExchanger.t:Pterosaur_25","p":0.8521059368062702,"accept":2538,"reject":29669,"acceptFC":2377,"rejectFC":29514,"rejectIv":29669,"rejectOp":29669},
+{"id":"removalProbCanonicalScaler.t:Pterosaur_25","p":0.09003606981901438,"accept":18448,"reject":77619,"acceptFC":17700,"rejectFC":77457,"rejectIv":62864,"rejectOp":62864},
+{"id":"migrationRateCanonicalScaler.t:Pterosaur_25","p":0.17813219568459593,"accept":31300,"reject":64982,"acceptFC":30606,"rejectFC":64793,"rejectIv":0,"rejectOp":0},
+{"id":"birthRateAmongDemesCanonicalScaler.t:Pterosaur_25","p":0.920509666169175,"accept":28552,"reject":66802,"acceptFC":28492,"rejectFC":65981,"rejectIv":0,"rejectOp":0}
 ]}
 -->

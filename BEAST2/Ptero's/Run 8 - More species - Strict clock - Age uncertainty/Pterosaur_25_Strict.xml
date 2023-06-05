@@ -54,7 +54,7 @@ name="alignment">
 <map name="OneOnX" >beast.math.distributions.OneOnX</map>
 
 
-<run id="mcmc" spec="MCMC" chainLength="2000000">
+<run id="mcmc" spec="MCMC" chainLength="1500000">
     <state id="state" spec="State" storeEvery="5000">
         <tree id="Tree.t:Pterosaur_25" spec="beast.evolution.tree.Tree" name="stateNode">
             <trait id="dateTrait.t:Pterosaur_25" spec="beast.evolution.tree.TraitSet" traitname="date-backward" value="Allkaruen koi=28.485,Austriadactylus cristatus=71.65,Austriadraco dallavecchiai=71.65,Cacibupteryx caribensis=13.15,Caelestiventus hanseni=63.8,Carniadactylus rosenfeldi=72.25,Dimorphodon macronyx=56.4,Dromomeron gigas=65.35,Dromomeron gregorii=72.75,Dromomeron romeri=80.5,Eudimorphodon ranzii=72.25,Faxinalipterus minimus=80.42,Ixalerpeton polesinensis=88.23,Kongonaphon kely=93.25,Lagerpeton chanarensis=90,Maehary bonapartei=80.42,Pachagnathus benitoi=65.35,Peteinosaurus zambellii=72.25,Preondactylus buffarinii=71.8,PVSJ 883=84.35,Raeticodactylus filisurensis=67.25,Rhamphorhynchus muensteri=0,Scleromochlus taylori=85.48,Seazzadactylus venieri=72.4,Yelaphomte praderioi=65.35">
