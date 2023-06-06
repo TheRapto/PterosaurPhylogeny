@@ -1,0 +1,39 @@
+<itsabeastystatewerein version='2.0' sample='144999'>
+<statenode id='Tree.t:Pterosaur_age'>((((7:21.06954814567932,26:26.06954814567932)60:6.435801903073013,((2:4.12329863930502,30:3.3732986393050197)43:20.338203857986713,31:30.761502497291744)56:3.6438475514605955)46:5.365043469768807,(((25:12.726723972468633,1:12.876723972468625)47:7.03746944030955,(15:8.79793956299271,24:5.347939562992707)54:13.966253849785474)44:1.5905090977856844,((4:6.654544042229944,9:14.054544042229942)48:18.029020716369175,(((((5:13.880879929368326,8:10.83087992936833)38:14.549905625573658,((28:28.089952986397456,3:14.939952986397456)57:27.106114907919753,(((23:6.427256754740554,10:6.427256754740554)49:2.9885322861221795,27:2.165789040862734)45:5.207625621689829,0:23.638414662552563)40:3.0726532317646473)53:7.684717660624777)34:8.790114263279854,6:9.870899818221844)61:6.97484621621544,14:6.3957460344372805)42:1.8245579863620947,22:15.12030402079938)32:8.01326073779974)36:4.67113775196475)52:11.965691007957275)37:46.32123686929846,(((((16:15.806519845694297,19:6.226519845694298)41:2.5657085055078,(18:2.376902021477946,17:7.396902021477942)50:3.1653263297241523)35:2.5674897299437447,20:20.93971808114584)51:11.55255125725435,29:27.43226933840019)58:5.812788508961717,((21:5.303006128587569,12:16.903006128587563)62:15.79355891610949,(13:5.808764014270622,11:20.958764014270628)33:19.13780103042643)55:13.278492802664857)39:32.71657254045769)59:0.0</statenode>
+<statenode id='clockRate.c:Pterosaur_age'>clockRate.c:Pterosaur_age[1 1] (0.0,Infinity): 0.0020618301072784493 </statenode>
+<statenode id='mutationRate.s:Pterosaur_age'>mutationRate.s:Pterosaur_age[1 1] (0.0,Infinity): 1.0 </statenode>
+<statenode id='proportionInvariant.s:Pterosaur_age'>proportionInvariant.s:Pterosaur_age[1 1] (0.0,1.0): 0.0 </statenode>
+<statenode id='gammaShape.s:Pterosaur_age'>gammaShape.s:Pterosaur_age[1 1] (0.001,1000.0): 1.0119590725482686 </statenode>
+<statenode id='birthRateCanonical.t:Pterosaur_age'>birthRateCanonical.t:Pterosaur_age[1 1] (-Infinity,Infinity): 0.37669661904325286 </statenode>
+<statenode id='deathRateCanonical.t:Pterosaur_age'>deathRateCanonical.t:Pterosaur_age[1 1] (-Infinity,Infinity): 7.507146113414482 </statenode>
+<statenode id='samplingRateCanonical.t:Pterosaur_age'>samplingRateCanonical.t:Pterosaur_age[1 1] (-Infinity,Infinity): 3.0586648878534533E-4 </statenode>
+<statenode id='originBDMMPrime.t:Pterosaur_age'>originBDMMPrime.t:Pterosaur_age[1 1] (-Infinity,Infinity): 156.12452633977247 </statenode>
+<statenode id='typeFrequencies.t:Pterosaur_age'>typeFrequencies.t:Pterosaur_age[24 1] (0.0,1.0): 0.013823132695064022 0.0171196397000693 0.011120185211436887 0.13981167679363782 0.13116321384034277 0.03578512320359793 0.0020300594216245416 0.032606064437625364 0.03005913476633498 0.01141482526795198 0.12291204931142072 0.033223957362847806 0.019060258867421548 0.0646862513665753 0.016869150288810742 0.0010258169873867684 0.047371382791583566 0.015666905470726487 0.001315778793407208 0.026846180544944018 0.025530262695607694 0.033373512750777476 0.08601546610217828 0.08116997132862695 </statenode>
+<statenode id='removalProbCanonical.t:Pterosaur_age'>removalProbCanonical.t:Pterosaur_age[1 1] (0.0,1.0): 0.9722580015647756 </statenode>
+<statenode id='migrationRateCanonical.t:Pterosaur_age'>migrationRateCanonical.t:Pterosaur_age[1 1] (-Infinity,Infinity): 0.2741413028442351 </statenode>
+<statenode id='birthRateAmongDemesCanonical.t:Pterosaur_age'>birthRateAmongDemesCanonical.t:Pterosaur_age[1 1] (-Infinity,Infinity): 0.3099102469331614 </statenode>
+</itsabeastystatewerein>
+<!--
+{"operators":[
+{"id":"StrictClockRateScaler.c:Pterosaur_age","p":0.6881911956295667,"accept":1315,"reject":3367,"acceptFC":994,"rejectFC":2780,"rejectIv":0,"rejectOp":0},
+{"id":"strictClockUpDownOperator.c:Pterosaur_age","p":0.7368326718598587,"accept":132,"reject":4585,"acceptFC":104,"rejectFC":3717,"rejectIv":4155,"rejectOp":2645},
+{"id":"FixMeanMutationRatesOperator","p":212.54248708563424,"accept":3039,"reject":0,"acceptFC":2426,"rejectFC":0,"rejectIv":0,"rejectOp":0},
+{"id":"proportionInvariantScaler.s:Pterosaur_age","p":0.5157601740418768,"accept":0,"reject":151,"acceptFC":0,"rejectFC":130,"rejectIv":151,"rejectOp":151},
+{"id":"gammaShapeScaler.s:Pterosaur_age","p":0.3852763866724194,"accept":40,"reject":109,"acceptFC":27,"rejectFC":91,"rejectIv":0,"rejectOp":0},
+{"id":"birthRateCanonicalScaler.t:Pterosaur_age","p":0.7365896267175253,"accept":872,"reject":3849,"acceptFC":537,"rejectFC":3274,"rejectIv":0,"rejectOp":0},
+{"id":"deathRateCanonicalScaler.t:Pterosaur_age","p":0.9303970355657136,"accept":137,"reject":4439,"acceptFC":116,"rejectFC":3585,"rejectIv":0,"rejectOp":0},
+{"id":"samplingRateCanonicalScaler.t:Pterosaur_age","p":0.3619245325226292,"accept":1937,"reject":2693,"acceptFC":1309,"rejectFC":2460,"rejectIv":0,"rejectOp":0},
+{"id":"BDMMPrimeLeafToSA.t:Pterosaur_age","p":"NaN","accept":4,"reject":15353,"acceptFC":0,"rejectFC":12423,"rejectIv":9142,"rejectOp":9087},
+{"id":"BDMMPrimeSAWilsonBalding.t:Pterosaur_age","p":"NaN","accept":750,"reject":14631,"acceptFC":618,"rejectFC":11798,"rejectIv":340,"rejectOp":252},
+{"id":"BDMMPrimeSAWide.t:Pterosaur_age","p":"NaN","accept":320,"reject":15026,"acceptFC":273,"rejectFC":12156,"rejectIv":11683,"rejectOp":11683},
+{"id":"BDMMPrimeSANarrow.t:Pterosaur_age","p":"NaN","accept":3801,"reject":11618,"acceptFC":3036,"rejectFC":9383,"rejectIv":6445,"rejectOp":6445},
+{"id":"BDMMPrimeSAUniformOperator.t:Pterosaur_age","p":"NaN","accept":19174,"reject":11613,"acceptFC":15375,"rejectFC":9333,"rejectIv":0,"rejectOp":0},
+{"id":"BDMMPrimeSATreeRootScaler.t:Pterosaur_age","p":0.8487716673630198,"accept":529,"reject":1026,"acceptFC":362,"rejectFC":906,"rejectIv":521,"rejectOp":70},
+{"id":"BDMMPrimeSATreeScaler.t:Pterosaur_age","p":0.9140812122819221,"accept":484,"reject":4128,"acceptFC":357,"rejectFC":3425,"rejectIv":2964,"rejectOp":1908},
+{"id":"originBDMMPrimeScaler.t:Pterosaur_age","p":0.7662981215656912,"accept":1115,"reject":3512,"acceptFC":917,"rejectFC":2813,"rejectIv":1537,"rejectOp":0},
+{"id":"typeFrequenciesExchanger.t:Pterosaur_age","p":0.5885378490026449,"accept":218,"reject":1299,"acceptFC":121,"rejectFC":1116,"rejectIv":1299,"rejectOp":1299},
+{"id":"removalProbCanonicalScaler.t:Pterosaur_age","p":0.173448466449416,"accept":2109,"reject":2506,"acceptFC":1384,"rejectFC":2341,"rejectIv":1454,"rejectOp":1454},
+{"id":"migrationRateCanonicalScaler.t:Pterosaur_age","p":0.2000259633156303,"accept":2056,"reject":2502,"acceptFC":1336,"rejectFC":2420,"rejectIv":0,"rejectOp":0},
+{"id":"birthRateAmongDemesCanonicalScaler.t:Pterosaur_age","p":0.9355297879923687,"accept":139,"reject":4422,"acceptFC":116,"rejectFC":3545,"rejectIv":0,"rejectOp":0}
+]}
+-->

@@ -1,18 +1,18 @@
 <itsabeastystatewerein version='2.0' sample='5000000'>
-<statenode id='birthRateBDS.t:empty'>birthRateBDS.t:empty[4 1] (0.0,Infinity): 0.44237407642529736 0.1868882402642487 0.3595243797751139 0.4564849982582715 </statenode>
-<statenode id='deathRateBDS.t:empty'>deathRateBDS.t:empty[4 1] (0.0,Infinity): 0.3416336859372926 0.01269228005728173 0.31829964746402695 0.37866507343997574 </statenode>
-<statenode id='samplingBDS.t:empty'>samplingBDS.t:empty[4 1] (0.0,1.0): 0.22258732368538206 0.04223347178000415 0.04993542619287116 0.012069997141397148 </statenode>
-<statenode id='origin.t:empty'>origin.t:empty[1 1] (0.0,Infinity): 42.71558884444788 </statenode>
+<statenode id='birthRateBDS.t:empty'>birthRateBDS.t:empty[4 1] (0.0,Infinity): 0.4096753001120775 0.4375343777869658 0.1245393255215592 1.2210022046507114 </statenode>
+<statenode id='deathRateBDS.t:empty'>deathRateBDS.t:empty[4 1] (0.0,Infinity): 0.38715398344606183 0.4752654998142648 0.17703293899554562 0.8989860215531568 </statenode>
+<statenode id='samplingBDS.t:empty'>samplingBDS.t:empty[4 1] (0.0,1.0): 0.004563817075886566 0.004290114627690435 0.0247707439095081 0.006236184196958677 </statenode>
+<statenode id='origin.t:empty'>origin.t:empty[1 1] (0.0,Infinity): 155.55604910846463 </statenode>
 </itsabeastystatewerein>
 <!--
 {"operators":[
-{"id":"BDSKY_contemp_bds_deathRateScaler.t:empty","p":0.2640915177598022,"accept":191048,"reject":494685,"acceptFC":190074,"rejectFC":494316,"rejectIv":0,"rejectOp":0},
-{"id":"BDSKY_contemp_bds_samplingScaler.t:empty","p":0.18127111660246736,"accept":189925,"reject":495509,"acceptFC":188755,"rejectFC":495250,"rejectIv":14420,"rejectOp":14420},
-{"id":"BDSKY_contemp_bds_birthRateScaler.t:empty","p":0.32221968822577557,"accept":185880,"reject":498829,"acceptFC":184930,"rejectFC":498385,"rejectIv":0,"rejectOp":0},
-{"id":"BDSKY_contemp_bds_originScaler.t:empty","p":0.7811698041561826,"accept":47563,"reject":157832,"acceptFC":47518,"rejectFC":157439,"rejectIv":59282,"rejectOp":0},
-{"id":"BDSKY_contemp_bds_deathRateScalerAll.t:empty","p":0.6327505920694001,"accept":172464,"reject":512283,"acceptFC":171899,"rejectFC":511444,"rejectIv":0,"rejectOp":0},
-{"id":"BDSKY_contemp_bds_samplingScalerAll.t:empty","p":0.25719594837232745,"accept":171647,"reject":513209,"acceptFC":170627,"rejectFC":512887,"rejectIv":31164,"rejectOp":31164},
-{"id":"BDSKY_contemp_bds_birthRateScalerAll.t:empty","p":0.6852022138422923,"accept":169920,"reject":513887,"acceptFC":169417,"rejectFC":513074,"rejectIv":0,"rejectOp":0},
-{"id":"BDSKY_contemp_bds_updownBD.t:empty","p":0.3372136849828537,"accept":177971,"reject":507349,"acceptFC":176956,"rejectFC":507028,"rejectIv":3334,"rejectOp":3334}
+{"id":"BDSKY_contemp_bds_deathRateScaler.t:empty","p":0.2923363301756993,"accept":193783,"reject":490222,"acceptFC":192977,"rejectFC":489654,"rejectIv":0,"rejectOp":0},
+{"id":"BDSKY_contemp_bds_samplingScaler.t:empty","p":0.1754272151697222,"accept":185827,"reject":499675,"acceptFC":184689,"rejectFC":499463,"rejectIv":1623,"rejectOp":1623},
+{"id":"BDSKY_contemp_bds_birthRateScaler.t:empty","p":0.27036524182424393,"accept":184243,"reject":500793,"acceptFC":183456,"rejectFC":500252,"rejectIv":0,"rejectOp":0},
+{"id":"BDSKY_contemp_bds_originScaler.t:empty","p":0.7421987605662878,"accept":43492,"reject":162519,"acceptFC":43395,"rejectFC":162206,"rejectIv":102703,"rejectOp":0},
+{"id":"BDSKY_contemp_bds_deathRateScalerAll.t:empty","p":0.845032157618398,"accept":148221,"reject":536810,"acceptFC":148039,"rejectFC":535589,"rejectIv":0,"rejectOp":0},
+{"id":"BDSKY_contemp_bds_samplingScalerAll.t:empty","p":0.2922126282303682,"accept":183522,"reject":500827,"acceptFC":182454,"rejectFC":500495,"rejectIv":931,"rejectOp":931},
+{"id":"BDSKY_contemp_bds_birthRateScalerAll.t:empty","p":0.841025601603441,"accept":142796,"reject":543041,"acceptFC":142622,"rejectFC":541855,"rejectIv":0,"rejectOp":0},
+{"id":"BDSKY_contemp_bds_updownBD.t:empty","p":0.2781587348612345,"accept":180956,"reject":503274,"acceptFC":179918,"rejectFC":502935,"rejectIv":129,"rejectOp":129}
 ]}
 -->

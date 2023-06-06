@@ -1,16 +1,16 @@
 <itsabeastystatewerein version='2.0' sample='1000000'>
-<statenode id='ePopSize.t:empty'>ePopSize.t:empty[1 1] (0.0,Infinity): 6.148147611649144 </statenode>
-<statenode id='growthRate1'>growthRate1[1 1] (-Infinity,Infinity): -0.2729015571864679 </statenode>
-<statenode id='growthRate2'>growthRate2[1 1] (-Infinity,Infinity): 0.07502314409563356 </statenode>
-<statenode id='growthRate3'>growthRate3[1 1] (-Infinity,Infinity): -0.0639363614758574 </statenode>
-<statenode id='growthRate4'>growthRate4[1 1] (-Infinity,Infinity): 0.7425485539311484 </statenode>
+<statenode id='ePopSize.t:empty'>ePopSize.t:empty[1 1] (0.0,Infinity): 1.7757190012241268 </statenode>
+<statenode id='growthRate1'>growthRate1[1 1] (-Infinity,Infinity): -0.5108497859203843 </statenode>
+<statenode id='growthRate2'>growthRate2[1 1] (-Infinity,Infinity): -0.13102575187051113 </statenode>
+<statenode id='growthRate3'>growthRate3[1 1] (-Infinity,Infinity): 0.1940767617023062 </statenode>
+<statenode id='growthRate4'>growthRate4[1 1] (-Infinity,Infinity): 0.013721357344774612 </statenode>
 </itsabeastystatewerein>
 <!--
 {"operators":[
-{"id":"ePopSizeScaler.t:empty","p":0.5081967062369619,"accept":59723,"reject":140305,"acceptFC":59396,"rejectFC":138572,"rejectIv":0,"rejectOp":0},
-{"id":"GrowthRateRandomWalk1.t:empty","p":0.20661611494712656,"accept":52241,"reject":148519,"acceptFC":50820,"rejectFC":147933,"rejectIv":0,"rejectOp":0},
-{"id":"GrowthRateRandomWalk2.t:empty","p":0.11639935403147438,"accept":50813,"reject":148427,"acceptFC":49771,"rejectFC":147433,"rejectIv":0,"rejectOp":0},
-{"id":"GrowthRateRandomWalk3.t:empty","p":0.43646275965515885,"accept":52790,"reject":147058,"acceptFC":51090,"rejectFC":146761,"rejectIv":0,"rejectOp":0},
-{"id":"GrowthRateRandomWalk4.t:empty","p":1.4312581311454626,"accept":58231,"reject":141894,"acceptFC":56421,"rejectFC":141802,"rejectIv":0,"rejectOp":0}
+{"id":"ePopSizeScaler.t:empty","p":0.46924505970847163,"accept":58636,"reject":141167,"acceptFC":58405,"rejectFC":139434,"rejectIv":0,"rejectOp":0},
+{"id":"GrowthRateRandomWalk1.t:empty","p":0.1833524873554928,"accept":50708,"reject":149300,"acceptFC":49383,"rejectFC":148657,"rejectIv":0,"rejectOp":0},
+{"id":"GrowthRateRandomWalk2.t:empty","p":0.0738232723195016,"accept":48561,"reject":151443,"acceptFC":47839,"rejectFC":150089,"rejectIv":0,"rejectOp":0},
+{"id":"GrowthRateRandomWalk3.t:empty","p":0.13299993148864317,"accept":50875,"reject":148997,"acceptFC":49703,"rejectFC":148145,"rejectIv":0,"rejectOp":0},
+{"id":"GrowthRateRandomWalk4.t:empty","p":0.02749853106418703,"accept":41173,"reject":159141,"acceptFC":40963,"rejectFC":157381,"rejectIv":0,"rejectOp":0}
 ]}
 -->
