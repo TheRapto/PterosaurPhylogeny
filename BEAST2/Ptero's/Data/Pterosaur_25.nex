@@ -3,39 +3,39 @@
 BEGIN TAXA;
 	DIMENSIONS  NTAX=25;
 	TAXLABELS
-    	'Allkaruen koi'
-		'Austriadactylus cristatus'
-		'Austriadraco dallavecchiai'
-		'Cacibupteryx caribensis'
-		'Caelestiventus hanseni'
-		'Carniadactylus rosenfeldi'
-		'Dimorphodon macronyx'
-		'Dromomeron gigas'
-		'Dromomeron gregorii'
-		'Dromomeron romeri'
-		'Eudimorphodon ranzii'
-		'Faxinalipterus minimus' 
-		'Ixalerpeton polesinensis'
-		'Kongonaphon kely'
-		'Lagerpeton chanarensis'
-		'Maehary bonapartei'
-		'Pachagnathus benitoi'
-		'Peteinosaurus zambellii'
-		'Preondactylus buffarinii'
-		'PVSJ 883'
-		'Raeticodactylus filisurensis'
-		'Rhamphorhynchus muensteri'
-		'Scleromochlus taylori'	
-		'Seazzadactylus venieri'
-    	'Yelaphomte praderioi'
+    'Allkaruen koi'
+	'Austriadactylus cristatus'
+	'Austriadraco dallavecchiai'
+	'Cacibupteryx caribensis'
+	'Caelestiventus hanseni'
+	'Carniadactylus rosenfeldi'
+	'Dimorphodon macronyx'
+	'Dromomeron gigas'
+	'Dromomeron gregorii'
+	'Dromomeron romeri'
+	'Eudimorphodon ranzii'
+	'Faxinalipterus minimus' 
+	'Ixalerpeton polesinensis'
+	'Kongonaphon kely'
+	'Lagerpeton chanarensis'
+	'Maehary bonapartei'
+	'Pachagnathus benitoi'
+	'Peteinosaurus zambellii'
+	'Preondactylus buffarinii'
+	'PVSJ 883'
+	'Raeticodactylus filisurensis'
+	'Rhamphorhynchus muensteri'
+	'Scleromochlus taylori'	
+	'Seazzadactylus venieri'
+    'Yelaphomte praderioi';
 END;
 
 BEGIN CHARACTERS;
-			DIMENSIONS NCHAR=823;
-			FORMAT DATATYPE=STANDARD GAP=- MISSING=? SYMBOLS="0123456";
-			CHARSTATELABELS
+	DIMENSIONS NCHAR=823;
+	FORMAT DATATYPE=STANDARD SYMBOLS="0123456" MISSING=? GAP=- ;
+	CHARSTATELABELS
 		 1 'Skull and lower jaws, interdental plates'/ 		
-		 'absent'
+		  'absent'
 		'present, small and well-spaced from each other'
 		'present, large and close to or contacting with each other'
 		,
@@ -315,7 +315,7 @@ BEGIN CHARACTERS;
 		,
 		 62 'Maxilla, ventral margin of the antorbital fossa or fenestra (if the antorbital fossa is absent from the horizontal process of the maxilla) in the horizontal process'/
 		 'mainly sub-parallel to the alveolar margin of the bone'
-		'diagonal, anteroventrally-to-posterodorsally oriented in an angle close to 45º'
+		'diagonal, anteroventrally-to-posterodorsally oriented in an angle close to 45 degrees'
 		,
 		 63 'Maxilla, shape of the posterior portion of the bone (ventral to the antorbital fenestra if it is present)'/
 		 'tapers posteriorly'
@@ -564,7 +564,10 @@ BEGIN CHARACTERS;
 		'longitudinally extended groove along most of the surface of the frontal'
 		'anterolaterally-to-posteromedially extended groove along the posterior half of the frontal'
 		,
-		 119 'DEACTIVATED',
+		 119 'DEACTIVATED'/
+		 'absent'
+		'present'
+		 ,
 		 120 'Frontal, ventral surface'/
 		 'hour-glass-shaped median longitudinal canal for the passage of the olfactory duct and olfactory bulb moulds on the anterior end of the bone'
 		'median longitudinal canal for the passage of the olfactory duct only slightly constricted, no olfactory bulb moulds and distinct semilunate posteromedially-to-anterolaterally oriented ridge on the orbital roof, extending onto the prefrontal'
@@ -3217,8 +3220,8 @@ BEGIN CHARACTERS;
 		'common crus is very thick, with a much larger cross sectional area than semicircular canals'
 		,
 		 734 'Inner ear, angle between portions of the anterior semicircular canal and posterior semicircular canal that are adjacent to the common crus in the coronal plane'/
-		 'angle is approximately 90°, generally less broad labyrinths'
-		'angle significantly exceeds 90°, generally low, broad labyrinths'
+		 'angle is approximately 90 degrees, generally less broad labyrinths'
+		'angle significantly exceeds 90 degrees, generally low, broad labyrinths'
 		,
 		 735 'Inner ear, posterior part of the lateral semicircular canal (LSC)'/
 		 'the posterior section of the LSC is not or only vaguely discernible, because the lateral semicircular duct shares a single osseous cavity, i.e. is confluent with the vestibular cavity and the cavity for the ventral section of the posterior semicircular ca'
@@ -3250,7 +3253,7 @@ BEGIN CHARACTERS;
 		,
 		 741 'Inner ear, orientation of common crus'/
 		 'vertical'
-		'posterodorsal, deviating from the vertical plane in an angle higher than 10º'
+		'posterodorsal, deviating from the vertical plane in an angle higher than 10 degrees'
 		,
 		 742 'Inner ear, straightness of common crus'/
 		 'straight'
@@ -3539,6 +3542,7 @@ BEGIN CHARACTERS;
 		 811 'Tibia, distal surface outline (excluding the posterolateral process if present)'/
 		 'anteroposteriorly longer, rounded or subquadrangular (approximately as wide as long)'
 		'mediolaterally expanded'
+		,
 		 812 'Tibia, deep slot in the anteromedial corner of the distal surface'/
 		 'absent'
 		'present (it receives the anteromedial process of the astragalus)'
@@ -3588,7 +3592,8 @@ BEGIN CHARACTERS;
 		 823 'Metatarsus, length of metatarsals III and V'/
 		 'metatarsal V equal to or longer than 50% of metatarsal III'
 		'metatarsal V shorter than 50% of metatarsal III'
-		;
+		,
+	;
 
 MATRIX
 
