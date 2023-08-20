@@ -878,7 +878,7 @@ name="alignment">
 <map name="OneOnX" >beast.math.distributions.OneOnX</map>
 
 
-<run id="mcmc" spec="MCMC" chainLength="1000000">
+<run id="mcmc" spec="MCMC" chainLength="10000000">
     <state id="state" spec="State" storeEvery="5000">
         <tree id="Tree.t:Pterosaur_25" spec="beast.evolution.tree.Tree" name="stateNode">
             <trait id="dateTrait.t:Pterosaur_25" spec="beast.evolution.tree.TraitSet" traitname="date-backward" value="Allkaruen koi=28.485,Austriadactylus cristatus=71.65,Austriadraco dallavecchiai=71.65,Cacibupteryx caribensis=13.15,Caelestiventus hanseni=63.8,Carniadactylus rosenfeldi=72.25,Dimorphodon macronyx=56.4,Dromomeron gigas=65.35,Dromomeron gregorii=72.75,Dromomeron romeri=80.5,Eudimorphodon ranzii=72.25,Faxinalipterus minimus=80.42,Ixalerpeton polesinensis=88.23,Kongonaphon kely=93.25,Lagerpeton chanarensis=90,Maehary bonapartei=80.42,Pachagnathus benitoi=65.35,Peteinosaurus zambellii=72.25,Preondactylus buffarinii=71.8,PVSJ 883=84.35,Raeticodactylus filisurensis=67.25,Rhamphorhynchus muensteri=0,Scleromochlus taylori=85.48,Seazzadactylus venieri=72.4,Yelaphomte praderioi=65.35">
@@ -894,7 +894,7 @@ name="alignment">
         <parameter id="birthRateCanonical.t:Pterosaur_25" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
         <parameter id="deathRateCanonical.t:Pterosaur_25" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
         <parameter id="samplingRateCanonical.t:Pterosaur_25" spec="parameter.RealParameter" name="stateNode">0.1</parameter>
-        <parameter id="originBDMMPrime.t:Pterosaur_25" spec="parameter.RealParameter" name="stateNode">110.0</parameter>
+        <parameter id="originBDMMPrime.t:Pterosaur_25" spec="parameter.RealParameter" name="stateNode">150.0</parameter>
         <parameter id="typeFrequencies.t:Pterosaur_25" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="1.0">1.0</parameter>
     </state>
 
@@ -910,7 +910,7 @@ name="alignment">
                 <parameterization id="CanonicalBDMMPrimeParameterization.t:Pterosaur_25" spec="bdmmprime.parameterization.CanonicalParameterization" processLength="@originBDMMPrime.t:Pterosaur_25">
                     <birthRate id="birthRateSVCanonical.t:Pterosaur_25" spec="bdmmprime.parameterization.SkylineVectorParameter" processLength="@originBDMMPrime.t:Pterosaur_25" skylineValues="@birthRateCanonical.t:Pterosaur_25" timesAreAges="true">
                         <typeSet id="typeSetBDMMPrime.t:Pterosaur_25" spec="bdmmprime.parameterization.TypeSet">
-                            <typeTraitSet id="typeTraitSet.t:Pterosaur_25" spec="bdmmprime.util.InitializedTraitSet" traitname="type" value="Allkaruen koi=NOT_SET,Austriadactylus cristatus=NOT_SET,Austriadraco dallavecchiai=NOT_SET,Cacibupteryx caribensis=NOT_SET,Caelestiventus hanseni=NOT_SET,Carniadactylus rosenfeldi=NOT_SET,Dimorphodon macronyx=NOT_SET,Dromomeron gigas=NOT_SET,Dromomeron gregorii=NOT_SET,Dromomeron romeri=NOT_SET,Eudimorphodon ranzii=NOT_SET,Faxinalipterus minimus=NOT_SET,Ixalerpeton polesinensis=NOT_SET,Kongonaphon kely=NOT_SET,Lagerpeton chanarensis=NOT_SET,Maehary bonapartei=NOT_SET,PVSJ 883=NOT_SET,Pachagnathus benitoi=NOT_SET,Peteinosaurus zambellii=NOT_SET,Preondactylus buffarinii=NOT_SET,Raeticodactylus filisurensis=NOT_SET,Rhamphorhynchus muensteri=NOT_SET,Scleromochlus taylori=NOT_SET,Seazzadactylus venieri=NOT_SET,Yelaphomte praderioi=NOT_SET">
+                            <typeTraitSet id="typeTraitSet.t:Pterosaur_25" spec="bdmmprime.util.InitializedTraitSet" traitname="type" value="Allkaruen koi=0,Austriadactylus cristatus=0,Austriadraco dallavecchiai=0,Cacibupteryx caribensis=0,Caelestiventus hanseni=0,Carniadactylus rosenfeldi=0,Dimorphodon macronyx=0,Dromomeron gigas=0,Dromomeron gregorii=0,Dromomeron romeri=0,Eudimorphodon ranzii=0,Faxinalipterus minimus=0,Ixalerpeton polesinensis=0,Kongonaphon kely=0,Lagerpeton chanarensis=0,Maehary bonapartei=0,PVSJ 883=0,Pachagnathus benitoi=0,Peteinosaurus zambellii=0,Preondactylus buffarinii=0,Raeticodactylus filisurensis=0,Rhamphorhynchus muensteri=0,Scleromochlus taylori=0,Seazzadactylus venieri=0,Yelaphomte praderioi=0">
                                 <taxa id="TaxonSet.1" spec="TaxonSet" alignment="@Pterosaur_25"/>
                             </typeTraitSet>
                         </typeSet>
@@ -952,19 +952,163 @@ name="alignment">
                 </Exponential>
             </prior>
             <prior id="originBDMMPrimePrior.t:Pterosaur_25" name="distribution" x="@originBDMMPrime.t:Pterosaur_25">
-                <OneOnX id="OneOnX.1" name="distr"/>
+                <Uniform id="Uniform.15" lower="75.0" name="distr" upper="250.0"/>
             </prior>
             <distribution id="samplingRateCanonicalPrior.t:Pterosaur_25" spec="bdmmprime.util.priors.ZeroExcludingPrior" x="@samplingRateCanonical.t:Pterosaur_25">
                 <Exponential id="Exponential.4" name="distr">
                     <parameter id="RealParameter.7" spec="parameter.RealParameter" estimate="false" name="mean">0.1</parameter>
                 </Exponential>
             </distribution>
+            <distribution id="Allkaruen koi1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Allkaruen koi1" spec="TaxonSet">
+                    <taxon id="Allkaruen koi" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.16" lower="23.3" name="distr" upper="33.67"/>
+            </distribution>
+            <distribution id="Austriadactylus cristatus1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Austriadactylus cristatus1" spec="TaxonSet">
+                    <taxon id="Austriadactylus cristatus" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.17" lower="70.5" name="distr" upper="73.8"/>
+            </distribution>
+            <distribution id="Austriadraco dallavecchiai1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Austriadraco dallavecchiai1" spec="TaxonSet">
+                    <taxon id="Austriadraco dallavecchiai" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.18" lower="70.5" name="distr" upper="72.8"/>
+            </distribution>
+            <distribution id="Cacibupteryx caribensis1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Cacibupteryx caribensis1" spec="TaxonSet">
+                    <taxon id="Cacibupteryx caribensis" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.19" lower="9.8" name="distr" upper="16.5"/>
+            </distribution>
+            <distribution id="Caelestiventus hanseni1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Caelestiventus hanseni1" spec="TaxonSet">
+                    <taxon id="Caelestiventus hanseni" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.20" lower="56.3" name="distr" upper="71.3"/>
+            </distribution>
+            <distribution id="Carniadactylus rosenfeldi1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Carniadactylus rosenfeldi1" spec="TaxonSet">
+                    <taxon id="Carniadactylus rosenfeldi" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.21" lower="71.0" name="distr" upper="73.5"/>
+            </distribution>
+            <distribution id="Dimorphodon macronyx1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Dimorphodon macronyx1" spec="TaxonSet">
+                    <taxon id="Dimorphodon macronyx" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.22" lower="55.2" name="distr" upper="57.6"/>
+            </distribution>
+            <distribution id="Dromomeron gigas1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Dromomeron gigas1" spec="TaxonSet">
+                    <taxon id="Dromomeron gigas" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.23" lower="61.0" name="distr" upper="69.7"/>
+            </distribution>
+            <distribution id="Dromomeron gregorii1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Dromomeron gregorii1" spec="TaxonSet">
+                    <taxon id="Dromomeron gregorii" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.24" lower="63.5" name="distr" upper="82.0"/>
+            </distribution>
+            <distribution id="Dromomeron romeri1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Dromomeron romeri1" spec="TaxonSet">
+                    <taxon id="Dromomeron romeri" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.25" lower="58.0" name="distr" upper="81.0"/>
+            </distribution>
+            <distribution id="Eudimorphodon ranzii1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Eudimorphodon ranzii1" spec="TaxonSet">
+                    <taxon id="Eudimorphodon ranzii" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.26" lower="71.3" name="distr" upper="73.2"/>
+            </distribution>
+            <distribution id="Faxinalipterus minimus1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Faxinalipterus minimus1" spec="TaxonSet">
+                    <taxon id="Faxinalipterus minimus" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.27" lower="80.05" name="distr" upper="80.79"/>
+            </distribution>
+            <distribution id="Ixalerpeton polesinensis1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Ixalerpeton polesinensis1" spec="TaxonSet">
+                    <taxon id="Ixalerpeton polesinensis" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.28" lower="87.5" name="distr" upper="88.96"/>
+            </distribution>
+            <distribution id="Kongonaphon kely1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Kongonaphon kely1" spec="TaxonSet">
+                    <taxon id="Kongonaphon kely" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.29" lower="92.0" name="distr" upper="94.5"/>
+            </distribution>
+            <distribution id="Lagerpeton chanarensis1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Lagerpeton chanarensis1" spec="TaxonSet">
+                    <taxon id="Lagerpeton chanarensis" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.30" lower="88.3" name="distr" upper="91.7"/>
+            </distribution>
+            <distribution id="Maehary bonapartei1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Maehary bonapartei1" spec="TaxonSet">
+                    <taxon id="Maehary bonapartei" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.31" lower="80.05" name="distr" upper="80.79"/>
+            </distribution>
+            <distribution id="PVSJ 8831.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="PVSJ 8831" spec="TaxonSet">
+                    <taxon id="PVSJ 883" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.32" lower="82.0" name="distr" upper="86.7"/>
+            </distribution>
+            <distribution id="Pachagnathus benitoi1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Pachagnathus benitoi1" spec="TaxonSet">
+                    <taxon id="Pachagnathus benitoi" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.33" lower="61.0" name="distr" upper="69.7"/>
+            </distribution>
+            <distribution id="Peteinosaurus zambellii1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Peteinosaurus zambellii1" spec="TaxonSet">
+                    <taxon id="Peteinosaurus zambellii" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.34" lower="71.3" name="distr" upper="73.2"/>
+            </distribution>
+            <distribution id="Preondactylus buffarinii1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Preondactylus buffarinii1" spec="TaxonSet">
+                    <taxon id="Preondactylus buffarinii" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.35" lower="70.8" name="distr" upper="72.8"/>
+            </distribution>
+            <distribution id="Raeticodactylus filisurensis1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Raeticodactylus filisurensis1" spec="TaxonSet">
+                    <taxon id="Raeticodactylus filisurensis" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.36" lower="63.5" name="distr" upper="71.0"/>
+            </distribution>
+            <distribution id="Scleromochlus taylori1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Scleromochlus taylori1" spec="TaxonSet">
+                    <taxon id="Scleromochlus taylori" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.37" lower="82.0" name="distr" upper="88.96"/>
+            </distribution>
+            <distribution id="Seazzadactylus venieri1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Seazzadactylus venieri1" spec="TaxonSet">
+                    <taxon id="Seazzadactylus venieri" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.38" lower="70.8" name="distr" upper="74.0"/>
+            </distribution>
+            <distribution id="Yelaphomte praderioi1.prior" spec="beast.math.distributions.MRCAPrior" tipsonly="true" tree="@Tree.t:Pterosaur_25">
+                <taxonset id="Yelaphomte praderioi1" spec="TaxonSet">
+                    <taxon id="Yelaphomte praderioi" spec="Taxon"/>
+                </taxonset>
+                <Uniform id="Uniform.39" lower="61.0" name="distr" upper="69.7"/>
+            </distribution>
         </distribution>
         <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
             <distribution id="treeLikelihood.Pterosaur_25" spec="ThreadedTreeLikelihood" data="@Pterosaur_25" tree="@Tree.t:Pterosaur_25">
                 <siteModel id="SiteModel.s:Pterosaur_25" spec="SiteModel" gammaCategoryCount="4" mutationRate="@mutationRate.s:Pterosaur_25" shape="@gammaShape.s:Pterosaur_25">
                     <parameter id="proportionInvariant.s:Pterosaur_25" spec="parameter.RealParameter" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
-                    <substModel id="LewisMK.s:Pterosaur_25" spec="LewisMK" stateNumber="0"/>
+                    <substModel id="LewisMK.s:Pterosaur_25" spec="LewisMK" stateNumber="7"/>
                 </siteModel>
                 <branchRateModel id="StrictClock.c:Pterosaur_25" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:Pterosaur_25"/>
             </distribution>
@@ -1011,6 +1155,54 @@ name="alignment">
         <parameter idref="typeFrequencies.t:Pterosaur_25"/>
     </operator>
 
+    <operator id="tipDatesSampler.Allkaruen koi1" spec="TipDatesRandomWalker" taxonset="@Allkaruen koi1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Austriadactylus cristatus1" spec="TipDatesRandomWalker" taxonset="@Austriadactylus cristatus1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Austriadraco dallavecchiai1" spec="TipDatesRandomWalker" taxonset="@Austriadraco dallavecchiai1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Cacibupteryx caribensis1" spec="TipDatesRandomWalker" taxonset="@Cacibupteryx caribensis1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Caelestiventus hanseni1" spec="TipDatesRandomWalker" taxonset="@Caelestiventus hanseni1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Carniadactylus rosenfeldi1" spec="TipDatesRandomWalker" taxonset="@Carniadactylus rosenfeldi1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Dimorphodon macronyx1" spec="TipDatesRandomWalker" taxonset="@Dimorphodon macronyx1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Dromomeron gigas1" spec="TipDatesRandomWalker" taxonset="@Dromomeron gigas1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Dromomeron gregorii1" spec="TipDatesRandomWalker" taxonset="@Dromomeron gregorii1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Dromomeron romeri1" spec="TipDatesRandomWalker" taxonset="@Dromomeron romeri1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Eudimorphodon ranzii1" spec="TipDatesRandomWalker" taxonset="@Eudimorphodon ranzii1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Faxinalipterus minimus1" spec="TipDatesRandomWalker" taxonset="@Faxinalipterus minimus1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Ixalerpeton polesinensis1" spec="TipDatesRandomWalker" taxonset="@Ixalerpeton polesinensis1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Kongonaphon kely1" spec="TipDatesRandomWalker" taxonset="@Kongonaphon kely1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Lagerpeton chanarensis1" spec="TipDatesRandomWalker" taxonset="@Lagerpeton chanarensis1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Maehary bonapartei1" spec="TipDatesRandomWalker" taxonset="@Maehary bonapartei1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.PVSJ 8831" spec="TipDatesRandomWalker" taxonset="@PVSJ 8831" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Pachagnathus benitoi1" spec="TipDatesRandomWalker" taxonset="@Pachagnathus benitoi1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Peteinosaurus zambellii1" spec="TipDatesRandomWalker" taxonset="@Peteinosaurus zambellii1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Preondactylus buffarinii1" spec="TipDatesRandomWalker" taxonset="@Preondactylus buffarinii1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Raeticodactylus filisurensis1" spec="TipDatesRandomWalker" taxonset="@Raeticodactylus filisurensis1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Scleromochlus taylori1" spec="TipDatesRandomWalker" taxonset="@Scleromochlus taylori1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Seazzadactylus venieri1" spec="TipDatesRandomWalker" taxonset="@Seazzadactylus venieri1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
+    <operator id="tipDatesSampler.Yelaphomte praderioi1" spec="TipDatesRandomWalker" taxonset="@Yelaphomte praderioi1" tree="@Tree.t:Pterosaur_25" weight="1.0" windowSize="1.0"/>
+
     <logger id="tracelog" spec="Logger" fileName="Pterosaur_25.log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
         <log idref="posterior"/>
         <log idref="likelihood"/>
@@ -1033,6 +1225,30 @@ name="alignment">
         </log>
         <log idref="birthRateAmongDemesSMCanonical.t:Pterosaur_25"/>
         <log idref="typeFrequencies.t:Pterosaur_25"/>
+        <log idref="Allkaruen koi1.prior"/>
+        <log idref="Austriadactylus cristatus1.prior"/>
+        <log idref="Austriadraco dallavecchiai1.prior"/>
+        <log idref="Cacibupteryx caribensis1.prior"/>
+        <log idref="Caelestiventus hanseni1.prior"/>
+        <log idref="Carniadactylus rosenfeldi1.prior"/>
+        <log idref="Dimorphodon macronyx1.prior"/>
+        <log idref="Dromomeron gigas1.prior"/>
+        <log idref="Dromomeron gregorii1.prior"/>
+        <log idref="Dromomeron romeri1.prior"/>
+        <log idref="Eudimorphodon ranzii1.prior"/>
+        <log idref="Faxinalipterus minimus1.prior"/>
+        <log idref="Ixalerpeton polesinensis1.prior"/>
+        <log idref="Kongonaphon kely1.prior"/>
+        <log idref="Lagerpeton chanarensis1.prior"/>
+        <log idref="Maehary bonapartei1.prior"/>
+        <log idref="PVSJ 8831.prior"/>
+        <log idref="Pachagnathus benitoi1.prior"/>
+        <log idref="Peteinosaurus zambellii1.prior"/>
+        <log idref="Preondactylus buffarinii1.prior"/>
+        <log idref="Raeticodactylus filisurensis1.prior"/>
+        <log idref="Scleromochlus taylori1.prior"/>
+        <log idref="Seazzadactylus venieri1.prior"/>
+        <log idref="Yelaphomte praderioi1.prior"/>
     </logger>
 
     <logger id="screenlog" spec="Logger" logEvery="1000">
