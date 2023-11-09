@@ -1,0 +1,33 @@
+<itsabeastystatewerein version='2.0' sample='100000'>
+<statenode id='Tree.t:PterosaurSmall'>(((7:7.007375044372019,((((20:6.127794364453624,2:7.677794364453607)25:0.7722056355463813,3:0.0)31:2.787596800208048,((1:0.0,14:6.300000000000011)28:2.2444122802600965,19:1.4944122802600965)30:1.1431845199479458)26:1.6335481028571213,17:9.42114490306517)22:2.5862301413068494)33:0.8182498916450953,((0:2.9357693930731728,15:2.3357693930731784)27:2.042141628011704,16:4.827911021084871)29:3.4477139149322316)32:19.191896690348052,(((11:3.968385776755497,((((13:0.0,((4:6.499408751082189,6:7.0994087510821835)24:10.54101717333706,5:1.8904259244192438)40:1.9595740755807505)35:2.2084042931108563,12:6.138404293110863)37:5.932351811313648,9:4.260756104424509)34:0.7592438955755014,10:0.0)39:0.7183857767554969)38:0.1818132084467159,18:8.670198985202223)21:2.2545198734596106,8:15.984718858661836)23:2.862802767703343)36:0.0</statenode>
+<statenode id='clockRate.c:PterosaurSmall'>clockRate.c:PterosaurSmall[1 1] (0.0,Infinity): 0.00791642041458288 </statenode>
+<statenode id='birthRateCanonical.t:PterosaurSmall'>birthRateCanonical.t:PterosaurSmall[1 1] (-Infinity,Infinity): 0.398898648379529 </statenode>
+<statenode id='deathRateCanonical.t:PterosaurSmall'>deathRateCanonical.t:PterosaurSmall[1 1] (-Infinity,Infinity): 0.33628594354326513 </statenode>
+<statenode id='samplingRateCanonical.t:PterosaurSmall'>samplingRateCanonical.t:PterosaurSmall[1 1] (-Infinity,Infinity): 0.022496553461537123 </statenode>
+<statenode id='originBDMMPrime.t:PterosaurSmall'>originBDMMPrime.t:PterosaurSmall[1 1] (-Infinity,Infinity): 38.28343805803671 </statenode>
+<statenode id='typeFrequencies.t:PterosaurSmall'>typeFrequencies.t:PterosaurSmall[1 1] (0.0,1.0): 1.0 </statenode>
+<statenode id='mutationRate.s:PterosaurSmall'>mutationRate.s:PterosaurSmall[1 1] (0.0,Infinity): 1.0 </statenode>
+<statenode id='gammaShape.s:PterosaurSmall'>gammaShape.s:PterosaurSmall[1 1] (0.001,1000.0): 1.0007548742571646 </statenode>
+<statenode id='proportionInvariant.s:PterosaurSmall'>proportionInvariant.s:PterosaurSmall[1 1] (0.0,1.0): 0.0 </statenode>
+</itsabeastystatewerein>
+<!--
+{"operators":[
+{"id":"StrictClockRateScaler.c:PterosaurSmall","p":0.6428177400554876,"accept":1021,"reject":2550,"acceptFC":567,"rejectFC":1802,"rejectIv":0,"rejectOp":0},
+{"id":"strictClockUpDownOperator.c:PterosaurSmall","p":0.7354387044727543,"accept":192,"reject":3315,"acceptFC":135,"rejectFC":2155,"rejectIv":2835,"rejectOp":2343},
+{"id":"birthRateCanonicalScaler.t:PterosaurSmall","p":0.7863414872988972,"accept":1039,"reject":2564,"acceptFC":724,"rejectFC":1673,"rejectIv":0,"rejectOp":0},
+{"id":"deathRateCanonicalScaler.t:PterosaurSmall","p":0.7396278798867891,"accept":1053,"reject":2487,"acceptFC":761,"rejectFC":1631,"rejectIv":0,"rejectOp":0},
+{"id":"samplingRateCanonicalScaler.t:PterosaurSmall","p":0.3039722353207732,"accept":1727,"reject":1763,"acceptFC":775,"rejectFC":1518,"rejectIv":0,"rejectOp":0},
+{"id":"BDMMPrimeLeafToSA.t:PterosaurSmall","p":"NaN","accept":1052,"reject":10673,"acceptFC":682,"rejectFC":7093,"rejectIv":6639,"rejectOp":6639},
+{"id":"BDMMPrimeSAWilsonBalding.t:PterosaurSmall","p":"NaN","accept":766,"reject":10886,"acceptFC":504,"rejectFC":7238,"rejectIv":321,"rejectOp":256},
+{"id":"BDMMPrimeSAWide.t:PterosaurSmall","p":"NaN","accept":204,"reject":11623,"acceptFC":123,"rejectFC":7661,"rejectIv":9493,"rejectOp":9493},
+{"id":"BDMMPrimeSANarrow.t:PterosaurSmall","p":"NaN","accept":2041,"reject":9586,"acceptFC":1389,"rejectFC":6255,"rejectIv":5154,"rejectOp":5154},
+{"id":"BDMMPrimeSAUniformOperator.t:PterosaurSmall","p":"NaN","accept":13839,"reject":9616,"acceptFC":9222,"rejectFC":6263,"rejectIv":0,"rejectOp":0},
+{"id":"BDMMPrimeSATreeRootScaler.t:PterosaurSmall","p":0.8106067825680011,"accept":375,"reject":825,"acceptFC":221,"rejectFC":569,"rejectIv":510,"rejectOp":336},
+{"id":"BDMMPrimeSATreeScaler.t:PterosaurSmall","p":0.9044834927306855,"accept":702,"reject":2774,"acceptFC":406,"rejectFC":1921,"rejectIv":1835,"rejectOp":1604},
+{"id":"originBDMMPrimeScaler.t:PterosaurSmall","p":0.6868101908595257,"accept":892,"reject":2660,"acceptFC":577,"rejectFC":1782,"rejectIv":992,"rejectOp":0},
+{"id":"typeFrequenciesExchanger.t:PterosaurSmall","p":11.987380004850067,"accept":1201,"reject":0,"acceptFC":788,"rejectFC":0,"rejectIv":0,"rejectOp":0},
+{"id":"FixMeanMutationRatesOperator","p":152.48029134232388,"accept":2340,"reject":0,"acceptFC":1572,"rejectFC":0,"rejectIv":0,"rejectOp":0},
+{"id":"gammaShapeScaler.s:PterosaurSmall","p":0.32828831466723907,"accept":52,"reject":62,"acceptFC":25,"rejectFC":39,"rejectIv":0,"rejectOp":0},
+{"id":"proportionInvariantScaler.s:PterosaurSmall","p":0.22444061691735118,"accept":0,"reject":121,"acceptFC":0,"rejectFC":71,"rejectIv":121,"rejectOp":121}
+]}
+-->

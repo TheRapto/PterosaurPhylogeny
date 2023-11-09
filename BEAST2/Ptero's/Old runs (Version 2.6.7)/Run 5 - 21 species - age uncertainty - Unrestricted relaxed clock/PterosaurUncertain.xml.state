@@ -1,0 +1,63 @@
+<itsabeastystatewerein version='2.0' sample='2669999'>
+<statenode id='Tree.t:PterosaurSmall'>(10:1.913908108605412,((((((((0:1.79918141961633,15:1.0116411873165774)28:0.9501099528524151,16:3.850334635534967)25:2.3661697899173824,((2:10.243611530693752,14:3.8109589876907446)32:8.045455259808854,7:1.6578957416377946)30:2.811795428483034)31:3.3594713884409835,(3:3.6796068224078446,17:4.951125304066416)21:5.81008088895479)24:0.9309163920045229,((19:1.8546317736817919,1:3.6012247163552384)27:0.1323201778470917,20:8.076123909628507)29:6.462276124793693)26:10.794113726605545,18:6.669304212075605)38:1.4723710508870482,(11:1.511902294183919,((8:5.35892259572023,12:5.640180099118545)34:4.4826335072333805,(((4:4.5323676707526275,6:1.8774887918014826)35:5.179471431360607,5:1.7611298971685478)23:7.938568509078557,13:1.6894113222897396)39:3.3899329427344433)37:2.2050348090760252)36:1.2959072412431638)33:0.11813368192955664,9:5.762669545789677)40:0.27468796332097867)22:0.0</statenode>
+<statenode id='originBDMMPrime.t:PterosaurSmall'>originBDMMPrime.t:PterosaurSmall[1 1] (-Infinity,Infinity): 40.500436466851276 </statenode>
+<statenode id='mutationRate.s:PterosaurSmall'>mutationRate.s:PterosaurSmall[1 1] (0.0,Infinity): 1.0 </statenode>
+<statenode id='gammaShape.s:PterosaurSmall'>gammaShape.s:PterosaurSmall[1 1] (0.001,1000.0): 1.0992394777876702 </statenode>
+<statenode id='proportionInvariant.s:PterosaurSmall'>proportionInvariant.s:PterosaurSmall[1 1] (0.0,1.0): 0.0 </statenode>
+<statenode id='ucedMean.c:PterosaurSmall'>ucedMean.c:PterosaurSmall[1 1] (-Infinity,Infinity): 0.009530484458921292 </statenode>
+<statenode id='expRateCategories.c:PterosaurSmall'>expRateCategories.c:PterosaurSmall[40 1] (0,39): 10 6 21 16 9 27 24 33 30 17 2 29 5 15 16 30 30 23 18 3 7 15 7 4 10 25 36 17 17 24 19 13 20 16 33 32 34 33 35 17 </statenode>
+<statenode id='birthRateCanonical.t:PterosaurSmall'>birthRateCanonical.t:PterosaurSmall[1 1] (-Infinity,Infinity): 1.494194907825558 </statenode>
+<statenode id='deathRateCanonical.t:PterosaurSmall'>deathRateCanonical.t:PterosaurSmall[1 1] (-Infinity,Infinity): 2.628450478086952 </statenode>
+<statenode id='samplingRateCanonical.t:PterosaurSmall'>samplingRateCanonical.t:PterosaurSmall[1 1] (-Infinity,Infinity): 0.0058966646834549725 </statenode>
+<statenode id='removalProbCanonical.t:PterosaurSmall'>removalProbCanonical.t:PterosaurSmall[1 1] (0.0,1.0): 0.0 </statenode>
+<statenode id='typeFrequencies.t:PterosaurSmall'>typeFrequencies.t:PterosaurSmall[15 1] (0.0,1.0): 0.020087728625874254 0.01563607757725976 0.025810639372321892 0.2784517999713838 0.05125753908675786 0.19975221736756746 0.005551263537340995 0.0345431020511925 0.02731075140083794 0.06657126231900662 0.028465835645314776 0.06644621656654814 0.08171264961154169 0.05618162202931055 0.04222129483774176 </statenode>
+<statenode id='birthRateAmongDemesCanonical.t:PterosaurSmall'>birthRateAmongDemesCanonical.t:PterosaurSmall[1 1] (-Infinity,Infinity): 0.08466170261664858 </statenode>
+<statenode id='migrationRateCanonical.t:PterosaurSmall'>migrationRateCanonical.t:PterosaurSmall[1 1] (-Infinity,Infinity): 2.3792768920815663 </statenode>
+</itsabeastystatewerein>
+<!--
+{"operators":[
+{"id":"BDMMPrimeLeafToSA.t:PterosaurSmall","p":"NaN","accept":6877,"reject":250498,"acceptFC":6858,"rejectFC":247317,"rejectIv":140326,"rejectOp":140316},
+{"id":"BDMMPrimeSAWilsonBalding.t:PterosaurSmall","p":"NaN","accept":12041,"reject":245930,"acceptFC":11949,"rejectFC":242949,"rejectIv":8173,"rejectOp":6135},
+{"id":"BDMMPrimeSAWide.t:PterosaurSmall","p":"NaN","accept":2915,"reject":255041,"acceptFC":2891,"rejectFC":251940,"rejectIv":210992,"rejectOp":210992},
+{"id":"BDMMPrimeSANarrow.t:PterosaurSmall","p":"NaN","accept":41134,"reject":216918,"acceptFC":40763,"rejectFC":214179,"rejectIv":116515,"rejectOp":116515},
+{"id":"BDMMPrimeSAUniformOperator.t:PterosaurSmall","p":"NaN","accept":266102,"reject":249898,"acceptFC":263061,"rejectFC":246575,"rejectIv":0,"rejectOp":0},
+{"id":"BDMMPrimeSATreeRootScaler.t:PterosaurSmall","p":0.8394732725068436,"accept":4310,"reject":21506,"acceptFC":4229,"rejectFC":21292,"rejectIv":15923,"rejectOp":9598},
+{"id":"BDMMPrimeSATreeScaler.t:PterosaurSmall","p":0.9116756692374776,"accept":8180,"reject":68604,"acceptFC":8098,"rejectFC":67773,"rejectIv":43586,"rejectOp":33917},
+{"id":"originBDMMPrimeScaler.t:PterosaurSmall","p":0.7629272665857805,"accept":22732,"reject":54780,"acceptFC":22576,"rejectFC":54043,"rejectIv":22275,"rejectOp":0},
+{"id":"FixMeanMutationRatesOperator","p":2196.910425446335,"accept":51801,"reject":0,"acceptFC":51218,"rejectFC":0,"rejectIv":0,"rejectOp":0},
+{"id":"gammaShapeScaler.s:PterosaurSmall","p":0.28530526143020707,"accept":766,"reject":1729,"acceptFC":756,"rejectFC":1714,"rejectIv":0,"rejectOp":0},
+{"id":"proportionInvariantScaler.s:PterosaurSmall","p":0.14197729413452023,"accept":0,"reject":2607,"acceptFC":0,"rejectFC":2576,"rejectIv":2607,"rejectOp":2607},
+{"id":"tipDatesSampler.Austriadactylus cristatus2","p":1,"accept":17220,"reject":8513,"acceptFC":17064,"rejectFC":8344,"rejectIv":5985,"rejectOp":1657},
+{"id":"tipDatesSampler.Austriadraco dallavecchiai1","p":1,"accept":16320,"reject":9483,"acceptFC":16172,"rejectFC":9321,"rejectIv":6778,"rejectOp":1641},
+{"id":"tipDatesSampler.Carniadactylus rosenfeldi1","p":1,"accept":15923,"reject":9787,"acceptFC":15793,"rejectFC":9597,"rejectIv":6605,"rejectOp":2092},
+{"id":"tipDatesSampler.Dromomeron gigas1","p":1,"accept":21076,"reject":4539,"acceptFC":20850,"rejectFC":4439,"rejectIv":2566,"rejectOp":605},
+{"id":"tipDatesSampler.Dromomeron gregorii1","p":1,"accept":22179,"reject":3757,"acceptFC":21957,"rejectFC":3674,"rejectIv":1002,"rejectOp":229},
+{"id":"tipDatesSampler.Eudimorphodon ranzii1","p":1,"accept":16234,"reject":9942,"acceptFC":16101,"rejectFC":9794,"rejectIv":7048,"rejectOp":54},
+{"id":"tipDatesSampler.Dromomeron romeri1","p":1,"accept":21046,"reject":4811,"acceptFC":20843,"rejectFC":4723,"rejectIv":2062,"rejectOp":1934},
+{"id":"tipDatesSampler.Faxinalipterus minimus1","p":1,"accept":8845,"reject":16925,"acceptFC":8740,"rejectFC":16706,"rejectIv":16467,"rejectOp":1417},
+{"id":"tipDatesSampler.Ixalerpeton polesinensis1","p":1,"accept":14397,"reject":11325,"acceptFC":14232,"rejectFC":11179,"rejectIv":9232,"rejectOp":816},
+{"id":"tipDatesSampler.Kongonaphon kely1","p":1,"accept":14009,"reject":11878,"acceptFC":13907,"rejectFC":11677,"rejectIv":9517,"rejectOp":5195},
+{"id":"tipDatesSampler.Lagerpeton chanarensis1","p":1,"accept":17664,"reject":8234,"acceptFC":17505,"rejectFC":8105,"rejectIv":4174,"rejectOp":353},
+{"id":"tipDatesSampler.Maehary bonapartei1","p":1,"accept":8607,"reject":17043,"acceptFC":8514,"rejectFC":16832,"rejectIv":16557,"rejectOp":1985},
+{"id":"tipDatesSampler.PVSJ 8831","p":1,"accept":19239,"reject":6651,"acceptFC":19060,"rejectFC":6534,"rejectIv":4904,"rejectOp":2493},
+{"id":"tipDatesSampler.Pachagnathus benitoi1","p":1,"accept":22196,"reject":3522,"acceptFC":21957,"rejectFC":3447,"rejectIv":2274,"rejectOp":918},
+{"id":"tipDatesSampler.Peteinosaurus zambellii1","p":1,"accept":13808,"reject":11784,"acceptFC":13693,"rejectFC":11578,"rejectIv":8221,"rejectOp":2094},
+{"id":"tipDatesSampler.Preondactylus buffarinii1","p":1,"accept":15690,"reject":9987,"acceptFC":15564,"rejectFC":9846,"rejectIv":6005,"rejectOp":53},
+{"id":"tipDatesSampler.Raeticodactylus filisurensis1","p":1,"accept":20708,"reject":4983,"acceptFC":20505,"rejectFC":4861,"rejectIv":2201,"rejectOp":50},
+{"id":"tipDatesSampler.Scleromochlus taylori1","p":1,"accept":19813,"reject":5976,"acceptFC":19590,"rejectFC":5860,"rejectIv":1730,"rejectOp":370},
+{"id":"tipDatesSampler.Seazzadactylus venieri1","p":1,"accept":16294,"reject":9392,"acceptFC":16141,"rejectFC":9222,"rejectIv":6335,"rejectOp":3209},
+{"id":"tipDatesSampler.Yelaphomte praderioi1","p":1,"accept":20725,"reject":5138,"acceptFC":20515,"rejectFC":5030,"rejectIv":2877,"rejectOp":813},
+{"id":"ucedMeanScaler.c:PterosaurSmall","p":0.5914748526911723,"accept":5127,"reject":20569,"acceptFC":5065,"rejectFC":20335,"rejectIv":0,"rejectOp":0},
+{"id":"ExpCategoriesRandomWalk.c:PterosaurSmall","p":"NaN","accept":158951,"reject":99486,"acceptFC":157057,"rejectFC":98271,"rejectIv":89062,"rejectOp":89062},
+{"id":"ExpCategoriesSwapOperator.c:PterosaurSmall","p":"NaN","accept":108144,"reject":149961,"acceptFC":106939,"rejectFC":147995,"rejectIv":0,"rejectOp":0},
+{"id":"ExpCategoriesUniform.c:PterosaurSmall","p":"NaN","accept":141955,"reject":116502,"acceptFC":140302,"rejectFC":115035,"rejectIv":0,"rejectOp":0},
+{"id":"relaxedUpDownOperatorExp.c:PterosaurSmall","p":0.4320863764573629,"accept":792,"reject":76372,"acceptFC":784,"rejectFC":75435,"rejectIv":72735,"rejectOp":55319},
+{"id":"birthRateCanonicalScaler.t:PterosaurSmall","p":0.49572269172267,"accept":25680,"reject":52056,"acceptFC":25237,"rejectFC":51507,"rejectIv":0,"rejectOp":0},
+{"id":"deathRateCanonicalScaler.t:PterosaurSmall","p":0.8279822365464593,"accept":30927,"reject":46802,"acceptFC":30843,"rejectFC":45924,"rejectIv":0,"rejectOp":0},
+{"id":"samplingRateCanonicalScaler.t:PterosaurSmall","p":0.2625490873434661,"accept":22531,"reject":54960,"acceptFC":21810,"rejectFC":54753,"rejectIv":0,"rejectOp":0},
+{"id":"removalProbCanonicalScaler.t:PterosaurSmall","p":0.27503853642973236,"accept":0,"reject":77628,"acceptFC":0,"rejectFC":76735,"rejectIv":77628,"rejectOp":77628},
+{"id":"typeFrequenciesExchanger.t:PterosaurSmall","p":2.1383619327079857,"accept":1217,"reject":24726,"acceptFC":1031,"rejectFC":24560,"rejectIv":24726,"rejectOp":24726},
+{"id":"birthRateAmongDemesCanonicalScaler.t:PterosaurSmall","p":0.7694796396691232,"accept":40097,"reject":37570,"acceptFC":40018,"rejectFC":36689,"rejectIv":0,"rejectOp":0},
+{"id":"migrationRateCanonicalScaler.t:PterosaurSmall","p":0.16247162774599622,"accept":23132,"reject":54784,"acceptFC":22334,"rejectFC":54649,"rejectIv":0,"rejectOp":0}
+]}
+-->
