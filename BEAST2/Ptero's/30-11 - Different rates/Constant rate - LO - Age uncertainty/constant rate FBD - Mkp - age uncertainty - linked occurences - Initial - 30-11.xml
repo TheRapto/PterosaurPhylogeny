@@ -2340,6 +2340,7 @@ filter="221">
 
         <operator id="tipDatesSampler.Eudimorphodon ranzii-2" spec="sa.evolution.operators.SampledNodeDateRandomWalker" taxonset="@Eudimorphodon ranzii-2" tree="@Tree.t:New Pterosaur Matrix" weight="1.0" windowSize="1.0"/>
 
+        <operator id="tipDatesSampler.Rhamphorhynchus muensteri-2" spec="sa.evolution.operators.SampledNodeDateRandomWalker" taxonset="@Rhamphorhynchus muensteri-2" tree="@Tree.t:New Pterosaur Matrix" weight="1.0" windowSize="1.0"/>
 
 # New code for age uncertainty end.
             
@@ -2469,6 +2470,7 @@ filter="221">
 
             <log idref="Eudimorphodon ranzii-2.prior"/>
 
+            <log idref="Rhamphorhynchus muensteri-2.prior"/>
 
 #Code for age uncertainty end.
                     
