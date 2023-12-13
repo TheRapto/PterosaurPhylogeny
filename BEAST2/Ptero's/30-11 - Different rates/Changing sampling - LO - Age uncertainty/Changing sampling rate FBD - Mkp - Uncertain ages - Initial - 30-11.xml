@@ -1351,9 +1351,9 @@ dataType="standard">
 
     
 
-    <run id="mcmc" spec="MCMC" chainLength="10000000">
+    <run id="mcmc" spec="MCMC" chainLength="20000000">
             
-        <state id="state" spec="State" storeEvery="5000">
+        <state id="state" spec="State" storeEvery="10000">
                     
             <tree id="Tree.t:New Pterosaur Matrix" spec="beast.base.evolution.tree.Tree" name="stateNode">
                             
@@ -1850,8 +1850,6 @@ Matrix"/>
                 <distribution id="Rhamphor multi.prior" spec="beast.base.evolution.tree.MRCAPrior" monophyletic="true" tree="@Tree.t:New Pterosaur Matrix">
                                     
                     <taxonset id="Rhamphor multi" spec="TaxonSet">
-                                            
-                        <taxon idref="Lagerpeton_chanarensis"/>
                                             
                         <taxon idref="Rhamphorhynchus_muensteri"/>
                                             
