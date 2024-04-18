@@ -1,9 +1,0 @@
-#####Excatly the same as the strict clock from exercise 5
-
-####Strict clock model#### 
-#rate is constant over time and across all branches
-
-#As rate is unknown, a exponential prior is used.
-branch_rates ~ dnExponential(10.0)
-
-moves.append( mvScale(branch_rates, lambda = 0.5, tune = true, weight = 3.0) )
