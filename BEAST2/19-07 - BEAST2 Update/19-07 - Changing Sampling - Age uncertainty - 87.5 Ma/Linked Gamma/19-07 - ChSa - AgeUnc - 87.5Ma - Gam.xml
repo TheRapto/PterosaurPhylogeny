@@ -1397,14 +1397,26 @@ Matrix"/>
                     
             <stateNode id="rateCategories.c:New Pterosaur Matrix" spec="parameter.IntegerParameter" dimension="62">1</stateNode>
                     
-            <parameter id="birthRateCanonical.t:New Pterosaur Matrix" spec="parameter.RealParameter" dimension="5" lower="0.0" name="stateNode">1.0 1.0 1.0 1.0 1.0</parameter>
+            <parameter id="birthRateCanonical.t:New Pterosaur Matrix" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
                     
-            <parameter id="deathRateCanonical.t:New Pterosaur Matrix" spec="parameter.RealParameter" dimension="5" lower="0.0" name="stateNode">1.0 1.0 1.0 1.0 1.0</parameter>
+            <parameter id="deathRateCanonical.t:New Pterosaur Matrix" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
                     
             <parameter id="samplingRateCanonical.t:New Pterosaur Matrix" spec="parameter.RealParameter" dimension="5" lower="0.0" name="stateNode">0.1 0.1 0.1 0.1 0.1</parameter>
                     
             <parameter id="originBDMMPrime.t:New Pterosaur Matrix" spec="parameter.RealParameter" name="stateNode">100.0</parameter>
-                
+<!--New from here-->                  
+            <parameter id="gammaShape.s:New Pterosaur Matrix2" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+                    
+            <parameter id="gammaShape.s:New Pterosaur Matrix3" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+                    
+            <parameter id="gammaShape.s:New Pterosaur Matrix4" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+                    
+            <parameter id="gammaShape.s:New Pterosaur Matrix5" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+                    
+            <parameter id="gammaShape.s:New Pterosaur Matrix6" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+                    
+            <parameter id="gammaShape.s:New Pterosaur Matrix8" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+<!--Untill here-->                  
         </state>
             
         <init id="RandomTree.t:New Pterosaur Matrix" spec="RandomTree" estimate="false" initial="@Tree.t:New Pterosaur Matrix" taxa="@New Pterosaur Matrix2">
@@ -1427,8 +1439,6 @@ Matrix"/>
                                             
                         <birthRate id="birthRateSPCanonical.t:New Pterosaur Matrix" spec="bdmmprime.parameterization.SkylineVectorParameter" processLength="@originBDMMPrime.t:New Pterosaur Matrix" skylineValues="@birthRateCanonical.t:New Pterosaur Matrix" timesAreAges="true">
                                                     
-                            <parameter id="birthRateChangeTimesCanonical.t:New Pterosaur Matrix" spec="parameter.RealParameter" dimension="4" estimate="false" lower="0.0" name="changeTimes">58.26 66.41 84.2 93.9</parameter>
-                                                    
                             <typeSet id="typeSetBDMMPrime.t:New Pterosaur Matrix" spec="bdmmprime.parameterization.TypeSet">
                                                             
                                 <typeTraitSet id="typeTraitSet.t:New Pterosaur Matrix" spec="bdmmprime.util.InitializedTraitSet" traitname="type" value="Allkaruen_koi=NOT_SET,Austriadactylus_cristatus=NOT_SET,Austriadactylus_cristatus-2=NOT_SET,Austriadraco_dallavecchiai=NOT_SET,Cacibupteryx_caribensis=NOT_SET,Caelestiventus_hanseni=NOT_SET,Carniadactylus_rosenfeldi=NOT_SET,Dimorphodon_macronyx=NOT_SET,Dimorphodon_macronyx-2=NOT_SET,Dromomeron_gigas=NOT_SET,Dromomeron_gregorii=NOT_SET,Dromomeron_gregorii-2=NOT_SET,Dromomeron_romeri=NOT_SET,Dromomeron_romeri-2=NOT_SET,Dromomeron_romeri-3=NOT_SET,Eudimorphodon_ranzii=NOT_SET,Eudimorphodon_ranzii-2=NOT_SET,Faxinalipterus_minimus=NOT_SET,Ixalerpeton_polesinensis=NOT_SET,Kongonaphon_kely=NOT_SET,Lagerpeton_chanarensis=NOT_SET,PVSJ_883=NOT_SET,Pachagnathus_benitoi=NOT_SET,Peteinosaurus_zambellii=NOT_SET,Preondactylus_buffarinii=NOT_SET,Raeticodactylus_filisurensis=NOT_SET,Rhamphorhynchus_muensteri=NOT_SET,Rhamphorhynchus_muensteri-2=NOT_SET,Scleromochlus_taylori_new=NOT_SET,Seazzadactylus_venieri=NOT_SET,Venetoraptor_gassenae=NOT_SET,Yelaphomte_praderioi=NOT_SET">
@@ -1441,11 +1451,7 @@ Matrix"/>
                                                 
                         </birthRate>
                                             
-                        <deathRate id="deathRateSPCanonical.t:New Pterosaur Matrix" spec="bdmmprime.parameterization.SkylineVectorParameter" processLength="@originBDMMPrime.t:New Pterosaur Matrix" skylineValues="@deathRateCanonical.t:New Pterosaur Matrix" timesAreAges="true" typeSet="@typeSetBDMMPrime.t:New Pterosaur Matrix">
-                                                    
-                            <parameter id="deathRateChangeTimesCanonical.t:New Pterosaur Matrix" spec="parameter.RealParameter" dimension="4" estimate="false" lower="0.0" name="changeTimes">58.26 66.41 84.2 93.9</parameter>
-                                                
-                        </deathRate>
+                        <deathRate id="deathRateSPCanonical.t:New Pterosaur Matrix" spec="bdmmprime.parameterization.SkylineVectorParameter" processLength="@originBDMMPrime.t:New Pterosaur Matrix" skylineValues="@deathRateCanonical.t:New Pterosaur Matrix" timesAreAges="true" typeSet="@typeSetBDMMPrime.t:New Pterosaur Matrix"/>
                                             
                         <samplingRate id="samplingRateSPCanonical.t:New Pterosaur Matrix" spec="bdmmprime.parameterization.SkylineVectorParameter" processLength="@originBDMMPrime.t:New Pterosaur Matrix" skylineValues="@samplingRateCanonical.t:New Pterosaur Matrix" timesAreAges="true" typeSet="@typeSetBDMMPrime.t:New Pterosaur Matrix">
                                                     
@@ -1502,7 +1508,67 @@ Matrix"/>
                     </Exponential>
                                 
                 </distribution>
+<!--New from here-->                            
+                <prior id="GammaShapePrior.s:New Pterosaur Matrix2" name="distribution" x="@gammaShape.s:New Pterosaur Matrix2">
+                                    
+                    <Exponential id="Exponential.0" name="distr">
+                                            
+                        <mean id="Function$Constant.0" spec="Function$Constant" value="1.0"/>
+                                        
+                    </Exponential>
+                                
+                </prior>
                             
+                <prior id="GammaShapePrior.s:New Pterosaur Matrix3" name="distribution" x="@gammaShape.s:New Pterosaur Matrix3">
+                                    
+                    <Exponential id="Exponential.1" name="distr">
+                                            
+                        <mean id="Function$Constant.1" spec="Function$Constant" value="1.0"/>
+                                        
+                    </Exponential>
+                                
+                </prior>
+                            
+                <prior id="GammaShapePrior.s:New Pterosaur Matrix4" name="distribution" x="@gammaShape.s:New Pterosaur Matrix4">
+                                    
+                    <Exponential id="Exponential.2" name="distr">
+                                            
+                        <mean id="Function$Constant.2" spec="Function$Constant" value="1.0"/>
+                                        
+                    </Exponential>
+                                
+                </prior>
+                            
+                <prior id="GammaShapePrior.s:New Pterosaur Matrix5" name="distribution" x="@gammaShape.s:New Pterosaur Matrix5">
+                                    
+                    <Exponential id="Exponential.3" name="distr">
+                                            
+                        <mean id="Function$Constant.3" spec="Function$Constant" value="1.0"/>
+                                        
+                    </Exponential>
+                                
+                </prior>
+                            
+                <prior id="GammaShapePrior.s:New Pterosaur Matrix6" name="distribution" x="@gammaShape.s:New Pterosaur Matrix6">
+                                    
+                    <Exponential id="Exponential.4" name="distr">
+                                            
+                        <mean id="Function$Constant.4" spec="Function$Constant" value="1.0"/>
+                                        
+                    </Exponential>
+                                
+                </prior>
+                            
+                <prior id="GammaShapePrior.s:New Pterosaur Matrix8" name="distribution" x="@gammaShape.s:New Pterosaur Matrix8">
+                                    
+                    <Exponential id="Exponential.5" name="distr">
+                                            
+                        <mean id="Function$Constant.5" spec="Function$Constant" value="1.0"/>
+                                        
+                    </Exponential>
+                                
+                </prior>
+<!--Untill here-->                              
                 <prior id="originBDMMPrimePrior.t:New Pterosaur Matrix" name="distribution" x="@originBDMMPrime.t:New Pterosaur Matrix">
                                     
                     <Uniform id="Uniform.2" lower="87.5" name="distr" upper="113.38"/>
@@ -2004,9 +2070,9 @@ Matrix"/>
                 <distribution id="morphTreeLikelihood.New Pterosaur Matrix2" spec="TreeLikelihood" data="@New Pterosaur Matrix2" tree="@Tree.t:New Pterosaur Matrix">
                                     
                     <siteModel id="SiteModel.s:New Pterosaur Matrix2" spec="SiteModel" mutationRate="@mutationRate.s:New Pterosaur Matrix2">
-                                            
-                        <parameter id="gammaShape.s:New Pterosaur Matrix2" spec="parameter.RealParameter" estimate="false" name="shape">1.0</parameter>
-                                            
+ <!--Removed gammaShape here-->                                           
+ 
+  <!--Untill here-->                                            
                         <substModel id="LewisMK.s:New Pterosaur Matrix2" spec="morphmodels.evolution.substitutionmodel.LewisMK" datatype="@morphDataType.New Pterosaur Matrix2"/>
                                         
                     </siteModel>
@@ -2042,10 +2108,9 @@ filter="2-5,9-10,13,15,20,25,29,34,40,45,52,54,63,66-68,71,82,84,86-87,89,93,96,
                                         
                     </data>
                                     
-                    <siteModel id="SiteModel.s:New Pterosaur Matrix3" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:New Pterosaur Matrix2" mutationRate="@mutationRate.s:New Pterosaur Matrix3">
-                                            
-                        <parameter id="gammaShape.s:New Pterosaur Matrix3" spec="parameter.RealParameter" estimate="false" name="shape">1.0</parameter>
-                                            
+<!--Replaced from here-->                                    
+                    <siteModel id="SiteModel.s:New Pterosaur Matrix3" spec="SiteModel" gammaCategoryCount="4" mutationRate="@mutationRate.s:New Pterosaur Matrix3" shape="@gammaShape.s:New Pterosaur Matrix2">
+<!--Untill here-->                                            
                         <substModel id="LewisMK.s:New Pterosaur Matrix3" spec="morphmodels.evolution.substitutionmodel.LewisMK" datatype="@morphDataType.New Pterosaur Matrix3"/>
                                         
                     </siteModel>
@@ -2070,11 +2135,9 @@ filter="1,12,14,23,32,38,42,56,61,85,103,145,149,180,186,204,211,228,230,248,250
                         <userDataType id="morphDataType.New Pterosaur Matrix4" spec="beast.base.evolution.datatype.StandardData" ambiguities="12 01 012 23 02 24 123 13 234 04 0124 01234" nrOfStates="4"/>
                                         
                     </data>
-                                    
-                    <siteModel id="SiteModel.s:New Pterosaur Matrix4" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:New Pterosaur Matrix2" mutationRate="@mutationRate.s:New Pterosaur Matrix4">
-                                            
-                        <parameter id="gammaShape.s:New Pterosaur Matrix4" spec="parameter.RealParameter" estimate="false" name="shape">1.0</parameter>
-                                            
+<!--Replaced from here-->                                    
+                    <siteModel id="SiteModel.s:New Pterosaur Matrix4" spec="SiteModel" gammaCategoryCount="4" mutationRate="@mutationRate.s:New Pterosaur Matrix4" shape="@gammaShape.s:New Pterosaur Matrix2">
+<!--Untill here-->                   
                         <substModel id="LewisMK.s:New Pterosaur Matrix4" spec="morphmodels.evolution.substitutionmodel.LewisMK" datatype="@morphDataType.New Pterosaur Matrix4"/>
                                         
                     </siteModel>
@@ -2099,11 +2162,9 @@ filter="19,123,229,287,330-331,489,581,609,610-614">
                         <userDataType id="morphDataType.New Pterosaur Matrix5" spec="beast.base.evolution.datatype.StandardData" ambiguities="12 01 012 23 02 24 123 13 234 04 0124 01234" nrOfStates="5"/>
                                         
                     </data>
-                                    
-                    <siteModel id="SiteModel.s:New Pterosaur Matrix5" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:New Pterosaur Matrix2" mutationRate="@mutationRate.s:New Pterosaur Matrix5">
-                                            
-                        <parameter id="gammaShape.s:New Pterosaur Matrix5" spec="parameter.RealParameter" estimate="false" name="shape">1.0</parameter>
-                                            
+<!--Replaced from here-->                                    
+                    <siteModel id="SiteModel.s:New Pterosaur Matrix5" spec="SiteModel" gammaCategoryCount="4" mutationRate="@mutationRate.s:New Pterosaur Matrix5" shape="@gammaShape.s:New Pterosaur Matrix2">
+<!--Untill here-->                                              
                         <substModel id="LewisMK.s:New Pterosaur Matrix5" spec="morphmodels.evolution.substitutionmodel.LewisMK" datatype="@morphDataType.New Pterosaur Matrix5"/>
                                         
                     </siteModel>
@@ -2128,11 +2189,10 @@ filter="27,47,298,515,610-615">
                         <userDataType id="morphDataType.New Pterosaur Matrix6" spec="beast.base.evolution.datatype.StandardData" ambiguities="12 01 012 23 02 24 123 13 234 04 0124 01234" nrOfStates="6"/>
                                         
                     </data>
-                                    
-                    <siteModel id="SiteModel.s:New Pterosaur Matrix6" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:New Pterosaur Matrix2" mutationRate="@mutationRate.s:New Pterosaur Matrix6">
-                                            
-                        <parameter id="gammaShape.s:New Pterosaur Matrix6" spec="parameter.RealParameter" estimate="false" name="shape">1.0</parameter>
-                                            
+<!--Replaced from here-->                                     
+                     <siteModel id="SiteModel.s:New Pterosaur Matrix6" spec="SiteModel" gammaCategoryCount="4" mutationRate="@mutationRate.s:New Pterosaur Matrix6" shape="@gammaShape.s:New Pterosaur Matrix2">
+<!--Untill here-->         
+
                         <substModel id="LewisMK.s:New Pterosaur Matrix6" spec="morphmodels.evolution.substitutionmodel.LewisMK" datatype="@morphDataType.New Pterosaur Matrix6"/>
                                         
                     </siteModel>
@@ -2157,11 +2217,9 @@ filter="221,610-617">
                         <userDataType id="morphDataType.New Pterosaur Matrix8" spec="beast.base.evolution.datatype.StandardData" ambiguities="12 01 012 23 02 24 123 13 234 04 0124 01234" nrOfStates="8"/>
                                         
                     </data>
-                                    
-                    <siteModel id="SiteModel.s:New Pterosaur Matrix8" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:New Pterosaur Matrix2" mutationRate="@mutationRate.s:New Pterosaur Matrix8">
-                                            
-                        <parameter id="gammaShape.s:New Pterosaur Matrix8" spec="parameter.RealParameter" estimate="false" name="shape">1.0</parameter>
-                                            
+<!--Replaced from here-->                                      
+                    <siteModel id="SiteModel.s:New Pterosaur Matrix8" spec="SiteModel" gammaCategoryCount="4" mutationRate="@mutationRate.s:New Pterosaur Matrix8" shape="@gammaShape.s:New Pterosaur Matrix2">
+ <!--Untill here-->                                            
                         <substModel id="LewisMK.s:New Pterosaur Matrix8" spec="morphmodels.evolution.substitutionmodel.LewisMK" datatype="@morphDataType.New Pterosaur Matrix8"/>
                                         
                     </siteModel>
@@ -2293,7 +2351,19 @@ filter="221,610-617">
         <operator id="tipDatesSampler.V.gassenae" spec="sa.evolution.operators.SampledNodeDateRandomWalker" taxonset="@V.gassenae" tree="@Tree.t:New Pterosaur Matrix" weight="1.0" windowSize="1.0"/>
             
         <operator id="tipDatesSampler.Y.praderioi" spec="sa.evolution.operators.SampledNodeDateRandomWalker" taxonset="@Y.praderioi" tree="@Tree.t:New Pterosaur Matrix" weight="1.0" windowSize="1.0"/>
+<!--New from here-->
+        <operator id="gammaShapeScaler.s:New Pterosaur Matrix2" spec="ScaleOperator" parameter="@gammaShape.s:New Pterosaur Matrix2" scaleFactor="0.5" weight="0.1"/>
             
+        <operator id="gammaShapeScaler.s:New Pterosaur Matrix3" spec="ScaleOperator" parameter="@gammaShape.s:New Pterosaur Matrix3" scaleFactor="0.5" weight="0.1"/>
+            
+        <operator id="gammaShapeScaler.s:New Pterosaur Matrix4" spec="ScaleOperator" parameter="@gammaShape.s:New Pterosaur Matrix4" scaleFactor="0.5" weight="0.1"/>
+            
+        <operator id="gammaShapeScaler.s:New Pterosaur Matrix5" spec="ScaleOperator" parameter="@gammaShape.s:New Pterosaur Matrix5" scaleFactor="0.5" weight="0.1"/>
+            
+        <operator id="gammaShapeScaler.s:New Pterosaur Matrix6" spec="ScaleOperator" parameter="@gammaShape.s:New Pterosaur Matrix6" scaleFactor="0.5" weight="0.1"/>
+            
+        <operator id="gammaShapeScaler.s:New Pterosaur Matrix8" spec="ScaleOperator" parameter="@gammaShape.s:New Pterosaur Matrix8" scaleFactor="0.5" weight="0.1"/>
+<!--Untill here-->             
         <logger id="tracelog" spec="Logger" fileName="$(filebase).log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
                     
             <log idref="posterior"/>
@@ -2425,7 +2495,21 @@ filter="221,610-617">
             <log idref="V.gassenae.prior"/>
                     
             <log idref="Y.praderioi.prior"/>
-                
+<!--New from here-->                               
+            <parameter idref="originBDMMPrime.t:New Pterosaur Matrix" name="log"/>
+                    
+            <parameter idref="gammaShape.s:New Pterosaur Matrix2" name="log"/>
+                    
+            <parameter idref="gammaShape.s:New Pterosaur Matrix3" name="log"/>
+                    
+            <parameter idref="gammaShape.s:New Pterosaur Matrix4" name="log"/>
+                    
+            <parameter idref="gammaShape.s:New Pterosaur Matrix5" name="log"/>
+                    
+            <parameter idref="gammaShape.s:New Pterosaur Matrix6" name="log"/>
+                    
+            <parameter idref="gammaShape.s:New Pterosaur Matrix8" name="log"/>
+<!--Untill here-->                 
         </logger>
             
         <logger id="screenlog" spec="Logger" logEvery="1000">
