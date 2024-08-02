@@ -1,0 +1,82 @@
+<itsabeastystatewerein version='2.0' sample='4794999'>
+<statenode id='Tree.t:New Pterosaur Matrix'>((((((((((0:0.0,(3:3.556775602006674,(20:4.729305617483693,31:11.074018295507098)38:4.7174129687677)39:7.809562885252046)37:38.60102357959806,15:0.7468354298434576)42:8.798377955672422,(10:0.3138124051643416,30:4.280337641804152)33:1.3819155222434887)41:1.465141684826179,(4:0.5348002729213022,(6:1.3494046420608967,29:0.0)36:12.888179942716711)35:4.881895960393521)50:2.8469215177223646,16:5.321538568096301)40:0.2022939211197894,((1:3.291886627978215,25:4.2514887070881855)45:2.464928584461788,17:5.911686338371794)48:1.5179989459062426)49:0.7123719632641468,((2:4.072551653298476,22:4.490387051010927)44:3.284585813189338,(5:2.5271298632271453,(19:0.9424130861465514,24:0.0)43:8.281581865766114)46:3.25772579394868)34:0.11061633181680008)51:2.928772590379211,11:2.4413696655014974)55:10.048007323998831,21:3.3194304353217916)54:3.883398261188745,(((((7:0.0,(27:0.0,28:7.139226744694071)53:1.2602375228139238)52:1.807445254633663,9:9.75978174543549)61:15.272128776162077,12:0.8814954976854494)60:7.780500811813582,((((8:0.6605714117626746,26:0.0)32:6.101386586451326,23:1.0815401903394246)47:0.9924340498331503,18:1.4626623139265007)58:4.57265375503566,13:0.4353989365558846)59:0.038273630482493104)56:0.7162988362837268,14:2.36138911852521)62:2.05358290445632)57:0.0</statenode>
+<statenode id='mutationRate.s:New Pterosaur Matrix8'>mutationRate.s:New Pterosaur Matrix8[1 1] (0.0,Infinity): 0.02512657052983891 </statenode>
+<statenode id='mutationRate.s:New Pterosaur Matrix3'>mutationRate.s:New Pterosaur Matrix3[1 1] (0.0,Infinity): 0.058504310925039514 </statenode>
+<statenode id='mutationRate.s:New Pterosaur Matrix4'>mutationRate.s:New Pterosaur Matrix4[1 1] (0.0,Infinity): 8.811707466561547 </statenode>
+<statenode id='mutationRate.s:New Pterosaur Matrix2'>mutationRate.s:New Pterosaur Matrix2[1 1] (0.0,Infinity): 0.052138299896753254 </statenode>
+<statenode id='mutationRate.s:New Pterosaur Matrix5'>mutationRate.s:New Pterosaur Matrix5[1 1] (0.0,Infinity): 0.061717047274666106 </statenode>
+<statenode id='mutationRate.s:New Pterosaur Matrix6'>mutationRate.s:New Pterosaur Matrix6[1 1] (0.0,Infinity): 54.38385912149375 </statenode>
+<statenode id='ucldMean.c:New Pterosaur Matrix'>ucldMean.c:New Pterosaur Matrix[1 1] (0.0,Infinity): 0.018880945389399075 </statenode>
+<statenode id='ucldStdev.c:New Pterosaur Matrix'>ucldStdev.c:New Pterosaur Matrix[1 1] (0.0,Infinity): 7.73802593673354 </statenode>
+<statenode id='rateCategories.c:New Pterosaur Matrix'>rateCategories.c:New Pterosaur Matrix[62 1] (0,61): 23 26 23 23 30 27 28 52 29 9 33 25 29 5 25 29 22 24 1 28 23 26 24 27 44 4 11 37 23 14 6 21 9 27 34 24 20 17 24 23 35 28 23 23 24 26 25 29 28 30 25 28 8 21 25 22 30 26 22 37 23 21 </statenode>
+<statenode id='birthRateCanonical.t:New Pterosaur Matrix'>birthRateCanonical.t:New Pterosaur Matrix[1 1] (0.0,Infinity): 0.25685077635134823 </statenode>
+<statenode id='deathRateCanonical.t:New Pterosaur Matrix'>deathRateCanonical.t:New Pterosaur Matrix[1 1] (0.0,Infinity): 0.25300445800354204 </statenode>
+<statenode id='samplingRateCanonical.t:New Pterosaur Matrix'>samplingRateCanonical.t:New Pterosaur Matrix[1 1] (0.0,Infinity): 0.046516802295105054 </statenode>
+<statenode id='originBDMMPrime.t:New Pterosaur Matrix'>originBDMMPrime.t:New Pterosaur Matrix[1 1] (-Infinity,Infinity): 94.84419520834214 </statenode>
+<statenode id='gammaShape.s:New Pterosaur Matrix2'>gammaShape.s:New Pterosaur Matrix2[1 1] (0.001,1000.0): 8.224987899897041 </statenode>
+<statenode id='gammaShape.s:New Pterosaur Matrix3'>gammaShape.s:New Pterosaur Matrix3[1 1] (-Infinity,Infinity): 0.848304809035936 </statenode>
+<statenode id='gammaShape.s:New Pterosaur Matrix4'>gammaShape.s:New Pterosaur Matrix4[1 1] (-Infinity,Infinity): 0.37790729772105297 </statenode>
+<statenode id='gammaShape.s:New Pterosaur Matrix5'>gammaShape.s:New Pterosaur Matrix5[1 1] (-Infinity,Infinity): 1.6844084280269134 </statenode>
+<statenode id='gammaShape.s:New Pterosaur Matrix6'>gammaShape.s:New Pterosaur Matrix6[1 1] (-Infinity,Infinity): 0.34678197142201883 </statenode>
+<statenode id='gammaShape.s:New Pterosaur Matrix8'>gammaShape.s:New Pterosaur Matrix8[1 1] (-Infinity,Infinity): 0.2829806475973467 </statenode>
+</itsabeastystatewerein>
+<!--
+{"operators":[
+{"id":"FixMeanMutationRatesOperator","p":1.3034637134586855,"accept":8958,"reject":55814,"acceptFC":8788,"rejectFC":55245,"rejectIv":33806,"rejectOp":33806},
+{"id":"ucldMeanScaler.c:New Pterosaur Matrix","p":0.7996005010764118,"accept":1178,"reject":31199,"acceptFC":1163,"rejectFC":30848,"rejectIv":0,"rejectOp":0},
+{"id":"ucldStdevScaler.c:New Pterosaur Matrix","p":0.710224711004783,"accept":55,"reject":97668,"acceptFC":41,"rejectFC":96552,"rejectIv":0,"rejectOp":0},
+{"id":"CategoriesRandomWalk.c:New Pterosaur Matrix","p":"NaN","accept":120430,"reject":204469,"acceptFC":118878,"rejectFC":202009,"rejectIv":109423,"rejectOp":109423},
+{"id":"CategoriesSwapOperator.c:New Pterosaur Matrix","p":"NaN","accept":37137,"reject":287041,"acceptFC":36615,"rejectFC":283753,"rejectIv":0,"rejectOp":0},
+{"id":"CategoriesUniform.c:New Pterosaur Matrix","p":"NaN","accept":57725,"reject":267049,"acceptFC":56842,"rejectFC":264038,"rejectIv":0,"rejectOp":0},
+{"id":"relaxedUpDownOperator.c:New Pterosaur Matrix","p":0.7592022568485668,"accept":97,"reject":97071,"acceptFC":96,"rejectFC":95923,"rejectIv":92690,"rejectOp":82515},
+{"id":"birthRateCanonicalScaler.t:New Pterosaur Matrix","p":0.5570652684534634,"accept":22728,"reject":74878,"acceptFC":22141,"rejectFC":74271,"rejectIv":0,"rejectOp":0},
+{"id":"deathRateCanonicalScaler.t:New Pterosaur Matrix","p":0.5450041395782712,"accept":22499,"reject":74993,"acceptFC":21874,"rejectFC":74430,"rejectIv":0,"rejectOp":0},
+{"id":"samplingRateCanonicalScaler.t:New Pterosaur Matrix","p":0.324586507625844,"accept":27536,"reject":69723,"acceptFC":26691,"rejectFC":69417,"rejectIv":0,"rejectOp":0},
+{"id":"BDMMPrimeLeafToSA.t:New Pterosaur Matrix","p":"NaN","accept":11724,"reject":312757,"acceptFC":11561,"rejectFC":309070,"rejectIv":149203,"rejectOp":149203},
+{"id":"BDMMPrimeSAWilsonBalding.t:New Pterosaur Matrix","p":"NaN","accept":410,"reject":324208,"acceptFC":388,"rejectFC":320406,"rejectIv":100523,"rejectOp":5678},
+{"id":"BDMMPrimeSAWide.t:New Pterosaur Matrix","p":"NaN","accept":167,"reject":324369,"acceptFC":164,"rejectFC":320494,"rejectIv":296582,"rejectOp":279102},
+{"id":"BDMMPrimeSANarrow.t:New Pterosaur Matrix","p":"NaN","accept":4898,"reject":320232,"acceptFC":4833,"rejectFC":316382,"rejectIv":207477,"rejectOp":174887},
+{"id":"BDMMPrimeSAUniformOperator.t:New Pterosaur Matrix","p":"NaN","accept":90299,"reject":560202,"acceptFC":89365,"rejectFC":553266,"rejectIv":0,"rejectOp":0},
+{"id":"BDMMPrimeSATreeRootScaler.t:New Pterosaur Matrix","p":0.9638748994002223,"accept":3919,"reject":28544,"acceptFC":3863,"rejectFC":28197,"rejectIv":13858,"rejectOp":8574},
+{"id":"BDMMPrimeSATreeScaler.t:New Pterosaur Matrix","p":0.9812560697943331,"accept":1519,"reject":95976,"acceptFC":1513,"rejectFC":94739,"rejectIv":61560,"rejectOp":55138},
+{"id":"originBDMMPrimeScaler.t:New Pterosaur Matrix","p":0.8333235489998517,"accept":22190,"reject":75664,"acceptFC":22038,"rejectFC":74628,"rejectIv":50691,"rejectOp":0},
+{"id":"tipDatesSampler.A.Koi","p":1,"accept":24030,"reject":8539,"acceptFC":23847,"rejectFC":8328,"rejectIv":2587,"rejectOp":951},
+{"id":"tipDatesSampler.A. cristatus I","p":1,"accept":17362,"reject":15225,"acceptFC":17134,"rejectFC":15070,"rejectIv":4830,"rejectOp":3288},
+{"id":"tipDatesSampler.A.cristatus II","p":1,"accept":21881,"reject":10795,"acceptFC":21662,"rejectFC":10648,"rejectIv":5930,"rejectOp":2398},
+{"id":"tipDatesSampler.A.dallavecchiai","p":1,"accept":19255,"reject":13245,"acceptFC":19054,"rejectFC":13093,"rejectIv":2423,"rejectOp":1342},
+{"id":"tipDatesSampler.C.caribensis","p":1,"accept":24394,"reject":7967,"acceptFC":24091,"rejectFC":7895,"rejectIv":3770,"rejectOp":64},
+{"id":"tipDatesSampler.C.hanseni","p":1,"accept":13978,"reject":18568,"acceptFC":13858,"rejectFC":18309,"rejectIv":5595,"rejectOp":3835},
+{"id":"tipDatesSampler.C.rosenfeldi","p":1,"accept":15592,"reject":16929,"acceptFC":15535,"rejectFC":16597,"rejectIv":4717,"rejectOp":2366},
+{"id":"tipDatesSampler.D.macronyx I","p":1,"accept":11535,"reject":21078,"acceptFC":11497,"rejectFC":20690,"rejectIv":11194,"rejectOp":4495},
+{"id":"tipDatesSampler.D.macronyx II","p":1,"accept":20385,"reject":12023,"acceptFC":20362,"rejectFC":11677,"rejectIv":6895,"rejectOp":3288},
+{"id":"tipDatesSampler.D.gigas","p":1,"accept":26823,"reject":5611,"acceptFC":26597,"rejectFC":5448,"rejectIv":3207,"rejectOp":1036},
+{"id":"tipDatesSampler.D.gregorii I","p":1,"accept":23057,"reject":9321,"acceptFC":22886,"rejectFC":9128,"rejectIv":2424,"rejectOp":2153},
+{"id":"tipDatesSampler.D. gregorii II","p":1,"accept":24139,"reject":8058,"acceptFC":23909,"rejectFC":7910,"rejectIv":3266,"rejectOp":2526},
+{"id":"tipDatesSampler.D.romeri","p":1,"accept":23230,"reject":9025,"acceptFC":22909,"rejectFC":8963,"rejectIv":5250,"rejectOp":3581},
+{"id":"tipDatesSampler.D.romeri II","p":1,"accept":24441,"reject":7995,"acceptFC":24127,"rejectFC":7937,"rejectIv":5399,"rejectOp":3787},
+{"id":"tipDatesSampler.D.romeri III","p":1,"accept":28483,"reject":4127,"acceptFC":28149,"rejectFC":4069,"rejectIv":2404,"rejectOp":159},
+{"id":"tipDatesSampler.E.ranzii I","p":1,"accept":8859,"reject":23862,"acceptFC":8839,"rejectFC":23499,"rejectIv":9843,"rejectOp":5386},
+{"id":"tipDatesSampler.E.ranzii II","p":1,"accept":26762,"reject":5657,"acceptFC":26454,"rejectFC":5598,"rejectIv":3923,"rejectOp":120},
+{"id":"tipDatesSampler.F.minimus","p":1,"accept":12624,"reject":19859,"acceptFC":12555,"rejectFC":19542,"rejectIv":5698,"rejectOp":4207},
+{"id":"tipDatesSampler.I.polesinensis","p":1,"accept":21986,"reject":10845,"acceptFC":21866,"rejectFC":10573,"rejectIv":3518,"rejectOp":537},
+{"id":"tipDatesSampler.K.kely","p":1,"accept":15775,"reject":16527,"acceptFC":15660,"rejectFC":16300,"rejectIv":7403,"rejectOp":4177},
+{"id":"tipDatesSampler.L.chanarensis","p":1,"accept":15882,"reject":16686,"acceptFC":15711,"rejectFC":16466,"rejectIv":8783,"rejectOp":1317},
+{"id":"tipDatesSampler.P.benitoi","p":1,"accept":18055,"reject":14418,"acceptFC":17822,"rejectFC":14260,"rejectIv":2742,"rejectOp":1579},
+{"id":"tipDatesSampler.P.zambellii","p":1,"accept":22778,"reject":9867,"acceptFC":22587,"rejectFC":9650,"rejectIv":2586,"rejectOp":467},
+{"id":"tipDatesSampler.P.buffarinii","p":1,"accept":9342,"reject":23149,"acceptFC":9314,"rejectFC":22766,"rejectIv":7718,"rejectOp":4155},
+{"id":"tipDatesSampler.PVSJ","p":1,"accept":20592,"reject":11867,"acceptFC":20343,"rejectFC":11748,"rejectIv":6766,"rejectOp":3223},
+{"id":"tipDatesSampler.R.filisurensis","p":1,"accept":16551,"reject":15837,"acceptFC":16385,"rejectFC":15655,"rejectIv":3435,"rejectOp":2488},
+{"id":"tipDatesSampler.R.muensteri I","p":1,"accept":17319,"reject":15060,"acceptFC":17300,"rejectFC":14698,"rejectIv":2364,"rejectOp":1909},
+{"id":"tipDatesSampler.R.Muensteri II","p":1,"accept":0,"reject":32403,"acceptFC":0,"rejectFC":32021,"rejectIv":32403,"rejectOp":32403},
+{"id":"tipDatesSampler.S.taylori","p":1,"accept":13630,"reject":18874,"acceptFC":13337,"rejectFC":18766,"rejectIv":1694,"rejectOp":916},
+{"id":"tipDatesSampler.S.venieri","p":1,"accept":18662,"reject":13794,"acceptFC":18569,"rejectFC":13500,"rejectIv":2691,"rejectOp":1551},
+{"id":"tipDatesSampler.V.gassenae","p":1,"accept":13681,"reject":19007,"acceptFC":13439,"rejectFC":18846,"rejectIv":6636,"rejectOp":3666},
+{"id":"tipDatesSampler.Y.praderioi","p":1,"accept":17483,"reject":15074,"acceptFC":17156,"rejectFC":15001,"rejectIv":4837,"rejectOp":3913},
+{"id":"gammaShapeScaler.s:New Pterosaur Matrix2","p":0.6797802490159114,"accept":636,"reject":2690,"acceptFC":632,"rejectFC":2650,"rejectIv":0,"rejectOp":0},
+{"id":"gammaShapeScaler.s:New Pterosaur Matrix3","p":0.17432459857452093,"accept":1107,"reject":2253,"acceptFC":1075,"rejectFC":2240,"rejectIv":0,"rejectOp":0},
+{"id":"gammaShapeScaler.s:New Pterosaur Matrix4","p":0.1863304502524843,"accept":1161,"reject":2181,"acceptFC":1142,"rejectFC":2163,"rejectIv":0,"rejectOp":0},
+{"id":"gammaShapeScaler.s:New Pterosaur Matrix5","p":0.16493782646772379,"accept":1074,"reject":2194,"acceptFC":1054,"rejectFC":2178,"rejectIv":0,"rejectOp":0},
+{"id":"gammaShapeScaler.s:New Pterosaur Matrix6","p":0.1812904130521574,"accept":1060,"reject":2227,"acceptFC":1024,"rejectFC":2210,"rejectIv":0,"rejectOp":0},
+{"id":"gammaShapeScaler.s:New Pterosaur Matrix8","p":0.17228775189641754,"accept":1024,"reject":2209,"acceptFC":998,"rejectFC":2200,"rejectIv":0,"rejectOp":0}
+]}
+-->
