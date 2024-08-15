@@ -52,3 +52,6 @@ rsconnect/
 *.traj
 *.log
 *.trees
+
+# Mac OS files
+*.DS_Store
