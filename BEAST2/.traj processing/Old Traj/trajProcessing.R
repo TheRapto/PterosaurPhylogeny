@@ -27,9 +27,10 @@ parseTrajectory <- function(trajStr) {
 
 #Loading in the original trajectory file for processing:
 Traj= read_tsv("Changing Birth-death FBD - Mkp - Uncertain ages - 06-02.New Pterosaur Matrix.traj", col_types="ic")
+Traj= read_tsv("15-08-CRBDS-ULN-MkPG.New Pterosaur Matrix.traj", col_types="ic")
 
 #The function that processes the trajectroies, adapted to handle preloaded Traj's
-loadTrajectories <- function(filename, burninFrac=0.1, subsample=NA) {
+loadTrajectories <- function(filename, burninFrac=0.2, subsample=NA) {
     states <- NULL
     events <- NULL
 
@@ -97,13 +98,13 @@ save(Processed_Traj, file="Processed_Traj_BD.Rdata")
 ####Changing all rates plot:####
 
 #Set amount of subsampling. For example 10 means every tenth value of the trajectory.
-Subsample=100
+Subsample=1000
 {
 #Loads the wanted processed Traj. Choose one:
 load("Processed_Traj_AllRates.Rdata")
 #Parsing the inputs to be readable
-Time=Processed_Traj$states$time[seq(1, length(Processed_Traj$states$time), Subsample)]
-N=Processed_Traj$states$N[seq(1, length(Processed_Traj$states$N), Subsample)]
+Time=NewTraj$age[seq(1, length(NewTraj$age), Subsample)]
+N=NewTraj$N[seq(1, length(NewTraj$N), Subsample)]
 df=data.frame(y=N,
               x=Time)
 title="Changing All Rates"
@@ -205,7 +206,7 @@ dev.off()
 ####Changing all rates 95% HPD plot:####
 
 #Set amount of subsampling. For example 10 means every tenth value of the trajectory.
-Subsample=100
+Subsample=1000
 {
   #Loads the wanted processed Traj. Choose one:
   load("Processed_Traj_AllRates.Rdata")
