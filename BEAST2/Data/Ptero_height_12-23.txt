@@ -11,6 +11,7 @@ Dromomeron_romeri		74.83
 Eudimorphodon_ranzii		69.59
 Faxinalipterus_minimus		75.285
 Ixalerpeton_polesinensis	84.28
+<<<<<<< Updated upstream
 Kongonaphon_kely		90.37
 Lagerpeton_chanarensis		89.18
 Pachagnathus_benitoi		61.525
@@ -32,4 +33,25 @@ Dromomeron_romeri-3		64.83
 Dromomeron_romeri-4		58.33
 Dimorphodon_macronyx-2		52.6
 Eudimorphodon_ranzii-2		63.715
+=======
+Kongonaphon_kely	90.37
+Lagerpeton_chanarensis	88.83
+Pachagnathus_benitoi	61.525
+Peteinosaurus_zambellii	69.59
+Preondactylus_buffarinii	65.6
+PVSJ_883	83.18
+Raeticodactylus_filisurensis	63.565
+Rhamphorhynchus_muensteri	31.17
+Scleromochlus_taylori_new	79.375
+Seazzadactylus_venieri	67.33
+Venetoraptor_gassenae	84.28
+Yelaphomte_praderioi	61.525
+Austriadactylus_cristatus-2	65.6
+Carniadactylus_rosenfeldi-2	69.59
+Dromomeron_gregorii-2	72.235
+Dromomeron_romeri-2	67.33
+Dromomeron_romeri-3	59.265
+Dimorphodon_macronyx-2	52.6
+Eudimorphodon_ranzii-2	65.6
+>>>>>>> Stashed changes
 Rhamphorhynchus_muensteri-2	0
