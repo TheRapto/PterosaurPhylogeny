@@ -295,11 +295,51 @@ TrajTimeBDSam=gridTrajectoriesByTime(TrajBDSam,TimePtero)
 TrajTimeBD=gridTrajectoriesByTime(TrajBD,TimePtero)
 }
 library(deeptime)
+library(coda)
 
+
+  
+  TestMCMC=as.mcmc(Test)
+  
+  result_list=list()
+  t=as.character(TrajTimeConst$t)  
+  N=TrajTimeConst$N
+  ConstMCMCTest=as.mcmc(result_list
+                        )
+  HPDinterval(ConstMCMCTest)
+
+  # Loop through N and t, an`6.5`# Loop through N and t, and append values of t to the corresponding variable in result_list
+  for (i in 1:length(t)) {
+    if (t[i] %in% names(result_list)) {
+      result_list[[t[i]]] = c(result_list[[t[i]]], N[i])  # Append the value to the existing vector
+    } else {
+      result_list[[t[i]]] = N[i]  # Create a new vector for the variable
+    }
+  }
+  # Sample input data with duplicates in N
+  N <- c("var1", "var2", "var1", "var3", "var2", "var1")  # List of variable names with duplicates
+  t <- c(10, 20, 15, 30, 25, 5)                             # Corresponding values
+  
+  # Create an empty list to store the results
+  result_list <- list()
+  
+  # Loop through N and t, and append values of t to the corresponding variable in result_list
+  for (i in 1:length(N)) {
+    if (N[i] %in% names(result_list)) {
+      result_list[[N[i]]] <- c(result_list[[N[i]]], t[i])  # Append the value to the existing vector
+    } else {
+      result_list[[N[i]]] <- t[i]  # Create a new vector for the variable
+    }
+  }
+  
+  # Print the result_list
+  print(result_list)
+  
+  
 #Findign the mean and the sd:
 summarySE_NA <- function(data=NULL, measurevar, groupvars=NULL, na.rm=TRUE, conf.interval=.95) {
   library(doBy)
-  
+
   # New version of length which can handle NA's: if na.rm==T, don't count them
   
   length2 <- function (x, na.rm=TRUE) {
