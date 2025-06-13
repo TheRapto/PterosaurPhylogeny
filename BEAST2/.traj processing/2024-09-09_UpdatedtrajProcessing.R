@@ -297,17 +297,11 @@ TrajTimeBD=gridTrajectoriesByTime(TrajBD,TimePtero)
 library(deeptime)
 library(coda)
 
-
-  
-  TestMCMC=as.mcmc(Test)
-  
+BoundariesUpLow = function(Trajectory){
   result_list=list()
-  t=as.character(TrajTimeConst$t)  
-  N=TrajTimeConst$N
-  ConstMCMCTest=as.mcmc(result_list
-                        )
-  HPDinterval(ConstMCMCTest)
-
+  t=as.character(Trajectory$t)  
+  N=Trajectory$N
+  
   # Loop through N and t, an`6.5`# Loop through N and t, and append values of t to the corresponding variable in result_list
   for (i in 1:length(t)) {
     if (t[i] %in% names(result_list)) {
@@ -316,27 +310,21 @@ library(coda)
       result_list[[t[i]]] = N[i]  # Create a new vector for the variable
     }
   }
-  # Sample input data with duplicates in N
-  N <- c("var1", "var2", "var1", "var3", "var2", "var1")  # List of variable names with duplicates
-  t <- c(10, 20, 15, 30, 25, 5)                             # Corresponding values
-  
-  # Create an empty list to store the results
-  result_list <- list()
-  
-  # Loop through N and t, and append values of t to the corresponding variable in result_list
-  for (i in 1:length(N)) {
-    if (N[i] %in% names(result_list)) {
-      result_list[[N[i]]] <- c(result_list[[N[i]]], t[i])  # Append the value to the existing vector
-    } else {
-      result_list[[N[i]]] <- t[i]  # Create a new vector for the variable
-    }
+  {
+  HPDBoundary$Lower=1:201
+  HPDBoundary$Upper=1:201
   }
+for (i in 1:length(AgePtero)) {
+    LoopMCMC=as.mcmc(result_list[[i]])
+    Interval=HPDinterval(LoopMCMC)
+    HPDBoundary$Lower[i]= Interval[1]
+    HPDBoundary$Upper[i]= Interval[2]
+}
+  return(HPDBoundary)
+}
   
-  # Print the result_list
-  print(result_list)
   
-  
-#Findign the mean and the sd:
+#Finding the mean and the sd:
 summarySE_NA <- function(data=NULL, measurevar, groupvars=NULL, na.rm=TRUE, conf.interval=.95) {
   library(doBy)
 
@@ -370,10 +358,11 @@ summarySE_NA <- function(data=NULL, measurevar, groupvars=NULL, na.rm=TRUE, conf
 {
 MeanConst <- summarySE_NA(TrajTimeConst, measurevar="N", groupvars="t")
 title="Constant Rates"
+UpLow = BoundariesUpLow(TrajTimeConst)
 df=data.frame(y=MeanConst$N,
               x=MeanConst$t+146.17,
-              Sdtop=MeanConst$N+MeanConst$sd,
-              Sdbot=MeanConst$N-MeanConst$sd)
+              Sdtop=UpLow$Lower,
+              Sdbot=UpLow$Upper)
 
 Constplot=ggplot(data = df, aes(x=x, y = y)) +
   geom_ribbon(aes(ymin=Sdbot,ymax=Sdtop, fill=Sdbot<Sdtop),show.legend=FALSE)+
@@ -387,7 +376,7 @@ Constplot=ggplot(data = df, aes(x=x, y = y)) +
   theme(legend.position = c(0.3, 0.85)) +
   theme(legend.key.size = unit(0.3, "cm")) +
   theme(legend.title = element_blank()) + 
-  scale_y_continuous(limits=c(-5,50)) 
+  scale_y_continuous(limits=c(-5,70)) 
 
 Constplot
 }
@@ -395,10 +384,12 @@ Constplot
 {
   MeanBD <- summarySE_NA(TrajTimeBD, measurevar="N", groupvars="t")
   title="Changing Birth-Death"
+  UpLow = BoundariesUpLow(TrajTimeBD)
   df=data.frame(y=MeanBD$N,
                 x=MeanBD$t+146.17,
-                Sdtop=MeanBD$N+MeanBD$sd,
-                Sdbot=MeanBD$N-MeanBD$sd)
+                Sdtop=UpLow$Lower,
+                Sdbot=UpLow$Upper)
+  
   
   BDplot=ggplot(data = df, aes(x=x, y = y)) +
     geom_ribbon(aes(ymin=Sdbot,ymax=Sdtop, fill=Sdbot<Sdtop),show.legend=FALSE)+
@@ -412,7 +403,7 @@ Constplot
     theme(legend.position = c(0.3, 0.85)) +
     theme(legend.key.size = unit(0.3, "cm")) +
     theme(legend.title = element_blank()) + 
-    scale_y_continuous(limits=c(-5,50)) 
+    scale_y_continuous(limits=c(-5,70)) 
   
   BDplot
 }
@@ -421,10 +412,11 @@ Constplot
 {
   MeanBDSam <- summarySE_NA(TrajTimeBDSam, measurevar="N", groupvars="t")
   title="Changing Birth-Death & Sampling"
+  UpLow = BoundariesUpLow(TrajTimeBDSam)
   df=data.frame(y=MeanBDSam$N,
                 x=MeanBDSam$t+146.17,
-                Sdtop=MeanBDSam$N+MeanBDSam$sd,
-                Sdbot=MeanBDSam$N-MeanBDSam$sd)
+                Sdtop=UpLow$Lower,
+                Sdbot=UpLow$Upper)
   
   BDSamplot=ggplot(data = df, aes(x=x, y = y)) +
     geom_ribbon(aes(ymin=Sdbot,ymax=Sdtop, fill=Sdbot<Sdtop),show.legend=FALSE)+
@@ -438,7 +430,7 @@ Constplot
     theme(legend.position = c(0.3, 0.85)) +
     theme(legend.key.size = unit(0.3, "cm")) +
     theme(legend.title = element_blank()) + 
-    scale_y_continuous(limits=c(-5,50)) 
+    scale_y_continuous(limits=c(-5,70)) 
   
   BDSamplot
 }
@@ -446,10 +438,11 @@ Constplot
 {
   MeanSam <- summarySE_NA(TrajTimeSam, measurevar="N", groupvars="t")
   title="Changing  Sampling"
+  UpLow = BoundariesUpLow(TrajTimeSam)
   df=data.frame(y=MeanSam$N,
                 x=MeanSam$t+146.17,
-                Sdtop=MeanSam$N+MeanSam$sd,
-                Sdbot=MeanSam$N-MeanSam$sd)
+                Sdtop=UpLow$Lower,
+                Sdbot=UpLow$Upper)
   
   Samplot=ggplot(data = df, aes(x=x, y = y)) +
     geom_ribbon(aes(ymin=Sdbot,ymax=Sdtop, fill=Sdbot<Sdtop),show.legend=FALSE)+
@@ -463,7 +456,7 @@ Constplot
     theme(legend.position = c(0.3, 0.85)) +
     theme(legend.key.size = unit(0.3, "cm")) +
     theme(legend.title = element_blank()) + 
-    scale_y_continuous(limits=c(-5,50)) 
+    scale_y_continuous(limits=c(-5,70)) 
   
   Samplot
 }
